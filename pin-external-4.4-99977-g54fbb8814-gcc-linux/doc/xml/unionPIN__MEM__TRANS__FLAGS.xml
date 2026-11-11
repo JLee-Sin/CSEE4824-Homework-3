@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="unionPIN__MEM__TRANS__FLAGS" kind="union" language="C++" prot="public">
+    <compoundname>PIN_MEM_TRANS_FLAGS</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionPIN__MEM__TRANS__FLAGS_1a5920b99d3627c831b221bb459fd6d5d0" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 PIN_MEM_TRANS_FLAGS::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>PIN_MEM_TRANS_FLAGS::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1246" column="12" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="1246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionPIN__MEM__TRANS__FLAGS_1a11c09955885bd97f986116e661fe7da4" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 PIN_MEM_TRANS_FLAGS::isAtomic</definition>
+        <argsstring></argsstring>
+        <name>isAtomic</name>
+        <qualifiedname>PIN_MEM_TRANS_FLAGS::isAtomic</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1249" column="16" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="1249" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionPIN__MEM__TRANS__FLAGS_1a134d7767f9d2aa0713774f38869ca3cd" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 PIN_MEM_TRANS_FLAGS::isRmw</definition>
+        <argsstring></argsstring>
+        <name>isRmw</name>
+        <qualifiedname>PIN_MEM_TRANS_FLAGS::isRmw</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1250" column="16" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="1250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionPIN__MEM__TRANS__FLAGS_1ab529bda417c13077a2b4f65a1276c827" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 PIN_MEM_TRANS_FLAGS::isPrefetch</definition>
+        <argsstring></argsstring>
+        <name>isPrefetch</name>
+        <qualifiedname>PIN_MEM_TRANS_FLAGS::isPrefetch</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1251" column="16" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="1251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionPIN__MEM__TRANS__FLAGS_1a03ef918309dcc482a25a8610dadc16bf" prot="public" static="no" mutable="no">
+        <type>UINT32</type>
+        <definition>UINT32 PIN_MEM_TRANS_FLAGS::isFromPin</definition>
+        <argsstring></argsstring>
+        <name>isFromPin</name>
+        <qualifiedname>PIN_MEM_TRANS_FLAGS::isFromPin</qualifiedname>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1252" column="16" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="1252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionPIN__MEM__TRANS__FLAGS_1ae3b9ea2b50b3380424962de05dfd3065" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="unionPIN__MEM__TRANS__FLAGS" kindref="compound">PIN_MEM_TRANS_FLAGS</ref></type>
+        <definition>struct PIN_MEM_TRANS_FLAGS PIN_MEM_TRANS_FLAGS::bits</definition>
+        <argsstring></argsstring>
+        <name>bits</name>
+        <qualifiedname>PIN_MEM_TRANS_FLAGS::bits</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1253" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>used in for memory address translation callback </para>
+    </detaileddescription>
+    <location file="Source/pin/include/types_vmapi.PH" line="1244" column="1" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="1245" bodyend="1254"/>
+    <listofallmembers>
+      <member refid="unionPIN__MEM__TRANS__FLAGS_1ae3b9ea2b50b3380424962de05dfd3065" prot="public" virt="non-virtual"><scope>PIN_MEM_TRANS_FLAGS</scope><name>bits</name></member>
+      <member refid="unionPIN__MEM__TRANS__FLAGS_1a5920b99d3627c831b221bb459fd6d5d0" prot="public" virt="non-virtual"><scope>PIN_MEM_TRANS_FLAGS</scope><name>data</name></member>
+      <member refid="unionPIN__MEM__TRANS__FLAGS_1a11c09955885bd97f986116e661fe7da4" prot="public" virt="non-virtual"><scope>PIN_MEM_TRANS_FLAGS</scope><name>isAtomic</name></member>
+      <member refid="unionPIN__MEM__TRANS__FLAGS_1a03ef918309dcc482a25a8610dadc16bf" prot="public" virt="non-virtual"><scope>PIN_MEM_TRANS_FLAGS</scope><name>isFromPin</name></member>
+      <member refid="unionPIN__MEM__TRANS__FLAGS_1ab529bda417c13077a2b4f65a1276c827" prot="public" virt="non-virtual"><scope>PIN_MEM_TRANS_FLAGS</scope><name>isPrefetch</name></member>
+      <member refid="unionPIN__MEM__TRANS__FLAGS_1a134d7767f9d2aa0713774f38869ca3cd" prot="public" virt="non-virtual"><scope>PIN_MEM_TRANS_FLAGS</scope><name>isRmw</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

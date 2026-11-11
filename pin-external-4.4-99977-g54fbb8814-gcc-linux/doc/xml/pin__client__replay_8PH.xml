@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="pin__client__replay_8PH" kind="file" language="C++">
+    <compoundname>pin_client_replay.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="pin__client__replay_8PH_1a0fe1db23cde86790efe918814ddfdbbe" prot="public" static="no">
+        <name>PIN_G_PIN_CLIENT_REPLAY_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client_replay.PH" line="9" column="10" bodyfile="Source/pin/pin/pin_client_replay.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__SYSCALL_1gaefc2f308b1fc73ad2b1bfd1a7c41512c" kind="function"><name>PIN_ReplaySyscallEntry</name></member>
+      <member refid="group__SYSCALL_1ga62ed9a93aa5739f576ec49b39c8e699c" kind="function"><name>PIN_ReplaySyscallExit</name></member>
+      <member refid="group__REPLAY_1ga56cbe508bdf0333f5427112711699e9c" kind="function"><name>PIN_ReplayContextChange</name></member>
+      <memberdef kind="function" id="pin__client__replay_8PH_1ga07759b799516b378bd7f3faa0a0a8325" prot="public" static="no" extern="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>VOID</type>
+        <definition>VOID IMG_ReplayImageLoad</definition>
+        <argsstring>(IMG img)</argsstring>
+        <name>IMG_ReplayImageLoad</name>
+        <param>
+          <type>IMG</type>
+          <declname>img</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Replays the image load of an IMG object (created by <ref refid="group__REPLAY_1gadd939297fe51b34aedcbcb8b627a89f2" kindref="member">IMG_CreateAt()</ref>). This means that all the image load callbacks will be called for the specified IMG object. If <ref refid="group__PIN__CONTROL_1gab466cd00518ff315446c92f98f7ea1a0" kindref="member">PIN_StartProgram()</ref> wasn&apos;t called yet, PIN will enqueue this request and will process this request after <ref refid="group__PIN__CONTROL_1gab466cd00518ff315446c92f98f7ea1a0" kindref="member">PIN_StartProgram()</ref> was called</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The image object to replay its load</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>The vm and pin client locks are obtained during the call of this API.</para>
+</simplesect>
+<simplesect kind="par"><title>Availability:</title><para><bold>Mode:</bold> JIT<linebreak/>
+<bold>O/S</bold>: All<linebreak/>
+<bold>CPU:</bold> All<linebreak/>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client_replay.PH" line="135" column="13" declfile="Source/pin/pin/pin_client_replay.PH" declline="135" declcolumn="13"/>
+      </memberdef>
+      <member refid="group__REPLAY_1ga67068d9c22e4da2fb9522098dcf18bde" kind="function"><name>IMG_ReplayImageUnload</name></member>
+      <member refid="group__REPLAY_1ga66fc4a31f4b1b0ac74fef23c08bf759d" kind="function"><name>PIN_WasMemoryReservedInLoadTime</name></member>
+      <member refid="group__PIN__PROCESS_1ga5188cd2a4da0f268a47a8f74e6664a5a" kind="function"><name>PIN_ExitApplication</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2010-2026<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_PIN_CLIENT_REPLAY_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>pin_client_replay</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_PIN_CLIENT_REPLAY_PH</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__SYSCALL_1gaefc2f308b1fc73ad2b1bfd1a7c41512c" kindref="member">PIN_ReplaySyscallEntry</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__INS__INSPECTION_1gaf903f1f8ddcb9710d191943763e6474a" kindref="member">SYSCALL_STANDARD</ref><sp/>std);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__SYSCALL_1ga62ed9a93aa5739f576ec49b39c8e699c" kindref="member">PIN_ReplaySyscallExit</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__INS__INSPECTION_1gaf903f1f8ddcb9710d191943763e6474a" kindref="member">SYSCALL_STANDARD</ref><sp/>std);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__REPLAY_1ga56cbe508bdf0333f5427112711699e9c" kindref="member">PIN_ReplayContextChange</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>from,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>to,<sp/><ref refid="group__PIN__CONTROL_1ga8e4e6511a0e09fdc5ec7d6dbf395b3a8" kindref="member">CONTEXT_CHANGE_REASON</ref><sp/>reason,<sp/>INT32<sp/>info);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__REPLAY_1ga07759b799516b378bd7f3faa0a0a8325" kindref="member">IMG_ReplayImageLoad</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__REPLAY_1ga67068d9c22e4da2fb9522098dcf18bde" kindref="member">IMG_ReplayImageUnload</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__REPLAY_1ga66fc4a31f4b1b0ac74fef23c08bf759d" kindref="member">PIN_WasMemoryReservedInLoadTime</ref>();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NORETURN<sp/>VOID<sp/><ref refid="group__PIN__PROCESS_1ga5188cd2a4da0f268a47a8f74e6664a5a" kindref="member">PIN_ExitApplication</ref>(INT32<sp/>status);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_PIN_CLIENT_REPLAY_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/pin/pin_client_replay.PH"/>
+  </compounddef>
+</doxygen>

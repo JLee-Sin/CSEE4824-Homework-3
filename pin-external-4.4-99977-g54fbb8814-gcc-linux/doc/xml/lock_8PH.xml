@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="lock_8PH" kind="file" language="C++">
+    <compoundname>lock.PH</compoundname>
+    <innerclass refid="structPIN__LOCK" prot="public">PIN_LOCK</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="lock_8PH_1a1a2527cd5a4b56b4df39dedf9f4c5093" prot="public" static="no">
+        <name>PIN_G_LOCK_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/base/lock.PH" line="9" column="10" bodyfile="Source/pin/base/lock.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__LOCK_1ga217cbb364b3339e20d2d3f3fbe0bb712" kind="typedef"><name>PIN_MUTEX</name></member>
+      <member refid="group__LOCK_1ga34b6e9367817716d0b85f804fba4ffea" kind="typedef"><name>PIN_RWMUTEX</name></member>
+      <member refid="group__LOCK_1ga483703255c7ea848f92a84df4768495e" kind="typedef"><name>PIN_SEMAPHORE</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__LOCK_1ga2d70a3db262121f240e8b91f7f9a3af7" kind="function"><name>PIN_InitLock</name></member>
+      <member refid="group__LOCK_1gae2608acfad1d1790a6d0d31e1d95f050" kind="function"><name>PIN_GetLock</name></member>
+      <member refid="group__LOCK_1ga35d97edadbd43507e71fa7fe85904ed6" kind="function"><name>PIN_ReleaseLock</name></member>
+      <member refid="group__LOCK_1gab2ccb8ea978654f4c0d9cadba96ee9ed" kind="function"><name>PIN_MutexInit</name></member>
+      <member refid="group__LOCK_1ga05f3629492c36f7aed88c2a3a17f48ea" kind="function"><name>PIN_MutexFini</name></member>
+      <member refid="group__LOCK_1ga5234870e9082eac1e51dda77e7fb3b93" kind="function"><name>PIN_MutexLock</name></member>
+      <member refid="group__LOCK_1gaf75d66d693aa94f61e04d718e3db1e24" kind="function"><name>PIN_MutexUnlock</name></member>
+      <member refid="group__LOCK_1gacb556c313cc4366e17e94fe927319453" kind="function"><name>PIN_MutexTryLock</name></member>
+      <member refid="group__LOCK_1gaa62d889dd0a931856fa569af553d1ca0" kind="function"><name>PIN_RWMutexInit</name></member>
+      <member refid="group__LOCK_1ga4f05eb08f60536ca79af4e81291abd1b" kind="function"><name>PIN_RWMutexFini</name></member>
+      <member refid="group__LOCK_1ga4aba2f3d4b6801946dee277391801d24" kind="function"><name>PIN_RWMutexReadLock</name></member>
+      <member refid="group__LOCK_1gae0f81460ebb750ee6f953bf30d06f453" kind="function"><name>PIN_RWMutexWriteLock</name></member>
+      <member refid="group__LOCK_1ga951173ca76976ea8f4d1ed58165f4cca" kind="function"><name>PIN_RWMutexUnlock</name></member>
+      <member refid="group__LOCK_1ga6688c2a2fecc786e9f9ea77a5f2829ad" kind="function"><name>PIN_RWMutexTryReadLock</name></member>
+      <member refid="group__LOCK_1ga8d5910392c3f1d29b57695cd5ce47a66" kind="function"><name>PIN_RWMutexTryWriteLock</name></member>
+      <member refid="group__LOCK_1ga957147cc7332eea7e8225915f8c8f3ec" kind="function"><name>PIN_SemaphoreInit</name></member>
+      <member refid="group__LOCK_1ga637f352cc6bea9ac2183db0b8c0b93ce" kind="function"><name>PIN_SemaphoreFini</name></member>
+      <member refid="group__LOCK_1gaf3aeec45644bc5b29b12288dd9dcbcfe" kind="function"><name>PIN_SemaphoreSet</name></member>
+      <member refid="group__LOCK_1ga8e0ac679404eb3cac378852cdb4364c6" kind="function"><name>PIN_SemaphoreClear</name></member>
+      <member refid="group__LOCK_1ga6f2b50096f0e12315b7e3aedc958cbce" kind="function"><name>PIN_SemaphoreIsSet</name></member>
+      <member refid="group__LOCK_1ga7cde56fb65209574e72bbabc2ee45d40" kind="function"><name>PIN_SemaphoreWait</name></member>
+      <member refid="group__LOCK_1ga0ffd3cd1e212cb6a17bf1dba50c76d8d" kind="function"><name>PIN_SemaphoreTimedWait</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2004-2021<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_LOCK_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>lock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_LOCK_PH</highlight></codeline>
+<codeline lineno="16" refid="structPIN__LOCK" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structPIN__LOCK" kindref="compound">PIN_LOCK</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>PINVM::PINSYNC_SAFEPOD_LOCK<sp/><ref refid="structPIN__LOCK_1a36a645e83d1c3101e74dc5db31593adb" kindref="member">_lock</ref>;<sp/></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>INT32<sp/><ref refid="structPIN__LOCK_1a9d933003df0ef4710d163d461fd9a5b1" kindref="member">_owner</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PINVM::PINSYNC_POD_LOCK<sp/><ref refid="group__LOCK_1ga217cbb364b3339e20d2d3f3fbe0bb712" kindref="member">PIN_MUTEX</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PINVM::PINSYNC_POD_RWLOCK<sp/><ref refid="group__LOCK_1ga34b6e9367817716d0b85f804fba4ffea" kindref="member">PIN_RWMUTEX</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PINVM::PINSYNC_POD_SEMAPHORE<sp/><ref refid="group__LOCK_1ga483703255c7ea848f92a84df4768495e" kindref="member">PIN_SEMAPHORE</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1ga2d70a3db262121f240e8b91f7f9a3af7" kindref="member">PIN_InitLock</ref>(<ref refid="structPIN__LOCK" kindref="compound">PIN_LOCK</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1gae2608acfad1d1790a6d0d31e1d95f050" kindref="member">PIN_GetLock</ref>(<ref refid="structPIN__LOCK" kindref="compound">PIN_LOCK</ref>*<sp/>lock,<sp/>INT32<sp/>val);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>INT32<sp/><ref refid="group__LOCK_1ga35d97edadbd43507e71fa7fe85904ed6" kindref="member">PIN_ReleaseLock</ref>(<ref refid="structPIN__LOCK" kindref="compound">PIN_LOCK</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__LOCK_1gab2ccb8ea978654f4c0d9cadba96ee9ed" kindref="member">PIN_MutexInit</ref>(<ref refid="group__LOCK_1ga217cbb364b3339e20d2d3f3fbe0bb712" kindref="member">PIN_MUTEX</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1ga05f3629492c36f7aed88c2a3a17f48ea" kindref="member">PIN_MutexFini</ref>(<ref refid="group__LOCK_1ga217cbb364b3339e20d2d3f3fbe0bb712" kindref="member">PIN_MUTEX</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1ga5234870e9082eac1e51dda77e7fb3b93" kindref="member">PIN_MutexLock</ref>(<ref refid="group__LOCK_1ga217cbb364b3339e20d2d3f3fbe0bb712" kindref="member">PIN_MUTEX</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1gaf75d66d693aa94f61e04d718e3db1e24" kindref="member">PIN_MutexUnlock</ref>(<ref refid="group__LOCK_1ga217cbb364b3339e20d2d3f3fbe0bb712" kindref="member">PIN_MUTEX</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__LOCK_1gacb556c313cc4366e17e94fe927319453" kindref="member">PIN_MutexTryLock</ref>(<ref refid="group__LOCK_1ga217cbb364b3339e20d2d3f3fbe0bb712" kindref="member">PIN_MUTEX</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__LOCK_1gaa62d889dd0a931856fa569af553d1ca0" kindref="member">PIN_RWMutexInit</ref>(<ref refid="group__LOCK_1ga34b6e9367817716d0b85f804fba4ffea" kindref="member">PIN_RWMUTEX</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1ga4f05eb08f60536ca79af4e81291abd1b" kindref="member">PIN_RWMutexFini</ref>(<ref refid="group__LOCK_1ga34b6e9367817716d0b85f804fba4ffea" kindref="member">PIN_RWMUTEX</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1ga4aba2f3d4b6801946dee277391801d24" kindref="member">PIN_RWMutexReadLock</ref>(<ref refid="group__LOCK_1ga34b6e9367817716d0b85f804fba4ffea" kindref="member">PIN_RWMUTEX</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1gae0f81460ebb750ee6f953bf30d06f453" kindref="member">PIN_RWMutexWriteLock</ref>(<ref refid="group__LOCK_1ga34b6e9367817716d0b85f804fba4ffea" kindref="member">PIN_RWMUTEX</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1ga951173ca76976ea8f4d1ed58165f4cca" kindref="member">PIN_RWMutexUnlock</ref>(<ref refid="group__LOCK_1ga34b6e9367817716d0b85f804fba4ffea" kindref="member">PIN_RWMUTEX</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__LOCK_1ga6688c2a2fecc786e9f9ea77a5f2829ad" kindref="member">PIN_RWMutexTryReadLock</ref>(<ref refid="group__LOCK_1ga34b6e9367817716d0b85f804fba4ffea" kindref="member">PIN_RWMUTEX</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__LOCK_1ga8d5910392c3f1d29b57695cd5ce47a66" kindref="member">PIN_RWMutexTryWriteLock</ref>(<ref refid="group__LOCK_1ga34b6e9367817716d0b85f804fba4ffea" kindref="member">PIN_RWMUTEX</ref>*<sp/>lock);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__LOCK_1ga957147cc7332eea7e8225915f8c8f3ec" kindref="member">PIN_SemaphoreInit</ref>(<ref refid="group__LOCK_1ga483703255c7ea848f92a84df4768495e" kindref="member">PIN_SEMAPHORE</ref>*<sp/>sem);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1ga637f352cc6bea9ac2183db0b8c0b93ce" kindref="member">PIN_SemaphoreFini</ref>(<ref refid="group__LOCK_1ga483703255c7ea848f92a84df4768495e" kindref="member">PIN_SEMAPHORE</ref>*<sp/>sem);</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1gaf3aeec45644bc5b29b12288dd9dcbcfe" kindref="member">PIN_SemaphoreSet</ref>(<ref refid="group__LOCK_1ga483703255c7ea848f92a84df4768495e" kindref="member">PIN_SEMAPHORE</ref>*<sp/>sem);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1ga8e0ac679404eb3cac378852cdb4364c6" kindref="member">PIN_SemaphoreClear</ref>(<ref refid="group__LOCK_1ga483703255c7ea848f92a84df4768495e" kindref="member">PIN_SEMAPHORE</ref>*<sp/>sem);</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__LOCK_1ga6f2b50096f0e12315b7e3aedc958cbce" kindref="member">PIN_SemaphoreIsSet</ref>(<ref refid="group__LOCK_1ga483703255c7ea848f92a84df4768495e" kindref="member">PIN_SEMAPHORE</ref>*<sp/>sem);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__LOCK_1ga7cde56fb65209574e72bbabc2ee45d40" kindref="member">PIN_SemaphoreWait</ref>(<ref refid="group__LOCK_1ga483703255c7ea848f92a84df4768495e" kindref="member">PIN_SEMAPHORE</ref>*<sp/>sem);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__LOCK_1ga0ffd3cd1e212cb6a17bf1dba50c76d8d" kindref="member">PIN_SemaphoreTimedWait</ref>(<ref refid="group__LOCK_1ga483703255c7ea848f92a84df4768495e" kindref="member">PIN_SEMAPHORE</ref>*<sp/>sem,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>timeout);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_LOCK_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/base/lock.PH"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="stopped__thread__client_8PH" kind="file" language="C++">
+    <compoundname>stopped_thread_client.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="stopped__thread__client_8PH_1adc7fadf2e108b7f3605043346afdeca1" prot="public" static="no">
+        <name>PIN_G_STOPPED_THREAD_CLIENT_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/stopped_thread_client.PH" line="9" column="10" bodyfile="Source/pin/pin/stopped_thread_client.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__THREADS_1ga86826797380b83015d91b08d74e77f20" kind="function"><name>PIN_StopApplicationThreads</name></member>
+      <member refid="group__THREADS_1ga2ad50e1fd43eddabc5ecebc94a2e7ff1" kind="function"><name>PIN_IsThreadStoppedInDebugger</name></member>
+      <member refid="group__THREADS_1ga49e352a082b01080241542eb52aef06b" kind="function"><name>PIN_ResumeApplicationThreads</name></member>
+      <member refid="group__THREADS_1ga6e27a968025d489bf756008e847f66fc" kind="function"><name>PIN_GetStoppedThreadCount</name></member>
+      <member refid="group__THREADS_1ga576c8a1cb5ad99011e7dc29d6e07e8e3" kind="function"><name>PIN_GetStoppedThreadId</name></member>
+      <member refid="group__THREADS_1ga30a72863aa7bcd9a37fcc46dc3b6789b" kind="function"><name>PIN_GetStoppedThreadContext</name></member>
+      <member refid="group__THREADS_1gab3274ea3f3981025ad0691e3ebd54428" kind="function"><name>PIN_GetStoppedThreadWriteableContext</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2012-2021<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_STOPPED_THREAD_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>stopped_thread_client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_STOPPED_THREAD_CLIENT_PH</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__THREADS_1ga86826797380b83015d91b08d74e77f20" kindref="member">PIN_StopApplicationThreads</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__THREADS_1ga2ad50e1fd43eddabc5ecebc94a2e7ff1" kindref="member">PIN_IsThreadStoppedInDebugger</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__THREADS_1ga49e352a082b01080241542eb52aef06b" kindref="member">PIN_ResumeApplicationThreads</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__THREADS_1ga6e27a968025d489bf756008e847f66fc" kindref="member">PIN_GetStoppedThreadCount</ref>();</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/><ref refid="group__THREADS_1ga576c8a1cb5ad99011e7dc29d6e07e8e3" kindref="member">PIN_GetStoppedThreadId</ref>(UINT32<sp/>i);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/><ref refid="group__THREADS_1ga30a72863aa7bcd9a37fcc46dc3b6789b" kindref="member">PIN_GetStoppedThreadContext</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/><ref refid="group__THREADS_1gab3274ea3f3981025ad0691e3ebd54428" kindref="member">PIN_GetStoppedThreadWriteableContext</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid);</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_STOPPED_THREAD_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/pin/stopped_thread_client.PH"/>
+  </compounddef>
+</doxygen>

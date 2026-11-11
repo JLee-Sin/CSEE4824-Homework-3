@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="versions__client_8PH" kind="file" language="C++">
+    <compoundname>versions_client.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="versions__client_8PH_1a240f6f78cd32a75618a78ee34fa5bfe8" prot="public" static="no">
+        <name>PIN_G_VERSIONS_CLIENT_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/versions_client.PH" line="9" column="10" bodyfile="Source/pin/pin/versions_client.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__TRACE__VERSION_1ga5fe8277b551bc9a3e6d9b516f39729bd" kind="function"><name>BBL_SetTargetVersion</name></member>
+      <member refid="group__TRACE__VERSION_1ga6ff779779ba60c3afb34f701b82a00f5" kind="function"><name>TRACE_Version</name></member>
+      <member refid="group__TRACE__VERSION_1ga6beede470576f50fe68ddc192616b552" kind="function"><name>INS_InsertVersionCase</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2020-2021<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_VERSIONS_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>versions_client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_VERSIONS_CLIENT_PH</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__TRACE__VERSION_1ga5fe8277b551bc9a3e6d9b516f39729bd" kindref="member">BBL_SetTargetVersion</ref>(BBL<sp/>bbl,<sp/>ADDRINT<sp/>version);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__TRACE__VERSION_1ga6ff779779ba60c3afb34f701b82a00f5" kindref="member">TRACE_Version</ref>(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__TRACE__VERSION_1ga6beede470576f50fe68ddc192616b552" kindref="member">INS_InsertVersionCase</ref>(INS<sp/>ins,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg,<sp/>INT32<sp/>case_value,<sp/>ADDRINT<sp/>version,<sp/>...);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_VERSIONS_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/pin/versions_client.PH"/>
+  </compounddef>
+</doxygen>

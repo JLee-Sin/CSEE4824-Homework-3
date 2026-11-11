@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="ins__ia32_8PH" kind="file" language="C++">
+    <compoundname>ins_ia32.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="ins__ia32_8PH_1a685403ca531188789b4d66c465ecdf94" prot="public" static="no">
+        <name>PIN_G_INS_IA32_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/core_ia32/ins_ia32.PH" line="9" column="10" bodyfile="Source/pin/core_ia32/ins_ia32.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__INS__INSPECTION_1gaca49479dff7386abb7da962d45aa716b" kind="function"><name>INS_MaxNumRRegs</name></member>
+      <member refid="group__INS__INSPECTION_1ga82aeda45eb9634fceb3e12e70839de34" kind="function"><name>INS_MaxNumWRegs</name></member>
+      <member refid="group__INS__INSPECTION_1ga21c9b5ea337536bc28a6d1cfb985c639" kind="function"><name>INS_RegRContain</name></member>
+      <member refid="group__INS__INSPECTION_1gab319902e019d907d773a1c6799d4ea32" kind="function"><name>INS_RegWContain</name></member>
+      <member refid="group__INS__INSPECTION_1gaae788ba063300f59ab21fc67c4129250" kind="function"><name>INS_FullRegRContain</name></member>
+      <member refid="group__INS__INSPECTION_1ga3ba87ee35e6c55f0a18bc57a4a2f2765" kind="function"><name>INS_FullRegWContain</name></member>
+      <member refid="group__INS__INSPECTION_1gab4bcc02676e0ae2a108e24ae1e4b6ecf" kind="function"><name>INS_IsStackRead</name></member>
+      <member refid="group__INS__INSPECTION_1ga5a3cbd97d1e9feec3459c8630a401cb7" kind="function"><name>INS_IsStackWrite</name></member>
+      <member refid="group__INS__INSPECTION_1ga52fb144aef5a1962cd6050b0dd9e872b" kind="function"><name>INS_IsIpRelRead</name></member>
+      <member refid="group__INS__INSPECTION_1ga2e46a2329a9ec52511fc3c0e6f97e354" kind="function"><name>INS_IsIpRelWrite</name></member>
+      <member refid="group__INS__INSPECTION_1ga1cfa7fb07799f93822756da2359d0f98" kind="function"><name>INS_IsPredicated</name></member>
+      <member refid="group__INS__INSPECTION_1ga7cf9a2c0cd1041fcb8d672bf2fe89859" kind="function"><name>INS_IsOriginal</name></member>
+      <member refid="group__INS__INSPECTION_1ga7158e5bde981e182f3163f1cad673caf" kind="function"><name>INS_Disassemble</name></member>
+      <member refid="group__INS__INSPECTION_1gad63a5e54b1ba36a4450b484e6a151117" kind="function"><name>INS_MemoryDisplacement</name></member>
+      <member refid="group__INS__INSPECTION_1ga28ea7c27eff42264de45ee427531fc1c" kind="function"><name>INS_MemoryBaseReg</name></member>
+      <member refid="group__INS__INSPECTION_1ga5b04a25a5e366081e919a661474e6f5f" kind="function"><name>INS_MemoryIndexReg</name></member>
+      <member refid="group__INS__INSPECTION_1ga9bc15536ae05615d31335e4dacd76130" kind="function"><name>INS_MemoryScale</name></member>
+      <member refid="group__INS__INSPECTION_1ga835a4c186436ac7a9c252da16b2a8bc2" kind="function"><name>INS_ChangeReg</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2020-2026<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_INS_IA32_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>ins_ia32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_INS_IA32_PH</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__INS__INSPECTION_1gaca49479dff7386abb7da962d45aa716b" kindref="member">INS_MaxNumRRegs</ref>(INS<sp/>x);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__INS__INSPECTION_1ga82aeda45eb9634fceb3e12e70839de34" kindref="member">INS_MaxNumWRegs</ref>(INS<sp/>x);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga21c9b5ea337536bc28a6d1cfb985c639" kindref="member">INS_RegRContain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INS<sp/>ins,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1gab319902e019d907d773a1c6799d4ea32" kindref="member">INS_RegWContain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INS<sp/>ins,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1gaae788ba063300f59ab21fc67c4129250" kindref="member">INS_FullRegRContain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INS<sp/>ins,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga3ba87ee35e6c55f0a18bc57a4a2f2765" kindref="member">INS_FullRegWContain</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INS<sp/>ins,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1gab4bcc02676e0ae2a108e24ae1e4b6ecf" kindref="member">INS_IsStackRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INS<sp/>ins);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga5a3cbd97d1e9feec3459c8630a401cb7" kindref="member">INS_IsStackWrite</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INS<sp/>ins);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga52fb144aef5a1962cd6050b0dd9e872b" kindref="member">INS_IsIpRelRead</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INS<sp/>ins);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga2e46a2329a9ec52511fc3c0e6f97e354" kindref="member">INS_IsIpRelWrite</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INS<sp/>ins);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga1cfa7fb07799f93822756da2359d0f98" kindref="member">INS_IsPredicated</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga7cf9a2c0cd1041fcb8d672bf2fe89859" kindref="member">INS_IsOriginal</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="group__INS__INSPECTION_1ga7158e5bde981e182f3163f1cad673caf" kindref="member">INS_Disassemble</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRDELTA<sp/><ref refid="group__INS__INSPECTION_1gad63a5e54b1ba36a4450b484e6a151117" kindref="member">INS_MemoryDisplacement</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="group__INS__INSPECTION_1ga28ea7c27eff42264de45ee427531fc1c" kindref="member">INS_MemoryBaseReg</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="group__INS__INSPECTION_1ga5b04a25a5e366081e919a661474e6f5f" kindref="member">INS_MemoryIndexReg</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__INS__INSPECTION_1ga9bc15536ae05615d31335e4dacd76130" kindref="member">INS_MemoryScale</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga835a4c186436ac7a9c252da16b2a8bc2" kindref="member">INS_ChangeReg</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>INS<sp/>ins,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>old_reg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>new_reg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BOOL<sp/>as_read);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_INS_IA32_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/core_ia32/ins_ia32.PH"/>
+  </compounddef>
+</doxygen>

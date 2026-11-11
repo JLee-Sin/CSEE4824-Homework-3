@@ -1,0 +1,450 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="image_8PH" kind="file" language="C++">
+    <compoundname>image.PH</compoundname>
+    <innerclass refid="classSymbolAddressRange" prot="public">SymbolAddressRange</innerclass>
+    <innerclass refid="structSymbolDebugInfo" prot="public">SymbolDebugInfo</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="image_8PH_1aa349be98b6a4b3675133c6f8f767803c" prot="public" static="no">
+        <name>PIN_G_IMAGE_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/image.PH" line="9" column="10" bodyfile="Source/pin/pin/image.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group__PIN__CONTROL_1ga32ad8725a818ddded04963a3b35a317c" kind="enum"><name>SYMBOL_INFO_MODE</name></member>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__IMG_1ga7d103a7d0bfc05892cdf2f9d39df9eba" kind="typedef"><name>IMAGECALLBACK</name></member>
+      <member refid="group__IMG_1ga6c062bd954a987b11f620dc9fb6cc49b" kind="typedef"><name>IMAGE_PRE_DEBUG_INFO_PROCESS_CALLBACK</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__REPLAY_1gadd939297fe51b34aedcbcb8b627a89f2" kind="function"><name>IMG_CreateAt</name></member>
+      <member refid="group__REPLAY_1ga07759b799516b378bd7f3faa0a0a8325" kind="function"><name>IMG_ReplayImageLoad</name></member>
+      <member refid="group__APPDEBUG_1ga23706ee02e7b38f1b619faed74d0bebc" kind="function"><name>IMG_GetLoaderInfo</name></member>
+      <member refid="group__APPDEBUG_1ga73ff2524249eac7fa68f269b642a7dac" kind="function"><name>IMG_SetLoaderInfo</name></member>
+      <member refid="group__IMG_1gacba3766aac7698896fdb8b02df2a283e" kind="function"><name>IMG_Next</name></member>
+      <member refid="group__IMG_1gaaa82261cabe74bad0613c43d2346a5cd" kind="function"><name>IMG_Prev</name></member>
+      <member refid="group__IMG_1gab591ec18986fb117120a714f06a35942" kind="function"><name>IMG_Invalid</name></member>
+      <member refid="group__IMG_1ga231a58e55838a4d4cbce3f7c0bfa9f0a" kind="function"><name>IMG_Valid</name></member>
+      <member refid="group__IMG_1ga2f97057faee2f7ed7e23b88b339f62f8" kind="function"><name>IMG_SecHead</name></member>
+      <member refid="group__IMG_1gad01a20a588a5110b1bb1361eb60eb166" kind="function"><name>IMG_SecTail</name></member>
+      <member refid="group__IMG_1ga2d7ae0d04e4da064200e61750c2677ac" kind="function"><name>IMG_RegsymHead</name></member>
+      <member refid="group__IMG_1gab35f17d40de6a4ecc51db591354d7841" kind="function"><name>IMG_EntryAddress</name></member>
+      <member refid="group__IMG_1ga4f3f8677449add4d0379b5424f5dcfd9" kind="function"><name>IMG_HasProperty</name></member>
+      <member refid="group__IMG_1gafe86e5ef3763949906abca7fedbf7d5b" kind="function"><name>IMG_Name</name></member>
+      <member refid="group__IMG_1gab4b4e29c1e70d42071380597aafd08a8" kind="function"><name>IMG_Gp</name></member>
+      <member refid="group__IMG_1gad01265ee1c2e8f4779092dae99bb2ee4" kind="function"><name>IMG_LoadOffset</name></member>
+      <member refid="group__IMG_1gafb09205aa6b44d2b9302fc1e422c3d75" kind="function"><name>IMG_LowAddress</name></member>
+      <member refid="group__IMG_1ga83595d9924300a59f727626ca9b8e88d" kind="function"><name>IMG_HighAddress</name></member>
+      <member refid="group__IMG_1gae2299d042776b36435d4240a0363c28a" kind="function"><name>IMG_StartAddress</name></member>
+      <member refid="group__IMG_1ga76799de259e3c3b0873a9d4c81745e1c" kind="function"><name>IMG_SizeMapped</name></member>
+      <member refid="group__IMG_1ga987423843679af4f9d3c33b22ddec5af" kind="function"><name>IMG_Type</name></member>
+      <member refid="group__IMG_1gaaf5dac811fd6035f5de7fc8ec6b68678" kind="function"><name>IMG_IsMainExecutable</name></member>
+      <member refid="group__IMG_1gaa6860d9e9f45d32553afc42c32b19eb2" kind="function"><name>IMG_hasLinesData</name></member>
+      <member refid="group__IMG_1ga55d2602b1970797c6869ab5dd85eace2" kind="function"><name>IMG_IsInterpreter</name></member>
+      <member refid="group__IMG_1ga5e24c7a3ab8102cf31679068d7dcb9cb" kind="function"><name>IMG_IsStaticExecutable</name></member>
+      <member refid="group__IMG_1ga78ab192435225bca4332a518af45a6bc" kind="function"><name>IMG_IsVDSO</name></member>
+      <member refid="group__IMG_1gaf5fbd7cd458878d79b0fc54615fcf851" kind="function"><name>IMG_NumRegions</name></member>
+      <member refid="group__IMG_1gaf67b1793bdcc17e3ba1283adb79baf47" kind="function"><name>IMG_RegionHighAddress</name></member>
+      <member refid="group__IMG_1gad39ae770c8ef64ac89ddf46f68fa9398" kind="function"><name>IMG_RegionLowAddress</name></member>
+      <member refid="group__SEC_1gac542c5ae233d0c42d2eaf1faacef5a82" kind="function"><name>SEC_Img</name></member>
+      <member refid="group__SEC_1ga1b5419aa605f3d8d2a67bc39273c4702" kind="function"><name>SEC_Next</name></member>
+      <member refid="group__SEC_1ga50ae8d91ee870b9904f341f706657588" kind="function"><name>SEC_Prev</name></member>
+      <member refid="group__SEC_1ga3ffd6d6c315bc044167b1ff53262470c" kind="function"><name>SEC_Invalid</name></member>
+      <member refid="group__SEC_1ga506416e0af1d3f3ebdd7fbec0d2c6f10" kind="function"><name>SEC_Valid</name></member>
+      <member refid="group__SEC_1ga83f823574b987c84827acd508b6df53f" kind="function"><name>SEC_RtnHead</name></member>
+      <member refid="group__SEC_1gaffa1bb4f87ad3b6e7263a9f4b3c0ab30" kind="function"><name>SEC_RtnTail</name></member>
+      <member refid="group__SEC_1gad6de502e2429cd8026f22ebd6db7ab2e" kind="function"><name>SEC_Name</name></member>
+      <member refid="group__SEC_1gae44a85e614a3b05a950ac81e3c6cc7c4" kind="function"><name>SEC_Type</name></member>
+      <member refid="group__SEC_1ga73822e20bc73df6d74f0f31e50db26a4" kind="function"><name>SEC_Mapped</name></member>
+      <member refid="group__SEC_1ga9ca91058248cd8104a75e726b5d58607" kind="function"><name>SEC_Data</name></member>
+      <member refid="group__RTN_1gada2259f79526461053d4f95d6e245fe1" kind="function"><name>RTN_Sec</name></member>
+      <member refid="group__RTN_1ga7ecd6cf61e0911aae5966e901f4d8592" kind="function"><name>RTN_Next</name></member>
+      <member refid="group__RTN_1ga1b9207ab1f0024727512a6e9de502133" kind="function"><name>RTN_Prev</name></member>
+      <member refid="group__RTN_1ga2e23300e596b670a387ad7b3ed9c8d59" kind="function"><name>RTN_Invalid</name></member>
+      <member refid="group__RTN_1ga22a8369ec4474996883881f376abc82c" kind="function"><name>RTN_Valid</name></member>
+      <member refid="group__RTN_1gab0b311db7f72d5f12fd5a27522e042f4" kind="function"><name>RTN_Name</name></member>
+      <member refid="group__RTN_1ga8228305617b6dd547f774f7cc73e8af4" kind="function"><name>RTN_IsArtificial</name></member>
+      <member refid="group__RTN_1ga2658ce681e47e746d0d902972efb65ab" kind="function"><name>RTN_Sym</name></member>
+      <member refid="group__RTN_1ga9d7d1ff4d1d3155254b8660dfee61199" kind="function"><name>RTN_DynamicMethodId</name></member>
+      <member refid="group__RTN_1ga75c5b3344e09298f276a3533f2998bd3" kind="function"><name>RTN_Funptr</name></member>
+      <member refid="group__RTN_1gac3d63409a130444b7c9e8f6dbc040ee6" kind="function"><name>RTN_Id</name></member>
+      <member refid="group__BBL_1ga924f36e487a71b9e59583a07e45e8019" kind="function"><name>BBL_InsHead</name></member>
+      <member refid="group__BBL_1ga70c0b7cebddadba915b65ebbf52e24f6" kind="function"><name>BBL_InsTail</name></member>
+      <member refid="group__BBL_1gaa86bd2f0e6a8f1a23205e553dcba8740" kind="function"><name>BBL_Next</name></member>
+      <member refid="group__BBL_1ga7316f90b892e948e2e2a39ea41d6ab0b" kind="function"><name>BBL_Prev</name></member>
+      <member refid="group__BBL_1gada06259bbda0582373f43b63e044146a" kind="function"><name>BBL_Valid</name></member>
+      <member refid="group__INS__INSPECTION_1ga5e25e558378743ce07e4b22d11b0f6c6" kind="function"><name>INS_Rtn</name></member>
+      <member refid="group__INS__INSPECTION_1ga7200b02bcadf61e9e651eeadd69f96d5" kind="function"><name>INS_Next</name></member>
+      <member refid="group__INS__INSPECTION_1ga370f74fd6a330cbe4d493ce0feb15ffe" kind="function"><name>INS_Prev</name></member>
+      <member refid="group__INS__INSPECTION_1ga95ed2863ea5b8db8aaf5b06547beeba1" kind="function"><name>INS_Invalid</name></member>
+      <member refid="group__INS__INSPECTION_1ga29639fe41688c24d5cbe6a60ed0e48cc" kind="function"><name>INS_Valid</name></member>
+      <member refid="group__INS__INSPECTION_1gab16f7dbf05bc9f916da996e8e6bd7bf8" kind="function"><name>INS_Address</name></member>
+      <member refid="group__INS__INSPECTION_1ga9658738a9670bafe1f7060ed131c2062" kind="function"><name>INS_Size</name></member>
+      <member refid="group__INS__INSPECTION_1ga201b13c2d99e665a9758950d83c28bef" kind="function"><name>INS_DirectControlFlowTargetAddress</name></member>
+      <member refid="group__INS__INSPECTION_1ga13f921362eb07927951010f074677bcc" kind="function"><name>INS_NextAddress</name></member>
+      <member refid="group__SYMBOLS_1ga5fc8e291378f4651b220ce2427691cc6" kind="function"><name>SYM_Next</name></member>
+      <member refid="group__SYMBOLS_1ga99eb7fa26abfd9c6d08e0e04b6bba7c4" kind="function"><name>SYM_Prev</name></member>
+      <member refid="group__SYMBOLS_1ga07d8cc2a5b192ff9414b3d55c7932cb1" kind="function"><name>SYM_Name</name></member>
+      <member refid="group__SYMBOLS_1ga17e013be5a1296fa67398439718d2391" kind="function"><name>SYM_Invalid</name></member>
+      <member refid="group__SYMBOLS_1ga1157b4a40557716fdabe0f53613263c6" kind="function"><name>SYM_Valid</name></member>
+      <member refid="group__SYMBOLS_1gade65313a639f5ab36ef1caac303d912e" kind="function"><name>SYM_Dynamic</name></member>
+      <member refid="group__SYMBOLS_1gac0a62569f21574f0275d876d3d43c896" kind="function"><name>SYM_GeneratedByPin</name></member>
+      <member refid="group__SYMBOLS_1ga6fdea8d159a44ff67a991ed729112f16" kind="function"><name>SYM_IFuncImplementation</name></member>
+      <member refid="group__SYMBOLS_1ga276ca3b181ad085abb876e2ec5031f0c" kind="function"><name>SYM_IFuncResolver</name></member>
+      <member refid="group__SYMBOLS_1ga016eed9899ff77acf1048713a0b084bd" kind="function"><name>SYM_Value</name></member>
+      <member refid="group__SYMBOLS_1ga6772cb7fbf86da031b6730684c0ec996" kind="function"><name>SYM_Index</name></member>
+      <member refid="group__SYMBOLS_1ga08d50a1fb736998c4f223f65d00b97b5" kind="function"><name>SYM_Address</name></member>
+      <member refid="group__IMG_1ga5754cae9cfb2df7ec7c8cb44a1db823d" kind="function"><name>IMG_Id</name></member>
+      <member refid="group__IMG_1ga1e383c63a70b438d8731a8e04e47cbee" kind="function"><name>IMG_DynamicRawData</name></member>
+      <member refid="group__IMG_1gac39eff1de20a6acbcecc203f5075d825" kind="function"><name>IMG_FindImgById</name></member>
+      <member refid="group__IMG_1gae21bb2ba431c4dd7964736c8102e656e" kind="function"><name>IMG_FindByAddress</name></member>
+      <member refid="group__RTN_1ga63bd82d1e10ee8c83d67529845f5ca46" kind="function"><name>RTN_AddInstrumentFunction</name></member>
+      <member refid="group__IMG_1ga4a067152140ead3e23279ab2bd6cd723" kind="function"><name>IMG_AddInstrumentFunction</name></member>
+      <member refid="group__IMG_1ga4717fe8d7cd73c9efe6a414897ad96a3" kind="function"><name>IMG_AddUnloadFunction</name></member>
+      <member refid="group__IMG_1gafbb0e0644ff68372b4f3bdd0070b2097" kind="function"><name>IMG_AddPreDebugInfoProcessCallback</name></member>
+      <member refid="group__RTN_1ga24ddd9b74a3cb10bf8c8c56935af0fb5" kind="function"><name>RTN_Range</name></member>
+      <member refid="group__RTN_1ga4989c730ab99a9dc194a0db4061863df" kind="function"><name>RTN_Size</name></member>
+      <member refid="group__RTN_1gac500e13529b48fcd8d4802b46b09c706" kind="function"><name>RTN_IFuncResolver</name></member>
+      <member refid="group__RTN_1gab9bbb5e3883706a2ae185e2798fd7c05" kind="function"><name>RTN_IFuncImplementation</name></member>
+      <member refid="group__IMG_1ga0a2ed1c58e7215da29194d1800ceee86" kind="function"><name>IMG_Open</name></member>
+      <member refid="group__IMG_1ga93a7a90e8bba62212028ed33bbfe83b2" kind="function"><name>IMG_Close</name></member>
+      <member refid="group__RTN_1ga7306ea5299f94bcad78d637c5c530d15" kind="function"><name>RTN_FindNameByAddress</name></member>
+      <member refid="group__RTN_1gad835205e761f6c5299287c5f42b861a1" kind="function"><name>RTN_FindByAddress</name></member>
+      <member refid="group__RTN_1ga55c41bc78903d1ef9b93a5d758c1e157" kind="function"><name>RTN_FindByName</name></member>
+      <member refid="group__RTN_1gab6ea217190b6d7bfb1e1380e66f7885f" kind="function"><name>RTN_Open</name></member>
+      <member refid="group__RTN_1gaf62cbb3ac07fd24f42a8ba927eb6d964" kind="function"><name>RTN_Close</name></member>
+      <member refid="group__RTN_1ga75cda09f353a70e23f2c4a96d64b2a01" kind="function"><name>RTN_InsHead</name></member>
+      <member refid="group__RTN_1ga41d9df454a1ae3d4c96b64bcd5b542e6" kind="function"><name>RTN_InsHeadOnly</name></member>
+      <member refid="group__RTN_1gad2c954694837fab4c439d59c4c474831" kind="function"><name>RTN_InsTail</name></member>
+      <member refid="group__RTN_1gab69c11b824c822eecab72bb18b01644a" kind="function"><name>RTN_NumIns</name></member>
+      <member refid="group__RTN_1ga806d0aa9f49fa888b684cad52591cdec" kind="function"><name>RTN_InsertCall</name></member>
+      <member refid="group__RTN_1ga711efcb54c649bd2d891a7ae730c91d0" kind="function"><name>RTN_Address</name></member>
+      <member refid="group__RTN_1gad780d7c43d06f2197051a05ffb7f7b96" kind="function"><name>RTN_CreateAt</name></member>
+      <member refid="group__RTN_1ga178f9e8bb73b7ea9bf3b1b374889f5a5" kind="function"><name>RTN_IsDynamic</name></member>
+      <member refid="group__SEC_1ga22539f22877029495af9b7bcc2bed05d" kind="function"><name>SEC_Address</name></member>
+      <member refid="group__SEC_1ga7250812be76096d1f7164ab0d863896c" kind="function"><name>SEC_IsReadable</name></member>
+      <member refid="group__SEC_1gac00ebe99a13ad14af6a9309c1beb3311" kind="function"><name>SEC_IsWriteable</name></member>
+      <member refid="group__SEC_1gac203291f24113eaa74ab022c1a8d1b80" kind="function"><name>SEC_IsExecutable</name></member>
+      <member refid="group__SEC_1gaf2b76e650b100d4dfd2003893a8b3774" kind="function"><name>SEC_Size</name></member>
+      <member refid="group__BBL_1gad0a08cca57fae0af6ca98f1002a067bf" kind="function"><name>BBL_Original</name></member>
+      <member refid="group__BBL_1gaa7aa68a764898661e115091ba524c6ba" kind="function"><name>BBL_Address</name></member>
+      <member refid="group__BBL_1gafc9ce3354eb08c36f2ff849e170e182c" kind="function"><name>BBL_Size</name></member>
+      <member refid="group__IMG_1ga58c32c83de8c12d086286a5cf6c7fee8" kind="function"><name>APP_ImgHead</name></member>
+      <member refid="group__IMG_1gad77f6e89bae77270f990e7564f885dab" kind="function"><name>APP_ImgTail</name></member>
+      <member refid="group__SYMBOLS_1ga5d57f95572040c8a7db5488702716b9d" kind="function"><name>PIN_UndecorateSymbolName</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2020-2026<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_IMAGE_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_IMAGE_PH</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>IMG<sp/><ref refid="group__REPLAY_1gadd939297fe51b34aedcbcb8b627a89f2" kindref="member">IMG_CreateAt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>filename,<sp/>ADDRINT<sp/>start,<sp/>USIZE<sp/>size,<sp/>ADDRINT<sp/>loadOffset,<sp/>BOOL<sp/>mainExecutable);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__REPLAY_1ga07759b799516b378bd7f3faa0a0a8325" kindref="member">IMG_ReplayImageLoad</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID*<sp/><ref refid="group__APPDEBUG_1ga23706ee02e7b38f1b619faed74d0bebc" kindref="member">IMG_GetLoaderInfo</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__APPDEBUG_1ga73ff2524249eac7fa68f269b642a7dac" kindref="member">IMG_SetLoaderInfo</ref>(IMG<sp/>img,<sp/>VOID*<sp/>loaderInfo);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>IMG<sp/><ref refid="group__IMG_1gacba3766aac7698896fdb8b02df2a283e" kindref="member">IMG_Next</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>IMG<sp/><ref refid="group__IMG_1gaaa82261cabe74bad0613c43d2346a5cd" kindref="member">IMG_Prev</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>IMG<sp/><ref refid="group__IMG_1gab591ec18986fb117120a714f06a35942" kindref="member">IMG_Invalid</ref>();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__IMG_1ga231a58e55838a4d4cbce3f7c0bfa9f0a" kindref="member">IMG_Valid</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SEC<sp/><ref refid="group__IMG_1ga2f97057faee2f7ed7e23b88b339f62f8" kindref="member">IMG_SecHead</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SEC<sp/><ref refid="group__IMG_1gad01a20a588a5110b1bb1361eb60eb166" kindref="member">IMG_SecTail</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SYM<sp/><ref refid="group__IMG_1ga2d7ae0d04e4da064200e61750c2677ac" kindref="member">IMG_RegsymHead</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__IMG_1gab35f17d40de6a4ecc51db591354d7841" kindref="member">IMG_EntryAddress</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__IMG_1ga4f3f8677449add4d0379b5424f5dcfd9" kindref="member">IMG_HasProperty</ref>(IMG<sp/>img,<sp/><ref refid="group__IMG_1ga38ea70f6ce2ffef5488aefbcc5494bce" kindref="member">IMG_PROPERTY</ref><sp/>property);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="group__IMG_1gafe86e5ef3763949906abca7fedbf7d5b" kindref="member">IMG_Name</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__IMG_1gab4b4e29c1e70d42071380597aafd08a8" kindref="member">IMG_Gp</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__IMG_1gad01265ee1c2e8f4779092dae99bb2ee4" kindref="member">IMG_LoadOffset</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__IMG_1gafb09205aa6b44d2b9302fc1e422c3d75" kindref="member">IMG_LowAddress</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__IMG_1ga83595d9924300a59f727626ca9b8e88d" kindref="member">IMG_HighAddress</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__IMG_1gae2299d042776b36435d4240a0363c28a" kindref="member">IMG_StartAddress</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="group__IMG_1ga76799de259e3c3b0873a9d4c81745e1c" kindref="member">IMG_SizeMapped</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__IMG_1ga94a20481f21c96ad7ad5147b5148ecb0" kindref="member">IMG_TYPE</ref><sp/><ref refid="group__IMG_1ga987423843679af4f9d3c33b22ddec5af" kindref="member">IMG_Type</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__IMG_1gaaf5dac811fd6035f5de7fc8ec6b68678" kindref="member">IMG_IsMainExecutable</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__IMG_1gaa6860d9e9f45d32553afc42c32b19eb2" kindref="member">IMG_hasLinesData</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"></highlight></codeline>
+<codeline lineno="470"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__IMG_1ga55d2602b1970797c6869ab5dd85eace2" kindref="member">IMG_IsInterpreter</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__IMG_1ga5e24c7a3ab8102cf31679068d7dcb9cb" kindref="member">IMG_IsStaticExecutable</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__IMG_1ga78ab192435225bca4332a518af45a6bc" kindref="member">IMG_IsVDSO</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__IMG_1gaf5fbd7cd458878d79b0fc54615fcf851" kindref="member">IMG_NumRegions</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="540"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__IMG_1gaf67b1793bdcc17e3ba1283adb79baf47" kindref="member">IMG_RegionHighAddress</ref>(IMG<sp/>img,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="541"><highlight class="normal"></highlight></codeline>
+<codeline lineno="559"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__IMG_1gad39ae770c8ef64ac89ddf46f68fa9398" kindref="member">IMG_RegionLowAddress</ref>(IMG<sp/>img,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>IMG<sp/><ref refid="group__SEC_1gac542c5ae233d0c42d2eaf1faacef5a82" kindref="member">SEC_Img</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SEC<sp/><ref refid="group__SEC_1ga1b5419aa605f3d8d2a67bc39273c4702" kindref="member">SEC_Next</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight></codeline>
+<codeline lineno="607"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SEC<sp/><ref refid="group__SEC_1ga50ae8d91ee870b9904f341f706657588" kindref="member">SEC_Prev</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"></highlight></codeline>
+<codeline lineno="621"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SEC<sp/><ref refid="group__SEC_1ga3ffd6d6c315bc044167b1ff53262470c" kindref="member">SEC_Invalid</ref>();</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__SEC_1ga506416e0af1d3f3ebdd7fbec0d2c6f10" kindref="member">SEC_Valid</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"></highlight></codeline>
+<codeline lineno="653"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RTN<sp/><ref refid="group__SEC_1ga83f823574b987c84827acd508b6df53f" kindref="member">SEC_RtnHead</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"></highlight></codeline>
+<codeline lineno="669"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RTN<sp/><ref refid="group__SEC_1gaffa1bb4f87ad3b6e7263a9f4b3c0ab30" kindref="member">SEC_RtnTail</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"></highlight></codeline>
+<codeline lineno="685"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="group__SEC_1gad6de502e2429cd8026f22ebd6db7ab2e" kindref="member">SEC_Name</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__SEC_1ga7fc7b3d12ebe2f3b13fe0bf7e3b1542e" kindref="member">SEC_TYPE</ref><sp/><ref refid="group__SEC_1gae44a85e614a3b05a950ac81e3c6cc7c4" kindref="member">SEC_Type</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__SEC_1ga73822e20bc73df6d74f0f31e50db26a4" kindref="member">SEC_Mapped</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="718"><highlight class="normal"></highlight></codeline>
+<codeline lineno="742"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VOID*<sp/><ref refid="group__SEC_1ga9ca91058248cd8104a75e726b5d58607" kindref="member">SEC_Data</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="743"><highlight class="normal"></highlight></codeline>
+<codeline lineno="758"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SEC<sp/><ref refid="group__RTN_1gada2259f79526461053d4f95d6e245fe1" kindref="member">RTN_Sec</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"></highlight></codeline>
+<codeline lineno="774"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RTN<sp/><ref refid="group__RTN_1ga7ecd6cf61e0911aae5966e901f4d8592" kindref="member">RTN_Next</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="775"><highlight class="normal"></highlight></codeline>
+<codeline lineno="790"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RTN<sp/><ref refid="group__RTN_1ga1b9207ab1f0024727512a6e9de502133" kindref="member">RTN_Prev</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="791"><highlight class="normal"></highlight></codeline>
+<codeline lineno="804"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RTN<sp/><ref refid="group__RTN_1ga2e23300e596b670a387ad7b3ed9c8d59" kindref="member">RTN_Invalid</ref>();</highlight></codeline>
+<codeline lineno="805"><highlight class="normal"></highlight></codeline>
+<codeline lineno="823"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__RTN_1ga22a8369ec4474996883881f376abc82c" kindref="member">RTN_Valid</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="824"><highlight class="normal"></highlight></codeline>
+<codeline lineno="839"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="group__RTN_1gab0b311db7f72d5f12fd5a27522e042f4" kindref="member">RTN_Name</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="840"><highlight class="normal"></highlight></codeline>
+<codeline lineno="861"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__RTN_1ga8228305617b6dd547f774f7cc73e8af4" kindref="member">RTN_IsArtificial</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="862"><highlight class="normal"></highlight></codeline>
+<codeline lineno="877"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SYM<sp/><ref refid="group__RTN_1ga2658ce681e47e746d0d902972efb65ab" kindref="member">RTN_Sym</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="878"><highlight class="normal"></highlight></codeline>
+<codeline lineno="893"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT<sp/><ref refid="group__RTN_1ga9d7d1ff4d1d3155254b8660dfee61199" kindref="member">RTN_DynamicMethodId</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="894"><highlight class="normal"></highlight></codeline>
+<codeline lineno="909"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>AFUNPTR<sp/><ref refid="group__RTN_1ga75c5b3344e09298f276a3533f2998bd3" kindref="member">RTN_Funptr</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="910"><highlight class="normal"></highlight></codeline>
+<codeline lineno="931"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__RTN_1gac3d63409a130444b7c9e8f6dbc040ee6" kindref="member">RTN_Id</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="932"><highlight class="normal"></highlight></codeline>
+<codeline lineno="947"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>INS<sp/><ref refid="group__BBL_1ga924f36e487a71b9e59583a07e45e8019" kindref="member">BBL_InsHead</ref>(BBL<sp/>bbl);</highlight></codeline>
+<codeline lineno="948"><highlight class="normal"></highlight></codeline>
+<codeline lineno="963"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>INS<sp/><ref refid="group__BBL_1ga70c0b7cebddadba915b65ebbf52e24f6" kindref="member">BBL_InsTail</ref>(BBL<sp/>bbl);</highlight></codeline>
+<codeline lineno="964"><highlight class="normal"></highlight></codeline>
+<codeline lineno="979"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BBL<sp/><ref refid="group__BBL_1gaa86bd2f0e6a8f1a23205e553dcba8740" kindref="member">BBL_Next</ref>(BBL<sp/>bbl);</highlight></codeline>
+<codeline lineno="980"><highlight class="normal"></highlight></codeline>
+<codeline lineno="995"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BBL<sp/><ref refid="group__BBL_1ga7316f90b892e948e2e2a39ea41d6ab0b" kindref="member">BBL_Prev</ref>(BBL<sp/>bbl);</highlight></codeline>
+<codeline lineno="996"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1011"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__BBL_1gada06259bbda0582373f43b63e044146a" kindref="member">BBL_Valid</ref>(BBL<sp/>bbl);</highlight></codeline>
+<codeline lineno="1012"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1029"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RTN<sp/><ref refid="group__INS__INSPECTION_1ga5e25e558378743ce07e4b22d11b0f6c6" kindref="member">INS_Rtn</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="1030"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1045"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>INS<sp/><ref refid="group__INS__INSPECTION_1ga7200b02bcadf61e9e651eeadd69f96d5" kindref="member">INS_Next</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="1046"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1061"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>INS<sp/><ref refid="group__INS__INSPECTION_1ga370f74fd6a330cbe4d493ce0feb15ffe" kindref="member">INS_Prev</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="1062"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1075"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>INS<sp/><ref refid="group__INS__INSPECTION_1ga95ed2863ea5b8db8aaf5b06547beeba1" kindref="member">INS_Invalid</ref>();</highlight></codeline>
+<codeline lineno="1076"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1091"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga29639fe41688c24d5cbe6a60ed0e48cc" kindref="member">INS_Valid</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="1092"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1107"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__INS__INSPECTION_1gab16f7dbf05bc9f916da996e8e6bd7bf8" kindref="member">INS_Address</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="1108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1118"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="group__INS__INSPECTION_1ga9658738a9670bafe1f7060ed131c2062" kindref="member">INS_Size</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="1119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1132"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__INS__INSPECTION_1ga201b13c2d99e665a9758950d83c28bef" kindref="member">INS_DirectControlFlowTargetAddress</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="1133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1143"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__INS__INSPECTION_1ga13f921362eb07927951010f074677bcc" kindref="member">INS_NextAddress</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="1144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1154"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SYM<sp/><ref refid="group__SYMBOLS_1ga5fc8e291378f4651b220ce2427691cc6" kindref="member">SYM_Next</ref>(SYM<sp/>sym);</highlight></codeline>
+<codeline lineno="1155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1165"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SYM<sp/><ref refid="group__SYMBOLS_1ga99eb7fa26abfd9c6d08e0e04b6bba7c4" kindref="member">SYM_Prev</ref>(SYM<sp/>sym);</highlight></codeline>
+<codeline lineno="1166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1176"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="group__SYMBOLS_1ga07d8cc2a5b192ff9414b3d55c7932cb1" kindref="member">SYM_Name</ref>(SYM<sp/>sym);</highlight></codeline>
+<codeline lineno="1177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1185"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>SYM<sp/><ref refid="group__SYMBOLS_1ga17e013be5a1296fa67398439718d2391" kindref="member">SYM_Invalid</ref>();</highlight></codeline>
+<codeline lineno="1186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1196"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__SYMBOLS_1ga1157b4a40557716fdabe0f53613263c6" kindref="member">SYM_Valid</ref>(SYM<sp/>sym);</highlight></codeline>
+<codeline lineno="1197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1207"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__SYMBOLS_1gade65313a639f5ab36ef1caac303d912e" kindref="member">SYM_Dynamic</ref>(SYM<sp/>sym);</highlight></codeline>
+<codeline lineno="1208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1220"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__SYMBOLS_1gac0a62569f21574f0275d876d3d43c896" kindref="member">SYM_GeneratedByPin</ref>(SYM<sp/>sym);</highlight></codeline>
+<codeline lineno="1221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1231"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__SYMBOLS_1ga6fdea8d159a44ff67a991ed729112f16" kindref="member">SYM_IFuncImplementation</ref>(SYM<sp/>sym);</highlight></codeline>
+<codeline lineno="1232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1242"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__SYMBOLS_1ga276ca3b181ad085abb876e2ec5031f0c" kindref="member">SYM_IFuncResolver</ref>(SYM<sp/>sym);</highlight></codeline>
+<codeline lineno="1243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1253"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__SYMBOLS_1ga016eed9899ff77acf1048713a0b084bd" kindref="member">SYM_Value</ref>(SYM<sp/>sym);</highlight></codeline>
+<codeline lineno="1254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1273"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__SYMBOLS_1ga6772cb7fbf86da031b6730684c0ec996" kindref="member">SYM_Index</ref>(SYM<sp/>sym);</highlight></codeline>
+<codeline lineno="1274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1284"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__SYMBOLS_1ga08d50a1fb736998c4f223f65d00b97b5" kindref="member">SYM_Address</ref>(SYM<sp/>sym);</highlight></codeline>
+<codeline lineno="1285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1289"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__IMG_1ga7d103a7d0bfc05892cdf2f9d39df9eba" kindref="member">IMAGECALLBACK</ref>)(IMG,<sp/>VOID*);</highlight></codeline>
+<codeline lineno="1290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1295"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>BOOL<sp/>(*<ref refid="group__IMG_1ga6c062bd954a987b11f620dc9fb6cc49b" kindref="member">IMAGE_PRE_DEBUG_INFO_PROCESS_CALLBACK</ref>)(IMG,<sp/>VOID*);</highlight></codeline>
+<codeline lineno="1296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1301"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga32ad8725a818ddded04963a3b35a317c" kindref="member">SYMBOL_INFO_MODE</ref></highlight></codeline>
+<codeline lineno="1302"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1303"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga32ad8725a818ddded04963a3b35a317ca638dc98de833dc4037e14bc6b0e2293d" kindref="member">NO_SYMBOLS</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1304"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga32ad8725a818ddded04963a3b35a317ca7deba6e46686ecdd822e1481e3fa32ef" kindref="member">EXPORT_SYMBOLS</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>0),<sp/></highlight></codeline>
+<codeline lineno="1307"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga32ad8725a818ddded04963a3b35a317ca69ec95d319e1326991d9a661c7b5a349" kindref="member">DEBUG_SYMBOLS</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>1),<sp/><sp/></highlight></codeline>
+<codeline lineno="1308"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga32ad8725a818ddded04963a3b35a317ca1c55b53fa60ae1040208433b28c4f833" kindref="member">IFUNC_SYMBOLS</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>2),<sp/><sp/></highlight></codeline>
+<codeline lineno="1313"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga32ad8725a818ddded04963a3b35a317caea4b39f11957a1057cea684dc831a072" kindref="member">DEBUG_AND_EXPORT_SYMBOLS</ref><sp/>=<sp/>(<ref refid="group__PIN__CONTROL_1gga32ad8725a818ddded04963a3b35a317ca69ec95d319e1326991d9a661c7b5a349" kindref="member">DEBUG_SYMBOLS</ref><sp/>|<sp/><ref refid="group__PIN__CONTROL_1gga32ad8725a818ddded04963a3b35a317ca7deba6e46686ecdd822e1481e3fa32ef" kindref="member">EXPORT_SYMBOLS</ref>),<sp/></highlight></codeline>
+<codeline lineno="1316"><highlight class="normal"><sp/><sp/><sp/><sp/>DEBUG_OR_EXPORT_SYMBOLS<sp/>=<sp/><ref refid="group__PIN__CONTROL_1gga32ad8725a818ddded04963a3b35a317caea4b39f11957a1057cea684dc831a072" kindref="member">DEBUG_AND_EXPORT_SYMBOLS</ref><sp/></highlight></codeline>
+<codeline lineno="1317"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1322" refid="classSymbolAddressRange" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classSymbolAddressRange" kindref="compound">SymbolAddressRange</ref></highlight></codeline>
+<codeline lineno="1323"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1324"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1325"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSymbolAddressRange" kindref="compound">SymbolAddressRange</ref>()<sp/>:<sp/>base(0),<sp/>size(0)<sp/>{}</highlight></codeline>
+<codeline lineno="1326"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSymbolAddressRange" kindref="compound">SymbolAddressRange</ref>(ADDRINT<sp/>sym_base,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sym_size)<sp/>:<sp/>base(sym_base),<sp/>size(sym_size)<sp/>{}</highlight></codeline>
+<codeline lineno="1327"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSymbolAddressRange" kindref="compound">SymbolAddressRange</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classSymbolAddressRange" kindref="compound">SymbolAddressRange</ref>&amp;<sp/>obj)<sp/>:<sp/>base(obj.base),<sp/>size(obj.size)<sp/>{}</highlight></codeline>
+<codeline lineno="1328"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSymbolAddressRange" kindref="compound">SymbolAddressRange</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classSymbolAddressRange" kindref="compound">SymbolAddressRange</ref>&amp;<sp/>obj)</highlight></codeline>
+<codeline lineno="1329"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>==<sp/>&amp;obj)</highlight></codeline>
+<codeline lineno="1331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1332"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>base<sp/>=<sp/>obj.base;</highlight></codeline>
+<codeline lineno="1335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>size<sp/>=<sp/>obj.size;</highlight></codeline>
+<codeline lineno="1336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="1337"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1338"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>operator&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classSymbolAddressRange" kindref="compound">SymbolAddressRange</ref>&amp;<sp/>range)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(base<sp/>&lt;<sp/>range.base);<sp/>}</highlight></codeline>
+<codeline lineno="1339"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>Contains(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ADDRINT<sp/>addr)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="1340"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(0<sp/>==<sp/>size)</highlight></codeline>
+<codeline lineno="1342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>addr<sp/>==<sp/>base;</highlight></codeline>
+<codeline lineno="1344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((addr<sp/>-<sp/>base)<sp/>&lt;<sp/>size);</highlight></codeline>
+<codeline lineno="1346"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1348"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1349"><highlight class="normal"><sp/><sp/><sp/><sp/>ADDRINT<sp/>base;</highlight></codeline>
+<codeline lineno="1350"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size;</highlight></codeline>
+<codeline lineno="1351"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1356" refid="structSymbolDebugInfo" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structSymbolDebugInfo" kindref="compound">SymbolDebugInfo</ref></highlight></codeline>
+<codeline lineno="1357"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1358"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structSymbolDebugInfo" kindref="compound">SymbolDebugInfo</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>sym_name,<sp/>ADDRINT<sp/>sym_base,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>sym_size,<sp/>uint32_t<sp/>sym_index,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_inlined)</highlight></codeline>
+<codeline lineno="1359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/><ref refid="structSymbolDebugInfo_1afb1aad47715935d9937437418fb3de05" kindref="member">name</ref>(sym_name),<sp/><ref refid="structSymbolDebugInfo_1a4cee757c7900af0888e21f0923b156a7" kindref="member">range</ref>(sym_base,<sp/>sym_size),<sp/><ref refid="structSymbolDebugInfo_1a721a4c600525cf5c9885b6c62935dcb2" kindref="member">index</ref>(sym_index),<sp/><ref refid="structSymbolDebugInfo_1a4c6179336b60f970b387bf407f58d49e" kindref="member">inlined</ref>(is_inlined)</highlight></codeline>
+<codeline lineno="1360"><highlight class="normal"><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="1361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1362"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structSymbolDebugInfo_1afb1aad47715935d9937437418fb3de05" kindref="member">name</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1363"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classSymbolAddressRange" kindref="compound">SymbolAddressRange</ref><sp/><ref refid="structSymbolDebugInfo_1a4cee757c7900af0888e21f0923b156a7" kindref="member">range</ref>;<sp/></highlight></codeline>
+<codeline lineno="1364"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="structSymbolDebugInfo_1a721a4c600525cf5c9885b6c62935dcb2" kindref="member">index</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1365"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structSymbolDebugInfo_1a4c6179336b60f970b387bf407f58d49e" kindref="member">inlined</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1367"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator&lt;(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structSymbolDebugInfo" kindref="compound">SymbolDebugInfo</ref>&amp;<sp/>info)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structSymbolDebugInfo_1a4cee757c7900af0888e21f0923b156a7" kindref="member">range</ref><sp/>&lt;<sp/>info.<ref refid="structSymbolDebugInfo_1a4cee757c7900af0888e21f0923b156a7" kindref="member">range</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="1368"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1387"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__IMG_1ga5754cae9cfb2df7ec7c8cb44a1db823d" kindref="member">IMG_Id</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="1388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1407"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID*<sp/><ref refid="group__IMG_1ga1e383c63a70b438d8731a8e04e47cbee" kindref="member">IMG_DynamicRawData</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="1408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1423"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>IMG<sp/><ref refid="group__IMG_1gac39eff1de20a6acbcecc203f5075d825" kindref="member">IMG_FindImgById</ref>(UINT32<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="1424"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1445"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>IMG<sp/><ref refid="group__IMG_1gae21bb2ba431c4dd7964736c8102e656e" kindref="member">IMG_FindByAddress</ref>(ADDRINT<sp/>address);</highlight></codeline>
+<codeline lineno="1446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1462"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__RTN_1ga63bd82d1e10ee8c83d67529845f5ca46" kindref="member">RTN_AddInstrumentFunction</ref>(<ref refid="group__RTN_1gafc6d6cdd1f6c3b8a2d87081c0fb65b22" kindref="member">RTN_INSTRUMENT_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1481"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__IMG_1ga4a067152140ead3e23279ab2bd6cd723" kindref="member">IMG_AddInstrumentFunction</ref>(<ref refid="group__IMG_1ga7d103a7d0bfc05892cdf2f9d39df9eba" kindref="member">IMAGECALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="1482"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1502"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__IMG_1ga4717fe8d7cd73c9efe6a414897ad96a3" kindref="member">IMG_AddUnloadFunction</ref>(<ref refid="group__IMG_1ga7d103a7d0bfc05892cdf2f9d39df9eba" kindref="member">IMAGECALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="1503"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1533"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__IMG_1gafbb0e0644ff68372b4f3bdd0070b2097" kindref="member">IMG_AddPreDebugInfoProcessCallback</ref>(<ref refid="group__IMG_1ga6c062bd954a987b11f620dc9fb6cc49b" kindref="member">IMAGE_PRE_DEBUG_INFO_PROCESS_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="1534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1551"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="group__RTN_1ga24ddd9b74a3cb10bf8c8c56935af0fb5" kindref="member">RTN_Range</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="1552"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1567"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="group__RTN_1ga4989c730ab99a9dc194a0db4061863df" kindref="member">RTN_Size</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="1568"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1583"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RTN<sp/><ref refid="group__RTN_1gac500e13529b48fcd8d4802b46b09c706" kindref="member">RTN_IFuncResolver</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="1584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1599"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RTN<sp/><ref refid="group__RTN_1gab9bbb5e3883706a2ae185e2798fd7c05" kindref="member">RTN_IFuncImplementation</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="1600"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1619"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>IMG<sp/><ref refid="group__IMG_1ga0a2ed1c58e7215da29194d1800ceee86" kindref="member">IMG_Open</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filename);</highlight></codeline>
+<codeline lineno="1620"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1633"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__IMG_1ga93a7a90e8bba62212028ed33bbfe83b2" kindref="member">IMG_Close</ref>(IMG<sp/>img);</highlight></codeline>
+<codeline lineno="1634"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1655"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="group__RTN_1ga7306ea5299f94bcad78d637c5c530d15" kindref="member">RTN_FindNameByAddress</ref>(ADDRINT<sp/>address);</highlight></codeline>
+<codeline lineno="1656"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1688"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RTN<sp/><ref refid="group__RTN_1gad835205e761f6c5299287c5f42b861a1" kindref="member">RTN_FindByAddress</ref>(ADDRINT<sp/>address);</highlight></codeline>
+<codeline lineno="1689"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1729"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RTN<sp/><ref refid="group__RTN_1ga55c41bc78903d1ef9b93a5d758c1e157" kindref="member">RTN_FindByName</ref>(IMG<sp/>img,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CHAR*<sp/>name);</highlight></codeline>
+<codeline lineno="1730"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1745"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__RTN_1gab6ea217190b6d7bfb1e1380e66f7885f" kindref="member">RTN_Open</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="1746"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1761"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__RTN_1gaf62cbb3ac07fd24f42a8ba927eb6d964" kindref="member">RTN_Close</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="1762"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1787"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>INS<sp/><ref refid="group__RTN_1ga75cda09f353a70e23f2c4a96d64b2a01" kindref="member">RTN_InsHead</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="1788"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1810"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>INS<sp/><ref refid="group__RTN_1ga41d9df454a1ae3d4c96b64bcd5b542e6" kindref="member">RTN_InsHeadOnly</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="1811"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1832"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>INS<sp/><ref refid="group__RTN_1gad2c954694837fab4c439d59c4c474831" kindref="member">RTN_InsTail</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="1833"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1846"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__RTN_1gab69c11b824c822eecab72bb18b01644a" kindref="member">RTN_NumIns</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="1847"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1868"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__RTN_1ga806d0aa9f49fa888b684cad52591cdec" kindref="member">RTN_InsertCall</ref>(RTN<sp/>rtn,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="1869"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1884"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__RTN_1ga711efcb54c649bd2d891a7ae730c91d0" kindref="member">RTN_Address</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="1885"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1921"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RTN<sp/><ref refid="group__RTN_1gad780d7c43d06f2197051a05ffb7f7b96" kindref="member">RTN_CreateAt</ref>(ADDRINT<sp/>address,<sp/>std::string<sp/>name);</highlight></codeline>
+<codeline lineno="1922"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1939"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__RTN_1ga178f9e8bb73b7ea9bf3b1b374889f5a5" kindref="member">RTN_IsDynamic</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="1940"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1954"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__SEC_1ga22539f22877029495af9b7bcc2bed05d" kindref="member">SEC_Address</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="1955"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1965"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__SEC_1ga7250812be76096d1f7164ab0d863896c" kindref="member">SEC_IsReadable</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="1966"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1976"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__SEC_1gac00ebe99a13ad14af6a9309c1beb3311" kindref="member">SEC_IsWriteable</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="1977"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1987"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__SEC_1gac203291f24113eaa74ab022c1a8d1b80" kindref="member">SEC_IsExecutable</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="1988"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1998"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="group__SEC_1gaf2b76e650b100d4dfd2003893a8b3774" kindref="member">SEC_Size</ref>(SEC<sp/>sec);</highlight></codeline>
+<codeline lineno="1999"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2014"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__BBL_1gad0a08cca57fae0af6ca98f1002a067bf" kindref="member">BBL_Original</ref>(BBL<sp/>bbl);</highlight></codeline>
+<codeline lineno="2015"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2030"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__BBL_1gaa7aa68a764898661e115091ba524c6ba" kindref="member">BBL_Address</ref>(BBL<sp/>bbl);</highlight></codeline>
+<codeline lineno="2031"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2046"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="group__BBL_1gafc9ce3354eb08c36f2ff849e170e182c" kindref="member">BBL_Size</ref>(BBL<sp/>bbl);</highlight></codeline>
+<codeline lineno="2047"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2060"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>IMG<sp/><ref refid="group__IMG_1ga58c32c83de8c12d086286a5cf6c7fee8" kindref="member">APP_ImgHead</ref>();</highlight></codeline>
+<codeline lineno="2061"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2074"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>IMG<sp/><ref refid="group__IMG_1gad77f6e89bae77270f990e7564f885dab" kindref="member">APP_ImgTail</ref>();</highlight></codeline>
+<codeline lineno="2075"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2133"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="group__SYMBOLS_1ga5d57f95572040c8a7db5488702716b9d" kindref="member">PIN_UndecorateSymbolName</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>symbolName,<sp/><ref refid="group__SYMBOLS_1ga8b0c33dda59c8d399096714c6307f23d" kindref="member">UNDECORATION</ref><sp/>style);</highlight></codeline>
+<codeline lineno="2134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2135"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_IMAGE_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/pin/image.PH"/>
+  </compounddef>
+</doxygen>

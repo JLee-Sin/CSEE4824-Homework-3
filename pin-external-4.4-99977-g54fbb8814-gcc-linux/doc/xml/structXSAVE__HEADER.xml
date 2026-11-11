@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structXSAVE__HEADER" kind="struct" language="C++" prot="public">
+    <compoundname>XSAVE_HEADER</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structXSAVE__HEADER_1a3cb4f509a771c2646eb764896aff92bf" prot="public" static="no" mutable="no">
+        <type>UINT64</type>
+        <definition>UINT64 XSAVE_HEADER::_xstate_bv</definition>
+        <argsstring></argsstring>
+        <name>_xstate_bv</name>
+        <qualifiedname>XSAVE_HEADER::_xstate_bv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/base/fpstate_ia32.PH" line="33" column="12" bodyfile="Source/pin/base/fpstate_ia32.PH" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structXSAVE__HEADER_1a854b033c951d502f2752d6fbbb805414" prot="public" static="no" mutable="no">
+        <type>UINT64</type>
+        <definition>UINT64 XSAVE_HEADER::_xcomp_bv</definition>
+        <argsstring></argsstring>
+        <name>_xcomp_bv</name>
+        <qualifiedname>XSAVE_HEADER::_xcomp_bv</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/base/fpstate_ia32.PH" line="40" column="12" bodyfile="Source/pin/base/fpstate_ia32.PH" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structXSAVE__HEADER_1a06d5950ffcd30fde7c739abb5f881a51" prot="public" static="no" mutable="no">
+        <type>UINT64</type>
+        <definition>UINT64 XSAVE_HEADER::_reserved</definition>
+        <argsstring>[6]</argsstring>
+        <name>_reserved</name>
+        <qualifiedname>XSAVE_HEADER::_reserved</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/base/fpstate_ia32.PH" line="41" column="12" bodyfile="Source/pin/base/fpstate_ia32.PH" bodystart="41" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="structXSAVE__HEADER_1ab7fb3551b76078b2458c5d310ccf1d6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>XSAVE_HEADER::XSAVE_HEADER</definition>
+        <argsstring>()</argsstring>
+        <name>XSAVE_HEADER</name>
+        <qualifiedname>XSAVE_HEADER::XSAVE_HEADER</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/base/fpstate_ia32.PH" line="25" column="5" bodyfile="Source/pin/base/fpstate_ia32.PH" bodystart="25" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="structXSAVE__HEADER_1ab7fb3551b76078b2458c5d310ccf1d6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>XSAVE_HEADER::XSAVE_HEADER</definition>
+        <argsstring>()</argsstring>
+        <name>XSAVE_HEADER</name>
+        <qualifiedname>XSAVE_HEADER::XSAVE_HEADER</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/base/fpstate_ia32e.PH" line="25" column="5" bodyfile="Source/pin/base/fpstate_ia32e.PH" bodystart="25" bodyend="25"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Header of the XSAVE area </para>
+    </detaileddescription>
+    <location file="Source/pin/base/fpstate_ia32.PH" line="23" column="1" bodyfile="Source/pin/base/fpstate_ia32.PH" bodystart="24" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structXSAVE__HEADER_1a06d5950ffcd30fde7c739abb5f881a51" prot="public" virt="non-virtual"><scope>XSAVE_HEADER</scope><name>_reserved</name></member>
+      <member refid="structXSAVE__HEADER_1a854b033c951d502f2752d6fbbb805414" prot="public" virt="non-virtual"><scope>XSAVE_HEADER</scope><name>_xcomp_bv</name></member>
+      <member refid="structXSAVE__HEADER_1a3cb4f509a771c2646eb764896aff92bf" prot="public" virt="non-virtual"><scope>XSAVE_HEADER</scope><name>_xstate_bv</name></member>
+      <member refid="structXSAVE__HEADER_1ab7fb3551b76078b2458c5d310ccf1d6e" prot="public" virt="non-virtual"><scope>XSAVE_HEADER</scope><name>XSAVE_HEADER</name></member>
+      <member refid="structXSAVE__HEADER_1ab7fb3551b76078b2458c5d310ccf1d6e" prot="public" virt="non-virtual"><scope>XSAVE_HEADER</scope><name>XSAVE_HEADER</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

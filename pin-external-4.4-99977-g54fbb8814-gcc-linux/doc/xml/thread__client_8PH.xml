@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="thread__client_8PH" kind="file" language="C++">
+    <compoundname>thread_client.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="thread__client_8PH_1af33789e18c576204d76f6c0afecaf22a" prot="public" static="no">
+        <name>PIN_G_THREAD_CLIENT_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/thread_client.PH" line="9" column="10" bodyfile="Source/pin/pin/thread_client.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__THREADS_1ga7957bec5714228e311e6f707fe3e18ff" kind="function"><name>PIN_GetTid</name></member>
+      <member refid="group__THREADS_1ga190c8d53ca36e6a454878a81af6d2630" kind="function"><name>PIN_GetNativeTid</name></member>
+      <member refid="group__THREADS_1gaa5fd602af7447f340430198aa4e06f85" kind="function"><name>PIN_GetNativeTidFromSysTid</name></member>
+      <member refid="group__THREADS_1ga67bef9fa550f89443517fffa6c614cef" kind="function"><name>PIN_GetNativeTidFromThreadId</name></member>
+      <member refid="group__THREADS_1gabe759ff297488936fd2ad6d37eb60670" kind="function"><name>PIN_ThreadId</name></member>
+      <member refid="group__THREADS_1ga78ea27e2df9c1d42ec9d256577ecfb7f" kind="function"><name>PIN_GetParentTid</name></member>
+      <member refid="group__THREADS_1ga23fe7ae94deab5bf574ff601d3d85a6b" kind="function"><name>PIN_SpawnInternalThread</name></member>
+      <member refid="group__THREADS_1gaec484eccc13fd52c6c41ff663c6afbcc" kind="function"><name>PIN_ExitThread</name></member>
+      <member refid="group__THREADS_1ga2b23785020a1f4666f9980805abc7aa4" kind="function"><name>PIN_IsApplicationThread</name></member>
+      <member refid="group__THREADS_1gaddd0dc2709292f807cb233e5ec0f809a" kind="function"><name>PIN_WaitForThreadTermination</name></member>
+      <member refid="group__THREADS_1gab2e14551036ea17c4f80ff5c81fefcf0" kind="function"><name>PIN_WaitForProgramStart</name></member>
+      <member refid="group__THREADS_1gae374938fedd50fe80f64ef26b6bcc0d0" kind="function"><name>PIN_InitializeInternalThread</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2010-2024<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_THREAD_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>thread_client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_THREAD_CLIENT_PH</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1gac896589ba4a8e51b3fe57df2744751a1" kindref="member">OS_THREAD_ID</ref><sp/><ref refid="group__THREADS_1ga7957bec5714228e311e6f707fe3e18ff" kindref="member">PIN_GetTid</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NATIVE_TID<sp/><ref refid="group__THREADS_1ga190c8d53ca36e6a454878a81af6d2630" kindref="member">PIN_GetNativeTid</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NATIVE_TID<sp/><ref refid="group__THREADS_1gaa5fd602af7447f340430198aa4e06f85" kindref="member">PIN_GetNativeTidFromSysTid</ref>(<ref refid="group__THREADS_1gac896589ba4a8e51b3fe57df2744751a1" kindref="member">OS_THREAD_ID</ref><sp/>sysThreadId);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NATIVE_TID<sp/><ref refid="group__THREADS_1ga67bef9fa550f89443517fffa6c614cef" kindref="member">PIN_GetNativeTidFromThreadId</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/><ref refid="group__THREADS_1gabe759ff297488936fd2ad6d37eb60670" kindref="member">PIN_ThreadId</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1gac896589ba4a8e51b3fe57df2744751a1" kindref="member">OS_THREAD_ID</ref><sp/><ref refid="group__THREADS_1ga78ea27e2df9c1d42ec9d256577ecfb7f" kindref="member">PIN_GetParentTid</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/><ref refid="group__THREADS_1ga23fe7ae94deab5bf574ff601d3d85a6b" kindref="member">PIN_SpawnInternalThread</ref>(<ref refid="group__THREADS_1gaf7d4b7206749ac3075b941a513d876c5" kindref="member">ROOT_THREAD_FUNC</ref>*<sp/>pThreadFunc,<sp/>VOID*<sp/>arg,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>stackSize,<sp/><ref refid="group__THREADS_1ga6fde44fe8696d51b99500e26aa0e4c61" kindref="member">PIN_THREAD_UID</ref>*<sp/>pThreadUid);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__THREADS_1gaec484eccc13fd52c6c41ff663c6afbcc" kindref="member">PIN_ExitThread</ref>(INT32<sp/>exitCode);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__THREADS_1ga2b23785020a1f4666f9980805abc7aa4" kindref="member">PIN_IsApplicationThread</ref>();</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__THREADS_1gaddd0dc2709292f807cb233e5ec0f809a" kindref="member">PIN_WaitForThreadTermination</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1ga6fde44fe8696d51b99500e26aa0e4c61" kindref="member">PIN_THREAD_UID</ref>&amp;<sp/>threadUid,<sp/>UINT32<sp/>milliseconds,<sp/>INT32*<sp/>pExitCode);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__THREADS_1gab2e14551036ea17c4f80ff5c81fefcf0" kindref="member">PIN_WaitForProgramStart</ref>();</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__THREADS_1gae374938fedd50fe80f64ef26b6bcc0d0" kindref="member">PIN_InitializeInternalThread</ref>();</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_THREAD_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/pin/thread_client.PH"/>
+  </compounddef>
+</doxygen>

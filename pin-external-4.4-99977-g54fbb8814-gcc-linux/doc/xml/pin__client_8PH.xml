@@ -1,0 +1,741 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="pin__client_8PH" kind="file" language="C++">
+    <compoundname>pin_client.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="pin__client_8PH_1acf0db3bc9a57fbf998e076afb1282189" prot="public" static="no">
+        <name>PIN_G_PIN_CLIENT_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client.PH" line="9" column="10" bodyfile="Source/pin/pin/pin_client.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pin__client_8PH_1a00a1a446d6ed5c93400784562ec593aa" prot="public" static="no">
+        <name>EnterPinClientSlaveMode</name>
+        <param></param>
+        <initializer>CheckPinClientLock(__FUNCTION__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Client side interface to pin vm. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client.PH" line="15" column="9" bodyfile="Source/pin/pin/pin_client.PH" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pin__client_8PH_1a93e877aa4906671cb5fd4a6098f05747" prot="public" static="no">
+        <name>ExitPinClientSlaveMode</name>
+        <param></param>
+        <initializer>CheckPinClientLock(__FUNCTION__)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client.PH" line="16" column="9" bodyfile="Source/pin/pin/pin_client.PH" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pin__client_8PH_1a2519c4f3c1924352fbecf603b170d370" prot="public" static="no">
+        <name>LOG_IMAGE</name>
+        <param><defname>s</defname></param>
+        <initializer>    if (ClientInt()-&gt;_VmLog) ClientInt()-&gt;_VmLog(&quot;IMAGE&quot;, s);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client.PH" line="18" column="9" bodyfile="Source/pin/pin/pin_client.PH" bodystart="18" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="define" id="pin__client_8PH_1a737f6e0faaed8cae1a74cf9c2002b611" prot="public" static="no">
+        <name>LOG_SYM</name>
+        <param><defname>s</defname></param>
+        <initializer>    if (ClientInt()-&gt;_VmLog) ClientInt()-&gt;_VmLog(&quot;SYMBOLS&quot;, s);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client.PH" line="20" column="9" bodyfile="Source/pin/pin/pin_client.PH" bodystart="20" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="define" id="pin__client_8PH_1a97b0d7741928986c7c1f623d67d61836" prot="public" static="no">
+        <name>LOG_PROBE</name>
+        <param><defname>s</defname></param>
+        <initializer>    if (ClientInt()-&gt;_VmLog) ClientInt()-&gt;_VmLog(&quot;PROBE&quot;, s);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client.PH" line="22" column="9" bodyfile="Source/pin/pin/pin_client.PH" bodystart="22" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="define" id="pin__client_8PH_1af5855a03384f9578ce932f470624e7a4" prot="public" static="no">
+        <name>LOG_FETCH_RTN_INS</name>
+        <param><defname>s</defname></param>
+        <initializer>    if (ClientInt()-&gt;_VmLog) ClientInt()-&gt;_VmLog(&quot;FETCH_RTN_INS&quot;, s);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client.PH" line="24" column="9" bodyfile="Source/pin/pin/pin_client.PH" bodystart="24" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="define" id="pin__client_8PH_1a4f83aaa510e82c6ec12c52ea35cce902" prot="public" static="no">
+        <name>LOG_UNWIND</name>
+        <param><defname>s</defname></param>
+        <initializer>    if (ClientInt()-&gt;_VmLog) ClientInt()-&gt;_VmLog(&quot;UNWIND&quot;, s);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client.PH" line="26" column="9" bodyfile="Source/pin/pin/pin_client.PH" bodystart="26" bodyend="27"/>
+      </memberdef>
+      <memberdef kind="define" id="pin__client_8PH_1a7ba08a7e9297fb30673923f44456063e" prot="public" static="no">
+        <name>LOG_BUFFER</name>
+        <param><defname>s</defname></param>
+        <initializer>    if (ClientInt()-&gt;_VmLog) ClientInt()-&gt;_VmLog(&quot;BUFFER&quot;, s);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client.PH" line="28" column="9" bodyfile="Source/pin/pin/pin_client.PH" bodystart="28" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="define" id="pin__client_8PH_1ae7a5ea1771d44c3d3909f74f82f4e7f6" prot="public" static="no">
+        <name>LOG_JIT_PROFILING</name>
+        <param><defname>s</defname></param>
+        <initializer>    if (ClientInt()-&gt;_VmLog) ClientInt()-&gt;_VmLog(&quot;VTUNE_JIT_API&quot;, s);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client.PH" line="30" column="9" bodyfile="Source/pin/pin/pin_client.PH" bodystart="30" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="define" id="pin__client_8PH_1a808f79ed9f9729384c691ce81fa80158" prot="public" static="no">
+        <name>LOG_VMLOG</name>
+        <param><defname>s</defname></param>
+        <initializer>    if (ClientInt()-&gt;_VmLog) ClientInt()-&gt;_VmLog(&quot;LOG&quot;, s);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client.PH" line="35" column="9" bodyfile="Source/pin/pin/pin_client.PH" bodystart="35" bodyend="36"/>
+      </memberdef>
+      <memberdef kind="define" id="pin__client_8PH_1a1c5edaa3eebb52dfceaf9a5bae053e0b" prot="public" static="no">
+        <name>LOG_VMWARNING</name>
+        <param><defname>s</defname></param>
+        <initializer>    if (ClientInt()-&gt;_VmLog) ClientInt()-&gt;_VmLog(&quot;WARNING&quot;, s);</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/pin_client.PH" line="37" column="9" bodyfile="Source/pin/pin/pin_client.PH" bodystart="37" bodyend="38"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group__PIN__CONTROL_1gab28152f755e5215a5e9ef343054e152e" kind="enum"><name>REPLAY_MODE</name></member>
+      <member refid="group__RTN_1ga9c9b90546cd64ce1579629c87ec84007" kind="enum"><name>PROBE_MODE</name></member>
+      <member refid="group__PIN__CONTROL_1ga1079583ef7d0d89098794aaafc2cdd7f" kind="enum"><name>SMC_ENABLE_DISABLE_TYPE</name></member>
+      <member refid="group__PIN__CONTROL_1ga2114b4480d050e1b7c8ac63449610448" kind="enum"><name>FPOINT</name></member>
+      <member refid="group__PIN__CONTROL_1ga04847a38918bb66387b616e2dac6e291" kind="enum"><name>ATTACH_STATUS</name></member>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kind="typedef"><name>TRACE</name></member>
+      <member refid="group__PIN__CONTROL_1ga943bbe3eeb81be27f127382e4b3f82bb" kind="typedef"><name>PIN_CONFIGURATION_INFO</name></member>
+      <member refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kind="typedef"><name>PIN_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1gabd9a69f9525e3ff6b422dabd230cf63c" kind="typedef"><name>REMOVE_INSTRUMENTATION_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1ga001c6e9e0cac2ab4ea3ae3d9f5a15fc3" kind="typedef"><name>DETACH_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1ga2d1917077e6365cb55f94a8cd1747b7f" kind="typedef"><name>DETACH_PROBED_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1gab167aa6770e560c4cae763d950104e18" kind="typedef"><name>ATTACH_PROBED_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1ga06536b5ceeac39f951acd0541f33d6e0" kind="typedef"><name>ATTACH_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1gae749c259c2759db886e1afbbffb8c11a" kind="typedef"><name>APPLICATION_START_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1ga47618aec52f2e6918ca0ffce8fefabde" kind="typedef"><name>PREPARE_FOR_FINI_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1ga8978f19f9ba6f66dcb9ab0763a32927c" kind="typedef"><name>FINI_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1gaab6073f3d7826fab0acd80622e7daf4a" kind="typedef"><name>FETCH_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1gafdfc14fff9d077c1c56019a71763d30f" kind="typedef"><name>OUT_OF_MEMORY_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1ga19b138f4eee61126518716ca586a3bdc" kind="typedef"><name>MEMORY_ADDR_TRANS_CALLBACK</name></member>
+      <member refid="group__TRACE_1gad80d434b4df6285334079c19df32a2e8" kind="typedef"><name>SMC_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1ga37b2fde2c0e113f45b69347032225840" kind="typedef"><name>FORK_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1ga848885f455ca7e4000cbe34359851a53" kind="typedef"><name>THREAD_START_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1gad66d9075769a0573e43721a1fb0c3e5e" kind="typedef"><name>THREAD_ATTACH_PROBED_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1gac799b787468a308c8fe33345a74403b3" kind="typedef"><name>THREAD_DETACH_PROBED_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1gafe174c8e7f51d02d96b572a3253ba2e4" kind="typedef"><name>THREAD_ATTACH_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1ga5c72b4a2e0ec256e8811ad82bfb3c71c" kind="typedef"><name>THREAD_DETACH_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1ga99a915108f24a372d07d45560db7fa87" kind="typedef"><name>THREAD_FINI_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1gaf00c74890a27774b6f9dad0f8267b720" kind="typedef"><name>CONTEXT_CHANGE_CALLBACK</name></member>
+      <member refid="group__SYSCALL_1gab34ef13ce96444da49a29c28f2893b21" kind="typedef"><name>SYSCALL_ENTRY_CALLBACK</name></member>
+      <member refid="group__SYSCALL_1ga47febb06d8fd5728e7ccba121b8ab56f" kind="typedef"><name>SYSCALL_EXIT_CALLBACK</name></member>
+      <member refid="group__PIN__CONTROL_1gae2eccf99d56cf9ac54001dc2f1c7a559" kind="typedef"><name>INTERCEPT_SIGNAL_CALLBACK</name></member>
+      <member refid="group__BUFFER_1ga78a19796d8e029988acdf7cfc3d879a2" kind="typedef"><name>TRACE_BUFFER_CALLBACK</name></member>
+      <member refid="group__INS__INSTRUMENTATION_1gaae44fa0b8ce18989425c352137de0a48" kind="typedef"><name>INS_INSTRUMENT_CALLBACK</name></member>
+      <member refid="group__TRACE_1ga07cee21d7d56284f183d218ef0c7ebfe" kind="typedef"><name>TRACE_INSTRUMENT_CALLBACK</name></member>
+      <member refid="group__RTN_1gafc6d6cdd1f6c3b8a2d87081c0fb65b22" kind="typedef"><name>RTN_INSTRUMENT_CALLBACK</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__PIN__CALLBACKS_1ga273251e9bfaf2ee66ee9abf2e48934d3" kind="function"><name>PIN_CALLBACK_INVALID</name></member>
+      <member refid="group__PIN__CONTROL_1ga33db0442eb244110a6355ddc4d98cab8" kind="function"><name>PIN_SetReplayMode</name></member>
+      <member refid="group__THREADS_1gab26b1cc40b5cfab48145b17d1e0f3085" kind="function"><name>PIN_SpawnApplicationThread</name></member>
+      <member refid="group__PIN__CONTROL_1ga49581d3c0504c1b73c135c2ea58ce514" kind="function"><name>PIN_LockClient</name></member>
+      <member refid="group__PIN__CONTROL_1ga28de790a20fcd1a8fd572a96e9c0064b" kind="function"><name>PIN_UnlockClient</name></member>
+      <member refid="group__ERROR__FILE_1ga736b7ac932c906914c9710bfa5ca98f2" kind="function"><name>PIN_WriteErrorMessage</name></member>
+      <member refid="group__RTN_1ga3952cb5eb8be9391d6503003e921d431" kind="function"><name>RTN_Replace</name></member>
+      <member refid="group__RTN_1gac9e6bf0201c6aec380fe607a76bce2e2" kind="function"><name>RTN_ReplaceSignature</name></member>
+      <member refid="group__RTN_1ga035b237e79abd711317ae9ad0dc5f3eb" kind="function"><name>RTN_ReplaceProbed</name></member>
+      <member refid="group__RTN_1gafa329b733d1835c22a76cd1caf025145" kind="function"><name>RTN_ReplaceProbedEx</name></member>
+      <member refid="group__PIN__CONTROL_1ga38f5a396edc14c80c3bd2c0b91084153" kind="function"><name>PIN_CallApplicationFunction</name></member>
+      <member refid="group__INS__INSPECTION_1gaa31c7176d19d938c7f399ecc5bdc21b9" kind="function"><name>INS_IsAddedForFunctionReplacement</name></member>
+      <member refid="group__PIN__CALLBACKS_1ga01647022e018d420c8269e90d213c3c0" kind="function"><name>CALLBACK_SetExecutionOrder</name></member>
+      <member refid="group__PIN__CALLBACKS_1ga371fbd344e119bf24f330fb322ae6b00" kind="function"><name>CALLBACK_GetExecutionOrder</name></member>
+      <member refid="group__TRACE_1gab2f19ff0a9198c83715eea79ada22503" kind="function"><name>TRACE_AddInstrumentFunction</name></member>
+      <member refid="group__INS__INSTRUMENTATION_1ga1333734dbf7d552365a24cd945d5691d" kind="function"><name>INS_AddInstrumentFunction</name></member>
+      <member refid="group__PIN__CONTROL_1gaa78c7b560975a6feffa420fadedc0627" kind="function"><name>PIN_AddFiniFunction</name></member>
+      <member refid="group__PIN__CONTROL_1gacd670ecd04074a3962968de22aab247c" kind="function"><name>PIN_AddPrepareForFiniFunction</name></member>
+      <member refid="group__PIN__CONTROL_1ga22abc469fb3a124bf69f80111f6fdef7" kind="function"><name>PIN_AddFetchFunction</name></member>
+      <member refid="group__PIN__CONTROL_1gabd8df83bbd040dfaf019bf18ec072b92" kind="function"><name>PIN_FetchCode</name></member>
+      <member refid="group__PIN__CONTROL_1ga77187fb76889090655ab0881ee096911" kind="function"><name>PIN_AddOutOfMemoryFunction</name></member>
+      <member refid="group__PIN__CONTROL_1ga26d9b2a04d10dfe7ed7d58b7e4a25f8d" kind="function"><name>PIN_AddXedDecodeCallbackFunction</name></member>
+      <member refid="group__PIN__CONTROL_1ga6ddee86f9c82dd00f07123dfc21a58ed" kind="function"><name>PIN_AddMemoryAddressTransFunction</name></member>
+      <member refid="group__TRACE_1ga2b5767a4ce4604d36829a1befa497223" kind="function"><name>TRACE_AddSmcDetectedFunction</name></member>
+      <member refid="group__PIN__CONTROL_1ga438d523bfee1f6296d252508ec564ac6" kind="function"><name>PIN_GetMemoryAddressTransFunction</name></member>
+      <member refid="group__PIN__CONTROL_1ga7501b4226bc92f358b7b361eea0929d2" kind="function"><name>PIN_AddDetachFunction</name></member>
+      <member refid="group__PIN__CONTROL_1ga4710100bcce91bdc5fc67bf8f918123a" kind="function"><name>PIN_AddDetachFunctionProbed</name></member>
+      <member refid="group__PIN__CONTROL_1ga984b4424d9ebf819ad6045894adbce38" kind="function"><name>PIN_AddThreadStartFunction</name></member>
+      <member refid="group__PIN__CONTROL_1ga00eaa74b7c902c85fa80ca9f7983c896" kind="function"><name>PIN_AddThreadAttachProbedFunction</name></member>
+      <member refid="group__PIN__CONTROL_1gaf4f2f9e67165b011a3eadedc97fa3d67" kind="function"><name>PIN_AddThreadAttachFunction</name></member>
+      <member refid="group__PIN__CONTROL_1ga31c0ce7e402dbbd3c5fc4b926a5ef391" kind="function"><name>PIN_AddThreadDetachProbedFunction</name></member>
+      <member refid="group__PIN__CONTROL_1gaa44e9c96f499d7ed333d7aa0b9518f3b" kind="function"><name>PIN_AddThreadDetachFunction</name></member>
+      <member refid="group__PIN__CONTROL_1ga785776d108a7843f983698509eceefc9" kind="function"><name>PIN_AddApplicationStartFunction</name></member>
+      <member refid="group__PIN__CONTROL_1gad4d7046de9ac2cc919910ca3293d2db6" kind="function"><name>PIN_AddThreadFiniFunction</name></member>
+      <member refid="group__PIN__CONTROL_1ga1cc0f28140cb83a035ebabdddf81861f" kind="function"><name>PIN_AddContextChangeFunction</name></member>
+      <member refid="group__SYSCALL_1ga8dc6b426fa6483242eb9ce5699671bf1" kind="function"><name>PIN_AddSyscallEntryFunction</name></member>
+      <member refid="group__SYSCALL_1ga86cd4ab2afd3af8435cdea496616d96c" kind="function"><name>PIN_AddSyscallExitFunction</name></member>
+      <member refid="group__PIN__CONTROL_1ga3463df5a1390b87e8a4568d6f2f43df9" kind="function"><name>PIN_InterceptSignal</name></member>
+      <member refid="group__PIN__CONTROL_1ga5dcf8bb7f5a70b12746c18bbbe5668f9" kind="function"><name>PIN_UnblockSignal</name></member>
+      <member refid="group__PIN__CONTROL_1gaea4e808e786d55b6f833e087586548ff" kind="function"><name>PIN_SetSmcSupport</name></member>
+      <member refid="group__PIN__CONTROL_1gad29e508159c002cafcb389624595ffba" kind="function"><name>PIN_AddForkFunction</name></member>
+      <member refid="group__PIN__CONTROL_1ga8fb8aae9e4b8012ab3c00225761c7785" kind="function"><name>PIN_RemoveInstrumentation</name></member>
+      <member refid="group__PIN__CONTROL_1ga40c83d7076e7be3ebc6cc8eff6cd6a6a" kind="function"><name>PIN_RemoveInstrumentationInRange</name></member>
+      <member refid="group__PIN__CONTROL_1gabcb114d9f01002dac1be6607da8b7c2c" kind="function"><name>PIN_RemoveFiniFunctions</name></member>
+      <member refid="group__PIN__CONTROL_1ga10440b20ad6bfca57c18652f61031731" kind="function"><name>PIN_Detach</name></member>
+      <member refid="group__PIN__CONTROL_1gac0f5ea28f49b4cd28101140f021c7f71" kind="function"><name>PIN_Attach</name></member>
+      <member refid="group__PIN__CONTROL_1gaf2fdaea6bac0c3a75e73d2692fd16b8e" kind="function"><name>PIN_DetachProbed</name></member>
+      <member refid="group__PIN__CONTROL_1gababd11163709312e34584227d6a3994a" kind="function"><name>PIN_AttachProbed</name></member>
+      <member refid="group__INS__INSTRUMENTATION_1gaa3666869f6f412dd7e1d20bca99e401b" kind="function"><name>INS_InsertPredicatedCall</name></member>
+      <member refid="group__INS__INSTRUMENTATION_1gaea02f152d3515f4758b8f979a380da09" kind="function"><name>INS_InsertCall</name></member>
+      <member refid="group__INS__INSTRUMENTATION_1ga3b589b45d857832458ca84ac5b6f04be" kind="function"><name>INS_InsertIfCall</name></member>
+      <member refid="group__INS__INSTRUMENTATION_1gaf88934525048d52d54a76f02d1ec3cf0" kind="function"><name>INS_InsertThenCall</name></member>
+      <member refid="group__INS__INSTRUMENTATION_1gac83cf4d3b530e2554c85c1428c3cb07c" kind="function"><name>INS_InsertIfPredicatedCall</name></member>
+      <member refid="group__INS__INSTRUMENTATION_1ga92b34e94caff1d253350efd068e329f2" kind="function"><name>INS_InsertThenPredicatedCall</name></member>
+      <member refid="group__PIN__CONTROL_1ga614df849c7bcb0f5ad0c01f98b39dad3" kind="function"><name>PIN_CreateDefaultConfigurationInfo</name></member>
+      <member refid="group__PIN__CONTROL_1gaaf30fb0e2832f9ce1016b9c751547d17" kind="function"><name>PIN_SetAllowedConcurrentCallbacks</name></member>
+      <member refid="group__PIN__CONTROL_1gab466cd00518ff315446c92f98f7ea1a0" kind="function"><name>PIN_StartProgram</name></member>
+      <member refid="group__PIN__CONTROL_1ga2e545d491302b50ea78c1bb844a8b544" kind="function"><name>PIN_StartProgramProbed</name></member>
+      <member refid="group__PIN__CONTROL_1ga523e1d653bc7f98ca5918b8faa7b2775" kind="function"><name>PIN_Version</name></member>
+      <member refid="group__PIN__CONTROL_1gade9cf860942a12f2f81eff43be7861f4" kind="function"><name>PIN_Init</name></member>
+      <member refid="group__TRACE_1gae5340cd88a962aac271e3547cdaa024e" kind="function"><name>TRACE_InsertCall</name></member>
+      <member refid="group__TRACE_1ga3ce47adf064c67f7289836aa5eabe680" kind="function"><name>TRACE_InsertIfCall</name></member>
+      <member refid="group__TRACE_1ga88d6254df161fa4aa236e092d8532278" kind="function"><name>TRACE_InsertThenCall</name></member>
+      <member refid="group__TRACE_1ga025844ffbef1e892eed7d7ce46f98138" kind="function"><name>TRACE_BblHead</name></member>
+      <member refid="group__TRACE_1ga2466f702bf17676b4d37f728caa0692f" kind="function"><name>TRACE_BblTail</name></member>
+      <member refid="group__TRACE_1ga35b565f6deabbcd077790219f57daeee" kind="function"><name>TRACE_Address</name></member>
+      <member refid="group__TRACE_1ga7c9e933da081232793b8fa60c41c29fe" kind="function"><name>TRACE_Size</name></member>
+      <member refid="group__TRACE_1ga6cfff844c7e29933289b72c06eb92e76" kind="function"><name>TRACE_Rtn</name></member>
+      <member refid="group__TRACE_1ga2134ee647c01b25e4ad20cbbddce5ef1" kind="function"><name>TRACE_HasFallThrough</name></member>
+      <member refid="group__TRACE_1ga5a531d7dafb583cd686778bcd48a829a" kind="function"><name>TRACE_NumBbl</name></member>
+      <member refid="group__TRACE_1ga3dd96087b6ca0031aad3cc4989d888ab" kind="function"><name>TRACE_NumIns</name></member>
+      <member refid="group__BBL_1ga9b7dabce7f0343da16e3be0bde9fd393" kind="function"><name>BBL_InsertCall</name></member>
+      <member refid="group__BBL_1gaee158afc4efc9224e85435aa55214272" kind="function"><name>BBL_InsertIfCall</name></member>
+      <member refid="group__BBL_1gaa868ef612bc1020554d64b1558cc7cc6" kind="function"><name>BBL_InsertThenCall</name></member>
+      <member refid="group__BBL_1ga49b398eb9c10ff80019315d6c2eee84a" kind="function"><name>BBL_HasFallThrough</name></member>
+      <member refid="group__CONTEXT_1ga112f3ad5960ae4c2273c20abb6479b7a" kind="function"><name>PIN_SupportsProcessorState</name></member>
+      <member refid="group__CONTEXT_1gabd227ecb35493c392d80173180acd7c7" kind="function"><name>PIN_ContextContainsState</name></member>
+      <member refid="group__CONTEXT_1gae96c2fa413d6009f9775cfebab49912f" kind="function"><name>PIN_SetContextRegval</name></member>
+      <member refid="group__CONTEXT_1ga44f8eeba2b8b874087441df1c3a530e2" kind="function"><name>PIN_GetContextRegval</name></member>
+      <member refid="group__CONTEXT_1ga83c0549f92440cf717c08689c47127cd" kind="function"><name>PIN_SetContextReg</name></member>
+      <member refid="group__CONTEXT_1ga5b5aea73f92ac62e0767cb32bf8de4ed" kind="function"><name>PIN_GetContextReg</name></member>
+      <member refid="group__CONTEXT_1ga147e92f2d15f95bd43cb6c8ea19057f4" kind="function"><name>PIN_SetContextFPState</name></member>
+      <member refid="group__CONTEXT_1ga628d9e2f229dc5101142c94a5411d073" kind="function"><name>PIN_GetContextFPState</name></member>
+      <member refid="group__CONTEXT_1ga2aed824bfc13169da54d875d8a44e9a9" kind="function"><name>PIN_SetContextFXSave</name></member>
+      <member refid="group__CONTEXT_1gaaaf02101bc84acf7a5f58853498729a4" kind="function"><name>PIN_GetContextFXSave</name></member>
+      <member refid="group__CONTEXT_1gacbaac112366f778eedeb4b258a40558f" kind="function"><name>PIN_GetFullContextRegsSet</name></member>
+      <member refid="group__CONTEXT_1gabd0a55669ab303520f82e4f512e084f9" kind="function"><name>PIN_SaveContext</name></member>
+      <member refid="group__CONTEXT_1gade2217c59d6e6b5cad08a59afe3d879a" kind="function"><name>PIN_ExecuteAt</name></member>
+      <member refid="group__SYSCALL_1gad9d546e07b4243cd28f5c3cbcfafc4eb" kind="function"><name>PIN_SetSyscallArgument</name></member>
+      <member refid="group__SYSCALL_1ga9f3bad50c8987db46b687193fe900fa6" kind="function"><name>PIN_GetSyscallArgument</name></member>
+      <member refid="group__SYSCALL_1gab045c7dedca9b8b63a9a339e9889cdc8" kind="function"><name>PIN_SetSyscallNumber</name></member>
+      <member refid="group__SYSCALL_1gab5648a015d935b4df7395c2b9f16707b" kind="function"><name>PIN_GetSyscallNumber</name></member>
+      <member refid="group__SYSCALL_1gaee394d106296c67ebe55c2a76736e1e9" kind="function"><name>PIN_GetSyscallReturn</name></member>
+      <member refid="group__SYSCALL_1ga196c129374709623b01eb3b676bb4f6e" kind="function"><name>PIN_SetSyscallReturn</name></member>
+      <member refid="group__SYSCALL_1ga5e0f238ac44ece7809f4ca6f834785b4" kind="function"><name>PIN_GetSyscallErrno</name></member>
+      <member refid="group__SYSCALL_1ga4ba15e53ecb01c9a954abf1e60f2a07c" kind="function"><name>PIN_SetSyscallErrno</name></member>
+      <member refid="group__PHYSICAL__CONTEXT_1ga1f2a4f0f1fda834df1d117270ee6b3b9" kind="function"><name>PIN_SetPhysicalContextReg</name></member>
+      <member refid="group__PHYSICAL__CONTEXT_1ga3a006fe2cf24804b69d56aca517b74ec" kind="function"><name>PIN_GetPhysicalContextReg</name></member>
+      <member refid="group__PHYSICAL__CONTEXT_1ga9aa8122d887712974421753744f362b6" kind="function"><name>PIN_SetPhysicalContextFPState</name></member>
+      <member refid="group__PHYSICAL__CONTEXT_1ga0150c6455fbab3a54a27dd00e6a39d33" kind="function"><name>PIN_GetPhysicalContextFPState</name></member>
+      <member refid="group__EXCEPTION_1ga35d13dc3ce578945eda8228b0db1c138" kind="function"><name>PIN_RaiseException</name></member>
+      <member refid="group__INS__MODIFICATION_1gaad5f037e311aa30dbc53e602e6ff672b" kind="function"><name>INS_RewriteMemoryOperand</name></member>
+      <member refid="group__INS__MODIFICATION_1ga71ff91493b7499425b5efed2dcfc213b" kind="function"><name>INS_RewriteScatteredMemoryOperand</name></member>
+      <member refid="group__INS__MODIFICATION_1ga1441fd9383ec6d8ed2218b329eedb86c" kind="function"><name>INS_InsertIndirectJump</name></member>
+      <member refid="group__INS__MODIFICATION_1ga5fabcfae35050a1cb92bb1c4034bab8a" kind="function"><name>INS_InsertDirectJump</name></member>
+      <member refid="group__REG_1gaf2783ea9f9f0e98c0645055b2aa368b3" kind="function"><name>PIN_ClaimToolRegister</name></member>
+      <member refid="group__PIN__CONTROL_1ga430cfc7dccf1376b898db6165a5e0e0e" kind="function"><name>PIN_VmFullPath</name></member>
+      <member refid="group__PIN__CONTROL_1gae4fb556b868cc11d715a82adde800482" kind="function"><name>PIN_ToolFullPath</name></member>
+      <member refid="group__PIN__PROCESS_1gaf5f4578464d7e16a4fdc0f95ba21c776" kind="function"><name>PIN_ExitProcess</name></member>
+      <member refid="group__PIN__PROCESS_1gae2f936a4d53e616f9cb0ca80b8f5acfa" kind="function"><name>PIN_GetPid</name></member>
+      <member refid="group__INS__MODIFICATION_1ga197b096ab500acaffc6fcd5ee3b93980" kind="function"><name>INS_Delete</name></member>
+      <member refid="group__INST__ARGS_1ga85838e12fe04880ed61c5c60378c0147" kind="function"><name>IARGLIST_AddArguments</name></member>
+      <member refid="group__INST__ARGS_1ga3d3e1e48b6fe3d71cb9f04a202ac55d7" kind="function"><name>IARGLIST_Alloc</name></member>
+      <member refid="group__INST__ARGS_1ga30472edf4c557377c7f6bc73601d0a90" kind="function"><name>IARGLIST_Free</name></member>
+      <member refid="group__PIN__CONTROL_1ga1225706d213f4bd1d81ed1fb32e792d7" kind="function"><name>PIN_SafeCopy</name></member>
+      <member refid="group__PIN__CONTROL_1ga9ca9a29ec02d848dd7b95717f400098c" kind="function"><name>PIN_SafeCopyEx</name></member>
+      <member refid="group__INS__INSTRUMENTATION_1ga097198320639318c65fa1ee815cbbe0c" kind="function"><name>INS_InsertFillBuffer</name></member>
+      <member refid="group__INS__INSTRUMENTATION_1gaf8750c3e9aa6ac8d2170d09e8867c473" kind="function"><name>INS_InsertFillBufferPredicated</name></member>
+      <member refid="group__INS__INSTRUMENTATION_1gad5a12904140ae5135f7ba8bca8f9df3f" kind="function"><name>INS_InsertFillBufferThen</name></member>
+      <member refid="group__BUFFER_1ga56fa8ed5b1b58950a46f5bab942adfb8" kind="function"><name>PIN_DefineTraceBuffer</name></member>
+      <member refid="group__BUFFER_1gaa204ceab2d2e3109dcfe88c4ac23feb2" kind="function"><name>PIN_AllocateBuffer</name></member>
+      <member refid="group__BUFFER_1ga4f86704278faf1b37c8a04e9214bd499" kind="function"><name>PIN_DeallocateBuffer</name></member>
+      <member refid="group__PIN__CONTROL_1ga7ff2e9b5b14feb3dc3102c9a34d24ff7" kind="function"><name>PIN_IsActionPending</name></member>
+      <member refid="group__PIN__CONTROL_1ga34b3940069a6c996249af9681348b31e" kind="function"><name>PIN_GetInitialThreadCount</name></member>
+      <member refid="group__BUFFER_1ga66f9102702b8697101b3c2bc128c385b" kind="function"><name>PIN_GetBufferPointer</name></member>
+      <member refid="group__PIN__CONTROL_1ga81eca939c7f3a6e3b83d06738ea2f67f" kind="function"><name>PIN_CheckReadAccess</name></member>
+      <member refid="group__PIN__CONTROL_1gadc75017a89b925e10a42d4fefee31615" kind="function"><name>PIN_CheckReadAccessEx</name></member>
+      <member refid="group__PIN__CONTROL_1ga038d6b330dc2b8d3e1efe8e3bfd6ff88" kind="function"><name>PIN_CheckWriteAccess</name></member>
+      <member refid="group__PIN__CONTROL_1ga7c03c68049cce956a7e669eb55f8b208" kind="function"><name>PIN_CheckWriteAccessEx</name></member>
+      <member refid="group__PIN__CONTROL_1ga6039144b83fc21c5482e16522e700c91" kind="function"><name>PIN_GetAuxVectorValue</name></member>
+      <member refid="group__PIN__PROCESS_1gaa6127aeb954da01691382a96ae2ab729" kind="function"><name>PIN_IsAmxActive</name></member>
+      <member refid="group__PIN__PROCESS_1gac4bfc7dcba11e5b4c7a9f53e60bb75d1" kind="function"><name>TileCfg_GetTileRows</name></member>
+      <member refid="group__PIN__PROCESS_1ga09beb15faeb089c02f8154834f551d1f" kind="function"><name>TileCfg_GetTileBytesPerRow</name></member>
+      <member refid="group__PIN__PROCESS_1ga82cdf4b2f74b73228a2dd64f8f49f8ba" kind="function"><name>TileCfg_GetPaletteID</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2020-2026<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_PIN_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>pin_client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_PIN_CLIENT_PH</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EnterPinClientSlaveMode()<sp/>CheckPinClientLock(__FUNCTION__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ExitPinClientSlaveMode()<sp/>CheckPinClientLock(__FUNCTION__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PIN_GENERATED_MESSAGE_PIN_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_IMAGE(s)<sp/>\</highlight></codeline>
+<codeline lineno="19"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(ClientInt()-&gt;_VmLog)<sp/>ClientInt()-&gt;_VmLog(&quot;IMAGE&quot;,<sp/>s);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_SYM(s)<sp/>\</highlight></codeline>
+<codeline lineno="21"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(ClientInt()-&gt;_VmLog)<sp/>ClientInt()-&gt;_VmLog(&quot;SYMBOLS&quot;,<sp/>s);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_PROBE(s)<sp/>\</highlight></codeline>
+<codeline lineno="23"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(ClientInt()-&gt;_VmLog)<sp/>ClientInt()-&gt;_VmLog(&quot;PROBE&quot;,<sp/>s);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_FETCH_RTN_INS(s)<sp/>\</highlight></codeline>
+<codeline lineno="25"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(ClientInt()-&gt;_VmLog)<sp/>ClientInt()-&gt;_VmLog(&quot;FETCH_RTN_INS&quot;,<sp/>s);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_UNWIND(s)<sp/>\</highlight></codeline>
+<codeline lineno="27"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(ClientInt()-&gt;_VmLog)<sp/>ClientInt()-&gt;_VmLog(&quot;UNWIND&quot;,<sp/>s);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_BUFFER(s)<sp/>\</highlight></codeline>
+<codeline lineno="29"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(ClientInt()-&gt;_VmLog)<sp/>ClientInt()-&gt;_VmLog(&quot;BUFFER&quot;,<sp/>s);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_JIT_PROFILING(s)<sp/>\</highlight></codeline>
+<codeline lineno="31"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(ClientInt()-&gt;_VmLog)<sp/>ClientInt()-&gt;_VmLog(&quot;VTUNE_JIT_API&quot;,<sp/>s);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>When<sp/>LOG()/WARNING()<sp/>is<sp/>called<sp/>from<sp/>Pin<sp/>client<sp/>library<sp/>it<sp/>will<sp/>be<sp/>printed<sp/>to<sp/>pintool.log</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>one<sp/>wants<sp/>to<sp/>print<sp/>a<sp/>general<sp/>log/warning<sp/>message<sp/>into<sp/>pin.log,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>then<sp/>LOG_VMLOG()/LOG_VMWARNING()<sp/>macro<sp/>should<sp/>be<sp/>used.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_VMLOG(s)<sp/>\</highlight></codeline>
+<codeline lineno="36"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(ClientInt()-&gt;_VmLog)<sp/>ClientInt()-&gt;_VmLog(&quot;LOG&quot;,<sp/>s);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOG_VMWARNING(s)<sp/>\</highlight></codeline>
+<codeline lineno="38"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>if<sp/>(ClientInt()-&gt;_VmLog)<sp/>ClientInt()-&gt;_VmLog(&quot;WARNING&quot;,<sp/>s);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TRACE_CLASS;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>TRACE_CLASS*<sp/><ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID*<sp/><ref refid="group__PIN__CONTROL_1ga943bbe3eeb81be27f127382e4b3f82bb" kindref="member">PIN_CONFIGURATION_INFO</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">COMPLEX_CALLBACKVAL_BASE;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>COMPLEX_CALLBACKVAL_BASE*<sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CALLBACKS_1ga273251e9bfaf2ee66ee9abf2e48934d3" kindref="member">PIN_CALLBACK_INVALID</ref>(0);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1gabd9a69f9525e3ff6b422dabd230cf63c" kindref="member">REMOVE_INSTRUMENTATION_CALLBACK</ref>)(VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1ga001c6e9e0cac2ab4ea3ae3d9f5a15fc3" kindref="member">DETACH_CALLBACK</ref>)(VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1ga2d1917077e6365cb55f94a8cd1747b7f" kindref="member">DETACH_PROBED_CALLBACK</ref>)(VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1gab167aa6770e560c4cae763d950104e18" kindref="member">ATTACH_PROBED_CALLBACK</ref>)(VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1ga06536b5ceeac39f951acd0541f33d6e0" kindref="member">ATTACH_CALLBACK</ref>)(VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1gae749c259c2759db886e1afbbffb8c11a" kindref="member">APPLICATION_START_CALLBACK</ref>)(VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1ga47618aec52f2e6918ca0ffce8fefabde" kindref="member">PREPARE_FOR_FINI_CALLBACK</ref>)(VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1ga8978f19f9ba6f66dcb9ab0763a32927c" kindref="member">FINI_CALLBACK</ref>)(INT32<sp/>code,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>size_t<sp/>(*<ref refid="group__PIN__CONTROL_1gaab6073f3d7826fab0acd80622e7daf4a" kindref="member">FETCH_CALLBACK</ref>)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buf,<sp/>ADDRINT<sp/>addr,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/><ref refid="structEXCEPTION__INFO" kindref="compound">EXCEPTION_INFO</ref>*<sp/>pExceptInfo,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1gafdfc14fff9d077c1c56019a71763d30f" kindref="member">OUT_OF_MEMORY_CALLBACK</ref>)(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>ADDRINT(<ref refid="group__INST__ARGS_1ga5d3025eb005b7ea4745799f0ee1b86a6" kindref="member">PIN_FAST_ANALYSIS_CALL</ref>*<sp/><ref refid="group__PIN__CONTROL_1ga19b138f4eee61126518716ca586a3bdc" kindref="member">MEMORY_ADDR_TRANS_CALLBACK</ref>)(<ref refid="structPIN__MEM__TRANS__INFO" kindref="compound">PIN_MEM_TRANS_INFO</ref>*<sp/>memTransInfo,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__TRACE_1gad80d434b4df6285334079c19df32a2e8" kindref="member">SMC_CALLBACK</ref>)(ADDRINT<sp/>traceStartAddress,<sp/>ADDRINT<sp/>traceEndAddress,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1ga37b2fde2c0e113f45b69347032225840" kindref="member">FORK_CALLBACK</ref>)(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1ga848885f455ca7e4000cbe34359851a53" kindref="member">THREAD_START_CALLBACK</ref>)(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadIndex,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/>INT32<sp/>flags,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1gad66d9075769a0573e43721a1fb0c3e5e" kindref="member">THREAD_ATTACH_PROBED_CALLBACK</ref>)(VOID*<sp/>sigmask,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1gac799b787468a308c8fe33345a74403b3" kindref="member">THREAD_DETACH_PROBED_CALLBACK</ref>)(VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1gafe174c8e7f51d02d96b572a3253ba2e4" kindref="member">THREAD_ATTACH_CALLBACK</ref>)(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadIndex,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1ga5c72b4a2e0ec256e8811ad82bfb3c71c" kindref="member">THREAD_DETACH_CALLBACK</ref>)(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadIndex,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1ga99a915108f24a372d07d45560db7fa87" kindref="member">THREAD_FINI_CALLBACK</ref>)(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadIndex,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/>INT32<sp/>code,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__PIN__CONTROL_1gaf00c74890a27774b6f9dad0f8267b720" kindref="member">CONTEXT_CHANGE_CALLBACK</ref>)(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadIndex,<sp/><ref refid="group__PIN__CONTROL_1ga8e4e6511a0e09fdc5ec7d6dbf395b3a8" kindref="member">CONTEXT_CHANGE_REASON</ref><sp/>reason,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>from,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>to,</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>INT32<sp/>info,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__SYSCALL_1gab34ef13ce96444da49a29c28f2893b21" kindref="member">SYSCALL_ENTRY_CALLBACK</ref>)(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadIndex,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__INS__INSPECTION_1gaf903f1f8ddcb9710d191943763e6474a" kindref="member">SYSCALL_STANDARD</ref><sp/>std,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__SYSCALL_1ga47febb06d8fd5728e7ccba121b8ab56f" kindref="member">SYSCALL_EXIT_CALLBACK</ref>)(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadIndex,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__INS__INSPECTION_1gaf903f1f8ddcb9710d191943763e6474a" kindref="member">SYSCALL_STANDARD</ref><sp/>std,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>BOOL<sp/>(*<ref refid="group__PIN__CONTROL_1gae2eccf99d56cf9ac54001dc2f1c7a559" kindref="member">INTERCEPT_SIGNAL_CALLBACK</ref>)(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/>INT32<sp/>sig,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/>BOOL<sp/>hasHandler,</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structEXCEPTION__INFO" kindref="compound">EXCEPTION_INFO</ref>*<sp/>pExceptInfo,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID*<sp/>(*TRACE_BUFFER_CALLBACK)(<ref refid="group__BUFFER_1gaee232a4179b4897b5869a6d5fc98d032" kindref="member">BUFFER_ID</ref><sp/>id,<sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/>VOID*<sp/>buf,<sp/>UINT64<sp/>numElements,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__INS__INSTRUMENTATION_1gaae44fa0b8ce18989425c352137de0a48" kindref="member">INS_INSTRUMENT_CALLBACK</ref>)(INS<sp/>ins,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__TRACE_1ga07cee21d7d56284f183d218ef0c7ebfe" kindref="member">TRACE_INSTRUMENT_CALLBACK</ref>)(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__RTN_1gafc6d6cdd1f6c3b8a2d87081c0fb65b22" kindref="member">RTN_INSTRUMENT_CALLBACK</ref>)(RTN<sp/>rtn,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1gab28152f755e5215a5e9ef343054e152e" kindref="member">REPLAY_MODE</ref></highlight></codeline>
+<codeline lineno="387"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"><sp/><sp/><sp/><sp/>REPLAY_MODE_NONE<sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1ggab28152f755e5215a5e9ef343054e152eac9edf1a9d0e893b11600c3667543994e" kindref="member">REPLAY_MODE_IMAGEOPS</ref><sp/>=<sp/>0x01,<sp/></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/>REPLAY_MODE_ALL<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/><ref refid="group__PIN__CONTROL_1ggab28152f755e5215a5e9ef343054e152eac9edf1a9d0e893b11600c3667543994e" kindref="member">REPLAY_MODE_IMAGEOPS</ref></highlight></codeline>
+<codeline lineno="391"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga33db0442eb244110a6355ddc4d98cab8" kindref="member">PIN_SetReplayMode</ref>(UINT32<sp/>flags);</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NATIVE_TID<sp/><ref refid="group__THREADS_1gab26b1cc40b5cfab48145b17d1e0f3085" kindref="member">PIN_SpawnApplicationThread</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt);</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight></codeline>
+<codeline lineno="486"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga49581d3c0504c1b73c135c2ea58ce514" kindref="member">PIN_LockClient</ref>();</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga28de790a20fcd1a8fd572a96e9c0064b" kindref="member">PIN_UnlockClient</ref>();</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"></highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__ERROR__FILE_1ga736b7ac932c906914c9710bfa5ca98f2" kindref="member">PIN_WriteErrorMessage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>msg,<sp/>INT32<sp/>type,<sp/><ref refid="group__ERROR__FILE_1gaa5229e893bc3646b53b8547328305441" kindref="member">PIN_ERR_SEVERITY_TYPE</ref><sp/>severity,<sp/>INT32<sp/>num,<sp/>...);</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"></highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>AFUNPTR<sp/><ref refid="group__RTN_1ga3952cb5eb8be9391d6503003e921d431" kindref="member">RTN_Replace</ref>(RTN<sp/>replacedRtn,<sp/>AFUNPTR<sp/>replacementFun);</highlight></codeline>
+<codeline lineno="550"><highlight class="normal"></highlight></codeline>
+<codeline lineno="592"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>AFUNPTR<sp/><ref refid="group__RTN_1gac9e6bf0201c6aec380fe607a76bce2e2" kindref="member">RTN_ReplaceSignature</ref>(RTN<sp/>replacedRtn,<sp/>AFUNPTR<sp/>replacementFun,<sp/>...);</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"></highlight></codeline>
+<codeline lineno="636"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__RTN_1ga9c9b90546cd64ce1579629c87ec84007" kindref="member">PROBE_MODE</ref></highlight></codeline>
+<codeline lineno="637"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/>PROBE_MODE_DEFAULT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/>PROBE_MODE_ALLOW_RELOCATION<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>0),</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/>PROBE_MODE_ALLOW_POTENTIAL_BRANCH_TARGET<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>1)</highlight></codeline>
+<codeline lineno="641"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"></highlight></codeline>
+<codeline lineno="678"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>AFUNPTR<sp/><ref refid="group__RTN_1ga035b237e79abd711317ae9ad0dc5f3eb" kindref="member">RTN_ReplaceProbed</ref>(RTN<sp/>replacedRtn,<sp/>AFUNPTR<sp/>replacementFun);</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>AFUNPTR<sp/><ref refid="group__RTN_1gafa329b733d1835c22a76cd1caf025145" kindref="member">RTN_ReplaceProbedEx</ref>(RTN<sp/>replacedRtn,<sp/><ref refid="group__RTN_1ga9c9b90546cd64ce1579629c87ec84007" kindref="member">PROBE_MODE</ref><sp/>mode,<sp/>AFUNPTR<sp/>replacementFun);</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight></codeline>
+<codeline lineno="748"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga38f5a396edc14c80c3bd2c0b91084153" kindref="member">PIN_CallApplicationFunction</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/><ref refid="group__PROTO_1gacfd9f3c8dc22310ce9b9152e8c61b17c" kindref="member">CALLINGSTD_TYPE</ref><sp/>cstype,<sp/>AFUNPTR<sp/>origFunPtr,</highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structCALL__APPLICATION__FUNCTION__PARAM" kindref="compound">CALL_APPLICATION_FUNCTION_PARAM</ref>*<sp/>param,<sp/>...);</highlight></codeline>
+<codeline lineno="750"><highlight class="normal"></highlight></codeline>
+<codeline lineno="761"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1gaa31c7176d19d938c7f399ecc5bdc21b9" kindref="member">INS_IsAddedForFunctionReplacement</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"></highlight></codeline>
+<codeline lineno="777"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CALLBACKS_1ga01647022e018d420c8269e90d213c3c0" kindref="member">CALLBACK_SetExecutionOrder</ref>(<ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/>callback,<sp/><ref refid="group__INST__ARGS_1ga3d1d5f6805cb16d00bce441290ca2212" kindref="member">CALL_ORDER</ref><sp/>order);</highlight></codeline>
+<codeline lineno="778"><highlight class="normal"></highlight></codeline>
+<codeline lineno="792"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__INST__ARGS_1ga3d1d5f6805cb16d00bce441290ca2212" kindref="member">CALL_ORDER</ref><sp/><ref refid="group__PIN__CALLBACKS_1ga371fbd344e119bf24f330fb322ae6b00" kindref="member">CALLBACK_GetExecutionOrder</ref>(<ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/>callback);</highlight></codeline>
+<codeline lineno="793"><highlight class="normal"></highlight></codeline>
+<codeline lineno="808"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__TRACE_1gab2f19ff0a9198c83715eea79ada22503" kindref="member">TRACE_AddInstrumentFunction</ref>(<ref refid="group__TRACE_1ga07cee21d7d56284f183d218ef0c7ebfe" kindref="member">TRACE_INSTRUMENT_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="809"><highlight class="normal"></highlight></codeline>
+<codeline lineno="824"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__INS__INSTRUMENTATION_1ga1333734dbf7d552365a24cd945d5691d" kindref="member">INS_AddInstrumentFunction</ref>(<ref refid="group__INS__INSTRUMENTATION_1gaae44fa0b8ce18989425c352137de0a48" kindref="member">INS_INSTRUMENT_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="825"><highlight class="normal"></highlight></codeline>
+<codeline lineno="843"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1gaa78c7b560975a6feffa420fadedc0627" kindref="member">PIN_AddFiniFunction</ref>(<ref refid="group__PIN__CONTROL_1ga8978f19f9ba6f66dcb9ab0763a32927c" kindref="member">FINI_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="844"><highlight class="normal"></highlight></codeline>
+<codeline lineno="867"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1gacd670ecd04074a3962968de22aab247c" kindref="member">PIN_AddPrepareForFiniFunction</ref>(<ref refid="group__PIN__CONTROL_1ga47618aec52f2e6918ca0ffce8fefabde" kindref="member">PREPARE_FOR_FINI_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="868"><highlight class="normal"></highlight></codeline>
+<codeline lineno="890"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga22abc469fb3a124bf69f80111f6fdef7" kindref="member">PIN_AddFetchFunction</ref>(<ref refid="group__PIN__CONTROL_1gaab6073f3d7826fab0acd80622e7daf4a" kindref="member">FETCH_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="891"><highlight class="normal"></highlight></codeline>
+<codeline lineno="909"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1gabd8df83bbd040dfaf019bf18ec072b92" kindref="member">PIN_FetchCode</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>copyBuf,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VOID*<sp/>address,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>maxSize,<sp/><ref refid="structEXCEPTION__INFO" kindref="compound">EXCEPTION_INFO</ref>*<sp/>pExceptInfo);</highlight></codeline>
+<codeline lineno="910"><highlight class="normal"></highlight></codeline>
+<codeline lineno="938"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga77187fb76889090655ab0881ee096911" kindref="member">PIN_AddOutOfMemoryFunction</ref>(<ref refid="group__PIN__CONTROL_1gafdfc14fff9d077c1c56019a71763d30f" kindref="member">OUT_OF_MEMORY_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="939"><highlight class="normal"></highlight></codeline>
+<codeline lineno="956"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga26d9b2a04d10dfe7ed7d58b7e4a25f8d" kindref="member">PIN_AddXedDecodeCallbackFunction</ref>(<ref refid="group__PIN__CONTROL_1ga4583560de9d18cb8f1b138e7a91f0666" kindref="member">XED_DECODE_CALLBACK</ref><sp/>fun);</highlight></codeline>
+<codeline lineno="957"><highlight class="normal"></highlight></codeline>
+<codeline lineno="974"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga6ddee86f9c82dd00f07123dfc21a58ed" kindref="member">PIN_AddMemoryAddressTransFunction</ref>(<ref refid="group__PIN__CONTROL_1ga19b138f4eee61126518716ca586a3bdc" kindref="member">MEMORY_ADDR_TRANS_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="975"><highlight class="normal"></highlight></codeline>
+<codeline lineno="990"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__TRACE_1ga2b5767a4ce4604d36829a1befa497223" kindref="member">TRACE_AddSmcDetectedFunction</ref>(<ref refid="group__TRACE_1gad80d434b4df6285334079c19df32a2e8" kindref="member">SMC_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="991"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1003"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga19b138f4eee61126518716ca586a3bdc" kindref="member">MEMORY_ADDR_TRANS_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1ga438d523bfee1f6296d252508ec564ac6" kindref="member">PIN_GetMemoryAddressTransFunction</ref>();</highlight></codeline>
+<codeline lineno="1004"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1027"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1ga7501b4226bc92f358b7b361eea0929d2" kindref="member">PIN_AddDetachFunction</ref>(<ref refid="group__PIN__CONTROL_1ga001c6e9e0cac2ab4ea3ae3d9f5a15fc3" kindref="member">DETACH_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1028"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1048"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1ga4710100bcce91bdc5fc67bf8f918123a" kindref="member">PIN_AddDetachFunctionProbed</ref>(<ref refid="group__PIN__CONTROL_1ga2d1917077e6365cb55f94a8cd1747b7f" kindref="member">DETACH_PROBED_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1049"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1066"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1ga984b4424d9ebf819ad6045894adbce38" kindref="member">PIN_AddThreadStartFunction</ref>(<ref refid="group__PIN__CONTROL_1ga848885f455ca7e4000cbe34359851a53" kindref="member">THREAD_START_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1067"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1096"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1ga00eaa74b7c902c85fa80ca9f7983c896" kindref="member">PIN_AddThreadAttachProbedFunction</ref>(<ref refid="group__PIN__CONTROL_1gad66d9075769a0573e43721a1fb0c3e5e" kindref="member">THREAD_ATTACH_PROBED_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1097"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1129"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1gaf4f2f9e67165b011a3eadedc97fa3d67" kindref="member">PIN_AddThreadAttachFunction</ref>(<ref refid="group__PIN__CONTROL_1gafe174c8e7f51d02d96b572a3253ba2e4" kindref="member">THREAD_ATTACH_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1153"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1ga31c0ce7e402dbbd3c5fc4b926a5ef391" kindref="member">PIN_AddThreadDetachProbedFunction</ref>(<ref refid="group__PIN__CONTROL_1gac799b787468a308c8fe33345a74403b3" kindref="member">THREAD_DETACH_PROBED_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1180"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1gaa44e9c96f499d7ed333d7aa0b9518f3b" kindref="member">PIN_AddThreadDetachFunction</ref>(<ref refid="group__PIN__CONTROL_1ga5c72b4a2e0ec256e8811ad82bfb3c71c" kindref="member">THREAD_DETACH_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1222"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1ga785776d108a7843f983698509eceefc9" kindref="member">PIN_AddApplicationStartFunction</ref>(<ref refid="group__PIN__CONTROL_1gae749c259c2759db886e1afbbffb8c11a" kindref="member">APPLICATION_START_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1243"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1gad4d7046de9ac2cc919910ca3293d2db6" kindref="member">PIN_AddThreadFiniFunction</ref>(<ref refid="group__PIN__CONTROL_1ga99a915108f24a372d07d45560db7fa87" kindref="member">THREAD_FINI_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1261"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1ga1cc0f28140cb83a035ebabdddf81861f" kindref="member">PIN_AddContextChangeFunction</ref>(<ref refid="group__PIN__CONTROL_1gaf00c74890a27774b6f9dad0f8267b720" kindref="member">CONTEXT_CHANGE_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1280"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__SYSCALL_1ga8dc6b426fa6483242eb9ce5699671bf1" kindref="member">PIN_AddSyscallEntryFunction</ref>(<ref refid="group__SYSCALL_1gab34ef13ce96444da49a29c28f2893b21" kindref="member">SYSCALL_ENTRY_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1316"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__SYSCALL_1ga86cd4ab2afd3af8435cdea496616d96c" kindref="member">PIN_AddSyscallExitFunction</ref>(<ref refid="group__SYSCALL_1ga47febb06d8fd5728e7ccba121b8ab56f" kindref="member">SYSCALL_EXIT_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1360"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1ga3463df5a1390b87e8a4568d6f2f43df9" kindref="member">PIN_InterceptSignal</ref>(INT32<sp/>sig,<sp/><ref refid="group__PIN__CONTROL_1gae2eccf99d56cf9ac54001dc2f1c7a559" kindref="member">INTERCEPT_SIGNAL_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1390"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1ga5dcf8bb7f5a70b12746c18bbbe5668f9" kindref="member">PIN_UnblockSignal</ref>(INT32<sp/>sig,<sp/>BOOL<sp/>enable);</highlight></codeline>
+<codeline lineno="1391"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1395"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1396"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1397"><highlight class="normal"><sp/><sp/><sp/><sp/>SMC_ENABLE,</highlight></codeline>
+<codeline lineno="1398"><highlight class="normal"><sp/><sp/><sp/><sp/>SMC_DISABLE</highlight></codeline>
+<codeline lineno="1399"><highlight class="normal">}<sp/><ref refid="group__PIN__CONTROL_1ga1079583ef7d0d89098794aaafc2cdd7f" kindref="member">SMC_ENABLE_DISABLE_TYPE</ref>;</highlight></codeline>
+<codeline lineno="1400"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1418"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1gaea4e808e786d55b6f833e087586548ff" kindref="member">PIN_SetSmcSupport</ref>(<ref refid="group__PIN__CONTROL_1ga1079583ef7d0d89098794aaafc2cdd7f" kindref="member">SMC_ENABLE_DISABLE_TYPE</ref><sp/>enable_disable);</highlight></codeline>
+<codeline lineno="1419"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1423"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga2114b4480d050e1b7c8ac63449610448" kindref="member">FPOINT</ref></highlight></codeline>
+<codeline lineno="1424"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1425"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga2114b4480d050e1b7c8ac63449610448ae15497466a8ecc6bddc4becc933efa12" kindref="member">FPOINT_BEFORE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1426"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga2114b4480d050e1b7c8ac63449610448a76673c60a3c5d0f8beebffc3679552b3" kindref="member">FPOINT_AFTER_IN_PARENT</ref>,<sp/></highlight></codeline>
+<codeline lineno="1427"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga2114b4480d050e1b7c8ac63449610448a545c2194fff97c1159b8872ba4632a2b" kindref="member">FPOINT_AFTER_IN_CHILD</ref><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1428"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1429"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1451"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1gad29e508159c002cafcb389624595ffba" kindref="member">PIN_AddForkFunction</ref>(<ref refid="group__PIN__CONTROL_1ga2114b4480d050e1b7c8ac63449610448" kindref="member">FPOINT</ref><sp/>point,<sp/><ref refid="group__PIN__CONTROL_1ga37b2fde2c0e113f45b69347032225840" kindref="member">FORK_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1466"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga8fb8aae9e4b8012ab3c00225761c7785" kindref="member">PIN_RemoveInstrumentation</ref>();</highlight></codeline>
+<codeline lineno="1467"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1484"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga40c83d7076e7be3ebc6cc8eff6cd6a6a" kindref="member">PIN_RemoveInstrumentationInRange</ref>(ADDRINT<sp/>start,<sp/>ADDRINT<sp/>end);</highlight></codeline>
+<codeline lineno="1485"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1501"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1gabcb114d9f01002dac1be6607da8b7c2c" kindref="member">PIN_RemoveFiniFunctions</ref>();</highlight></codeline>
+<codeline lineno="1502"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1550"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga10440b20ad6bfca57c18652f61031731" kindref="member">PIN_Detach</ref>();</highlight></codeline>
+<codeline lineno="1551"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1556"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga04847a38918bb66387b616e2dac6e291" kindref="member">ATTACH_STATUS</ref></highlight></codeline>
+<codeline lineno="1557"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1558"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga04847a38918bb66387b616e2dac6e291a37b8fca2f05c816ab237c1cdb72adb0c" kindref="member">ATTACH_INITIATED</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1559"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga04847a38918bb66387b616e2dac6e291af2ccbdc4611e742b0fdc7de09455b8b9" kindref="member">ATTACH_FAILED_DETACH</ref><sp/></highlight></codeline>
+<codeline lineno="1561"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1562"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1590"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga04847a38918bb66387b616e2dac6e291" kindref="member">ATTACH_STATUS</ref><sp/><ref refid="group__PIN__CONTROL_1gac0f5ea28f49b4cd28101140f021c7f71" kindref="member">PIN_Attach</ref>(<ref refid="group__PIN__CONTROL_1ga06536b5ceeac39f951acd0541f33d6e0" kindref="member">ATTACH_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1616"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1gaf2fdaea6bac0c3a75e73d2692fd16b8e" kindref="member">PIN_DetachProbed</ref>();</highlight></codeline>
+<codeline lineno="1617"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1645"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga04847a38918bb66387b616e2dac6e291" kindref="member">ATTACH_STATUS</ref><sp/><ref refid="group__PIN__CONTROL_1gababd11163709312e34584227d6a3994a" kindref="member">PIN_AttachProbed</ref>(<ref refid="group__PIN__CONTROL_1gab167aa6770e560c4cae763d950104e18" kindref="member">ATTACH_PROBED_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="1646"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1678"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__INSTRUMENTATION_1gaa3666869f6f412dd7e1d20bca99e401b" kindref="member">INS_InsertPredicatedCall</ref>(INS<sp/>ins,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>ipoint,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="1679"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1699"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__INSTRUMENTATION_1gaea02f152d3515f4758b8f979a380da09" kindref="member">INS_InsertCall</ref>(INS<sp/>ins,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="1700"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1727"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__INSTRUMENTATION_1ga3b589b45d857832458ca84ac5b6f04be" kindref="member">INS_InsertIfCall</ref>(INS<sp/>ins,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="1728"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1755"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__INSTRUMENTATION_1gaf88934525048d52d54a76f02d1ec3cf0" kindref="member">INS_InsertThenCall</ref>(INS<sp/>ins,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="1756"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1826"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__INSTRUMENTATION_1gac83cf4d3b530e2554c85c1428c3cb07c" kindref="member">INS_InsertIfPredicatedCall</ref>(INS<sp/>ins,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="1827"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1853"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__INSTRUMENTATION_1ga92b34e94caff1d253350efd068e329f2" kindref="member">INS_InsertThenPredicatedCall</ref>(INS<sp/>ins,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="1854"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1868"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga943bbe3eeb81be27f127382e4b3f82bb" kindref="member">PIN_CONFIGURATION_INFO</ref><sp/><ref refid="group__PIN__CONTROL_1ga614df849c7bcb0f5ad0c01f98b39dad3" kindref="member">PIN_CreateDefaultConfigurationInfo</ref>();</highlight></codeline>
+<codeline lineno="1869"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1899"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1gaaf30fb0e2832f9ce1016b9c751547d17" kindref="member">PIN_SetAllowedConcurrentCallbacks</ref>(<ref refid="group__PIN__CONTROL_1ga943bbe3eeb81be27f127382e4b3f82bb" kindref="member">PIN_CONFIGURATION_INFO</ref><sp/>options,<sp/><ref refid="group__PIN__CONTROL_1ga4e114852e46d5d839d6e71e242709777" kindref="member">PIN_CALLBACK_TYPE</ref><sp/>callbackType);</highlight></codeline>
+<codeline lineno="1900"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1922"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1gab466cd00518ff315446c92f98f7ea1a0" kindref="member">PIN_StartProgram</ref>(<ref refid="group__PIN__CONTROL_1ga943bbe3eeb81be27f127382e4b3f82bb" kindref="member">PIN_CONFIGURATION_INFO</ref><sp/>options<sp/>=<sp/><ref refid="group__PIN__CONTROL_1ga614df849c7bcb0f5ad0c01f98b39dad3" kindref="member">PIN_CreateDefaultConfigurationInfo</ref>());</highlight></codeline>
+<codeline lineno="1923"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1926"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1gab466cd00518ff315446c92f98f7ea1a0" kindref="member">PIN_StartProgram</ref>(<ref refid="group__PIN__CONTROL_1ga943bbe3eeb81be27f127382e4b3f82bb" kindref="member">PIN_CONFIGURATION_INFO</ref><sp/>options);</highlight></codeline>
+<codeline lineno="1927"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1942"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga2e545d491302b50ea78c1bb844a8b544" kindref="member">PIN_StartProgramProbed</ref>();</highlight></codeline>
+<codeline lineno="1943"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1948"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="group__PIN__CONTROL_1ga523e1d653bc7f98ca5918b8faa7b2775" kindref="member">PIN_Version</ref>();</highlight></codeline>
+<codeline lineno="1949"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1964"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1gade9cf860942a12f2f81eff43be7861f4" kindref="member">PIN_Init</ref>(INT32<sp/>argc,<sp/>CHAR**<sp/>argv);</highlight></codeline>
+<codeline lineno="1965"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1991"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__TRACE_1gae5340cd88a962aac271e3547cdaa024e" kindref="member">TRACE_InsertCall</ref>(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="1992"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2013"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__TRACE_1ga3ce47adf064c67f7289836aa5eabe680" kindref="member">TRACE_InsertIfCall</ref>(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="2014"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2035"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__TRACE_1ga88d6254df161fa4aa236e092d8532278" kindref="member">TRACE_InsertThenCall</ref>(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="2036"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2045"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BBL<sp/><ref refid="group__TRACE_1ga025844ffbef1e892eed7d7ce46f98138" kindref="member">TRACE_BblHead</ref>(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace);</highlight></codeline>
+<codeline lineno="2046"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2055"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BBL<sp/><ref refid="group__TRACE_1ga2466f702bf17676b4d37f728caa0692f" kindref="member">TRACE_BblTail</ref>(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace);</highlight></codeline>
+<codeline lineno="2056"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2065"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__TRACE_1ga35b565f6deabbcd077790219f57daeee" kindref="member">TRACE_Address</ref>(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace);</highlight></codeline>
+<codeline lineno="2066"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2078"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="group__TRACE_1ga7c9e933da081232793b8fa60c41c29fe" kindref="member">TRACE_Size</ref>(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace);</highlight></codeline>
+<codeline lineno="2079"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2088"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>RTN<sp/><ref refid="group__TRACE_1ga6cfff844c7e29933289b72c06eb92e76" kindref="member">TRACE_Rtn</ref>(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace);</highlight></codeline>
+<codeline lineno="2089"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2102"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__TRACE_1ga2134ee647c01b25e4ad20cbbddce5ef1" kindref="member">TRACE_HasFallThrough</ref>(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace);</highlight></codeline>
+<codeline lineno="2103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2112"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__TRACE_1ga5a531d7dafb583cd686778bcd48a829a" kindref="member">TRACE_NumBbl</ref>(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace);</highlight></codeline>
+<codeline lineno="2113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2122"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__TRACE_1ga3dd96087b6ca0031aad3cc4989d888ab" kindref="member">TRACE_NumIns</ref>(<ref refid="group__TRACE_1gafbca42a46e490ff446dd4c8e54ea182a" kindref="member">TRACE</ref><sp/>trace);</highlight></codeline>
+<codeline lineno="2123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2141"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__BBL_1ga9b7dabce7f0343da16e3be0bde9fd393" kindref="member">BBL_InsertCall</ref>(BBL<sp/>bbl,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="2142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2159"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__BBL_1gaee158afc4efc9224e85435aa55214272" kindref="member">BBL_InsertIfCall</ref>(BBL<sp/>bbl,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="2160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2178"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__BBL_1gaa868ef612bc1020554d64b1558cc7cc6" kindref="member">BBL_InsertThenCall</ref>(BBL<sp/>bbl,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="2179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2190"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__BBL_1ga49b398eb9c10ff80019315d6c2eee84a" kindref="member">BBL_HasFallThrough</ref>(BBL<sp/>bbl);</highlight></codeline>
+<codeline lineno="2191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2203"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__CONTEXT_1ga112f3ad5960ae4c2273c20abb6479b7a" kindref="member">PIN_SupportsProcessorState</ref>(<ref refid="group__CONTEXT_1ga479f2b92361e3794145bb90a1ea7e027" kindref="member">PROCESSOR_STATE</ref><sp/>state);</highlight></codeline>
+<codeline lineno="2204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2217"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__CONTEXT_1gabd227ecb35493c392d80173180acd7c7" kindref="member">PIN_ContextContainsState</ref>(<ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__CONTEXT_1ga479f2b92361e3794145bb90a1ea7e027" kindref="member">PROCESSOR_STATE</ref><sp/>state);</highlight></codeline>
+<codeline lineno="2218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2245"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__CONTEXT_1gae96c2fa413d6009f9775cfebab49912f" kindref="member">PIN_SetContextRegval</ref>(<ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UINT8*<sp/>val);</highlight></codeline>
+<codeline lineno="2246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2265"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__CONTEXT_1ga44f8eeba2b8b874087441df1c3a530e2" kindref="member">PIN_GetContextRegval</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg,<sp/>UINT8*<sp/>val);</highlight></codeline>
+<codeline lineno="2266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2285"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__CONTEXT_1ga83c0549f92440cf717c08689c47127cd" kindref="member">PIN_SetContextReg</ref>(<ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg,<sp/>ADDRINT<sp/>val);</highlight></codeline>
+<codeline lineno="2286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2302"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__CONTEXT_1ga5b5aea73f92ac62e0767cb32bf8de4ed" kindref="member">PIN_GetContextReg</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg);</highlight></codeline>
+<codeline lineno="2303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2315"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__CONTEXT_1ga147e92f2d15f95bd43cb6c8ea19057f4" kindref="member">PIN_SetContextFPState</ref>(<ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structFPSTATE" kindref="compound">FPSTATE</ref>*<sp/>fpstate);</highlight></codeline>
+<codeline lineno="2316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2330"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__CONTEXT_1ga628d9e2f229dc5101142c94a5411d073" kindref="member">PIN_GetContextFPState</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="structFPSTATE" kindref="compound">FPSTATE</ref>*<sp/>fpstate);</highlight></codeline>
+<codeline lineno="2331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2343"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__CONTEXT_1ga2aed824bfc13169da54d875d8a44e9a9" kindref="member">PIN_SetContextFXSave</ref>(<ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__CONTEXT_1ga4ca557f14f098e2c733785a3a9a78f50" kindref="member">FXSAVE</ref>*<sp/>fxsave);</highlight></codeline>
+<codeline lineno="2344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2359"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__CONTEXT_1gaaaf02101bc84acf7a5f58853498729a4" kindref="member">PIN_GetContextFXSave</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__CONTEXT_1ga4ca557f14f098e2c733785a3a9a78f50" kindref="member">FXSAVE</ref>*<sp/>fxsave);</highlight></codeline>
+<codeline lineno="2360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2373"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8a33ca031ce83cf24d58dca8adf19f6c" kindref="member">REGSET</ref><sp/><ref refid="group__CONTEXT_1gacbaac112366f778eedeb4b258a40558f" kindref="member">PIN_GetFullContextRegsSet</ref>();</highlight></codeline>
+<codeline lineno="2374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2389"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__CONTEXT_1gabd0a55669ab303520f82e4f512e084f9" kindref="member">PIN_SaveContext</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxtFrom,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxtTo);</highlight></codeline>
+<codeline lineno="2390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2417"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__CONTEXT_1gade2217c59d6e6b5cad08a59afe3d879a" kindref="member">PIN_ExecuteAt</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt);</highlight></codeline>
+<codeline lineno="2418"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2439"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__SYSCALL_1gad9d546e07b4243cd28f5c3cbcfafc4eb" kindref="member">PIN_SetSyscallArgument</ref>(<ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__INS__INSPECTION_1gaf903f1f8ddcb9710d191943763e6474a" kindref="member">SYSCALL_STANDARD</ref><sp/>std,<sp/>UINT32<sp/>argNum,<sp/>ADDRINT<sp/>val);</highlight></codeline>
+<codeline lineno="2440"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2461"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__SYSCALL_1ga9f3bad50c8987db46b687193fe900fa6" kindref="member">PIN_GetSyscallArgument</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__INS__INSPECTION_1gaf903f1f8ddcb9710d191943763e6474a" kindref="member">SYSCALL_STANDARD</ref><sp/>std,<sp/>UINT32<sp/>argNum);</highlight></codeline>
+<codeline lineno="2462"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2479"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__SYSCALL_1gab045c7dedca9b8b63a9a339e9889cdc8" kindref="member">PIN_SetSyscallNumber</ref>(<ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__INS__INSPECTION_1gaf903f1f8ddcb9710d191943763e6474a" kindref="member">SYSCALL_STANDARD</ref><sp/>std,<sp/>ADDRINT<sp/>val);</highlight></codeline>
+<codeline lineno="2480"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2503"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__SYSCALL_1gab5648a015d935b4df7395c2b9f16707b" kindref="member">PIN_GetSyscallNumber</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__INS__INSPECTION_1gaf903f1f8ddcb9710d191943763e6474a" kindref="member">SYSCALL_STANDARD</ref><sp/>std);</highlight></codeline>
+<codeline lineno="2504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2523"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__SYSCALL_1gaee394d106296c67ebe55c2a76736e1e9" kindref="member">PIN_GetSyscallReturn</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__INS__INSPECTION_1gaf903f1f8ddcb9710d191943763e6474a" kindref="member">SYSCALL_STANDARD</ref><sp/>std);</highlight></codeline>
+<codeline lineno="2524"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2542"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__SYSCALL_1ga196c129374709623b01eb3b676bb4f6e" kindref="member">PIN_SetSyscallReturn</ref>(<ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__INS__INSPECTION_1gaf903f1f8ddcb9710d191943763e6474a" kindref="member">SYSCALL_STANDARD</ref><sp/>std,<sp/>ADDRINT<sp/>val);</highlight></codeline>
+<codeline lineno="2543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2562"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__SYSCALL_1ga5e0f238ac44ece7809f4ca6f834785b4" kindref="member">PIN_GetSyscallErrno</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__INS__INSPECTION_1gaf903f1f8ddcb9710d191943763e6474a" kindref="member">SYSCALL_STANDARD</ref><sp/>std);</highlight></codeline>
+<codeline lineno="2563"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2583"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__SYSCALL_1ga4ba15e53ecb01c9a954abf1e60f2a07c" kindref="member">PIN_SetSyscallErrno</ref>(<ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__INS__INSPECTION_1gaf903f1f8ddcb9710d191943763e6474a" kindref="member">SYSCALL_STANDARD</ref><sp/>std,<sp/>ADDRINT<sp/>val);</highlight></codeline>
+<codeline lineno="2584"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2597"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PHYSICAL__CONTEXT_1ga1f2a4f0f1fda834df1d117270ee6b3b9" kindref="member">PIN_SetPhysicalContextReg</ref>(<ref refid="structPHYSICAL__CONTEXT" kindref="compound">PHYSICAL_CONTEXT</ref>*<sp/>pPhysCtxt,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg,<sp/>ADDRINT<sp/>val);</highlight></codeline>
+<codeline lineno="2598"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2611"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__PHYSICAL__CONTEXT_1ga3a006fe2cf24804b69d56aca517b74ec" kindref="member">PIN_GetPhysicalContextReg</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structPHYSICAL__CONTEXT" kindref="compound">PHYSICAL_CONTEXT</ref>*<sp/>pPhysCtxt,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg);</highlight></codeline>
+<codeline lineno="2612"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2625"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PHYSICAL__CONTEXT_1ga9aa8122d887712974421753744f362b6" kindref="member">PIN_SetPhysicalContextFPState</ref>(<ref refid="structPHYSICAL__CONTEXT" kindref="compound">PHYSICAL_CONTEXT</ref>*<sp/>pPhysCtxt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VOID*<sp/>fpstate);</highlight></codeline>
+<codeline lineno="2626"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2642"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PHYSICAL__CONTEXT_1ga0150c6455fbab3a54a27dd00e6a39d33" kindref="member">PIN_GetPhysicalContextFPState</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structPHYSICAL__CONTEXT" kindref="compound">PHYSICAL_CONTEXT</ref>*<sp/>pPhysCtxt,<sp/>VOID*<sp/>fpstate);</highlight></codeline>
+<codeline lineno="2643"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2676"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__EXCEPTION_1ga35d13dc3ce578945eda8228b0db1c138" kindref="member">PIN_RaiseException</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structEXCEPTION__INFO" kindref="compound">EXCEPTION_INFO</ref>*<sp/>pExceptInfo);</highlight></codeline>
+<codeline lineno="2677"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2772"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__MODIFICATION_1gaad5f037e311aa30dbc53e602e6ff672b" kindref="member">INS_RewriteMemoryOperand</ref>(INS<sp/>ins,<sp/>UINT32<sp/>memindex,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg);</highlight></codeline>
+<codeline lineno="2773"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2825"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__MODIFICATION_1ga71ff91493b7499425b5efed2dcfc213b" kindref="member">INS_RewriteScatteredMemoryOperand</ref>(INS<sp/>ins,<sp/>UINT32<sp/>memindex);</highlight></codeline>
+<codeline lineno="2826"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2842"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__MODIFICATION_1ga1441fd9383ec6d8ed2218b329eedb86c" kindref="member">INS_InsertIndirectJump</ref>(INS<sp/>ins,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>ipoint,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg);</highlight></codeline>
+<codeline lineno="2843"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2859"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__MODIFICATION_1ga5fabcfae35050a1cb92bb1c4034bab8a" kindref="member">INS_InsertDirectJump</ref>(INS<sp/>ins,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>ipoint,<sp/>ADDRINT<sp/>tgt);</highlight></codeline>
+<codeline lineno="2860"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2881"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="group__REG_1gaf2783ea9f9f0e98c0645055b2aa368b3" kindref="member">PIN_ClaimToolRegister</ref>();</highlight></codeline>
+<codeline lineno="2882"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2892"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>CHAR*<sp/><ref refid="group__PIN__CONTROL_1ga430cfc7dccf1376b898db6165a5e0e0e" kindref="member">PIN_VmFullPath</ref>();</highlight></codeline>
+<codeline lineno="2893"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2902"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CHAR*<sp/><ref refid="group__PIN__CONTROL_1gae4fb556b868cc11d715a82adde800482" kindref="member">PIN_ToolFullPath</ref>();</highlight></codeline>
+<codeline lineno="2903"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2922"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>NORETURN<sp/>VOID<sp/><ref refid="group__PIN__PROCESS_1gaf5f4578464d7e16a4fdc0f95ba21c776" kindref="member">PIN_ExitProcess</ref>(INT32<sp/>exitCode);</highlight></codeline>
+<codeline lineno="2923"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2932"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>INT<sp/><ref refid="group__PIN__PROCESS_1gae2f936a4d53e616f9cb0ca80b8f5acfa" kindref="member">PIN_GetPid</ref>();</highlight></codeline>
+<codeline lineno="2933"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2942"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__MODIFICATION_1ga197b096ab500acaffc6fcd5ee3b93980" kindref="member">INS_Delete</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="2943"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2952"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INST__ARGS_1ga85838e12fe04880ed61c5c60378c0147" kindref="member">IARGLIST_AddArguments</ref>(<ref refid="group__INST__ARGS_1gafbeb707dc23c7c09e1e8c932649107d5" kindref="member">IARGLIST</ref><sp/>args,<sp/>...);</highlight></codeline>
+<codeline lineno="2953"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2962"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__INST__ARGS_1gafbeb707dc23c7c09e1e8c932649107d5" kindref="member">IARGLIST</ref><sp/><ref refid="group__INST__ARGS_1ga3d3e1e48b6fe3d71cb9f04a202ac55d7" kindref="member">IARGLIST_Alloc</ref>();</highlight></codeline>
+<codeline lineno="2963"><highlight class="normal"></highlight></codeline>
+<codeline lineno="2972"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INST__ARGS_1ga30472edf4c557377c7f6bc73601d0a90" kindref="member">IARGLIST_Free</ref>(<ref refid="group__INST__ARGS_1gafbeb707dc23c7c09e1e8c932649107d5" kindref="member">IARGLIST</ref><sp/>args);</highlight></codeline>
+<codeline lineno="2973"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3001"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga1225706d213f4bd1d81ed1fb32e792d7" kindref="member">PIN_SafeCopy</ref>(VOID*<sp/>dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VOID*<sp/>src,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="3002"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3036"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga9ca9a29ec02d848dd7b95717f400098c" kindref="member">PIN_SafeCopyEx</ref>(VOID*<sp/>dst,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VOID*<sp/>src,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size,<sp/><ref refid="structEXCEPTION__INFO" kindref="compound">EXCEPTION_INFO</ref>*<sp/>pExceptInfo);</highlight></codeline>
+<codeline lineno="3037"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3062"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__INSTRUMENTATION_1ga097198320639318c65fa1ee815cbbe0c" kindref="member">INS_InsertFillBuffer</ref>(INS<sp/>ins,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/><ref refid="group__BUFFER_1gaee232a4179b4897b5869a6d5fc98d032" kindref="member">BUFFER_ID</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>...);</highlight></codeline>
+<codeline lineno="3063"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3084"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__INSTRUMENTATION_1gaf8750c3e9aa6ac8d2170d09e8867c473" kindref="member">INS_InsertFillBufferPredicated</ref>(INS<sp/>ins,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/><ref refid="group__BUFFER_1gaee232a4179b4897b5869a6d5fc98d032" kindref="member">BUFFER_ID</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>...);</highlight></codeline>
+<codeline lineno="3085"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3107"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__INS__INSTRUMENTATION_1gad5a12904140ae5135f7ba8bca8f9df3f" kindref="member">INS_InsertFillBufferThen</ref>(INS<sp/>ins,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/><ref refid="group__BUFFER_1gaee232a4179b4897b5869a6d5fc98d032" kindref="member">BUFFER_ID</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>...);</highlight></codeline>
+<codeline lineno="3108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3142"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__BUFFER_1gaee232a4179b4897b5869a6d5fc98d032" kindref="member">BUFFER_ID</ref><sp/><ref refid="group__BUFFER_1ga56fa8ed5b1b58950a46f5bab942adfb8" kindref="member">PIN_DefineTraceBuffer</ref>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>recordSize,<sp/>UINT32<sp/>numPages,<sp/><ref refid="group__BUFFER_1ga78a19796d8e029988acdf7cfc3d879a2" kindref="member">TRACE_BUFFER_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="3143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3160"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID*<sp/><ref refid="group__BUFFER_1gaa204ceab2d2e3109dcfe88c4ac23feb2" kindref="member">PIN_AllocateBuffer</ref>(<ref refid="group__BUFFER_1gaee232a4179b4897b5869a6d5fc98d032" kindref="member">BUFFER_ID</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3179"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__BUFFER_1ga4f86704278faf1b37c8a04e9214bd499" kindref="member">PIN_DeallocateBuffer</ref>(<ref refid="group__BUFFER_1gaee232a4179b4897b5869a6d5fc98d032" kindref="member">BUFFER_ID</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>VOID*<sp/>buf);</highlight></codeline>
+<codeline lineno="3180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3196"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1ga7ff2e9b5b14feb3dc3102c9a34d24ff7" kindref="member">PIN_IsActionPending</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid);</highlight></codeline>
+<codeline lineno="3197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3210"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__PIN__CONTROL_1ga34b3940069a6c996249af9681348b31e" kindref="member">PIN_GetInitialThreadCount</ref>();</highlight></codeline>
+<codeline lineno="3211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3226"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID*<sp/><ref refid="group__BUFFER_1ga66f9102702b8697101b3c2bc128c385b" kindref="member">PIN_GetBufferPointer</ref>(<ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ctxt,<sp/><ref refid="group__BUFFER_1gaee232a4179b4897b5869a6d5fc98d032" kindref="member">BUFFER_ID</ref><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="3227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3243"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1ga81eca939c7f3a6e3b83d06738ea2f67f" kindref="member">PIN_CheckReadAccess</ref>(VOID*<sp/>addr);</highlight></codeline>
+<codeline lineno="3244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3267"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1gadc75017a89b925e10a42d4fefee31615" kindref="member">PIN_CheckReadAccessEx</ref>(VOID*<sp/>addr,<sp/><ref refid="structEXCEPTION__INFO" kindref="compound">EXCEPTION_INFO</ref>*<sp/>pExceptInfo);</highlight></codeline>
+<codeline lineno="3268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3286"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1ga038d6b330dc2b8d3e1efe8e3bfd6ff88" kindref="member">PIN_CheckWriteAccess</ref>(VOID*<sp/>addr);</highlight></codeline>
+<codeline lineno="3287"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3312"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1ga7c03c68049cce956a7e669eb55f8b208" kindref="member">PIN_CheckWriteAccessEx</ref>(VOID*<sp/>addr,<sp/><ref refid="structEXCEPTION__INFO" kindref="compound">EXCEPTION_INFO</ref>*<sp/>pExceptInfo);</highlight></codeline>
+<codeline lineno="3313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3327"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__PIN__CONTROL_1ga6039144b83fc21c5482e16522e700c91" kindref="member">PIN_GetAuxVectorValue</ref>(ADDRINT<sp/>type,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">*<sp/>found);</highlight></codeline>
+<codeline lineno="3328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3329"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>TARGET_IA32E</highlight></codeline>
+<codeline lineno="3350"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__PROCESS_1gaa6127aeb954da01691382a96ae2ab729" kindref="member">PIN_IsAmxActive</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadId);</highlight></codeline>
+<codeline lineno="3351"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3367"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__PIN__PROCESS_1gac4bfc7dcba11e5b4c7a9f53e60bb75d1" kindref="member">TileCfg_GetTileRows</ref>(UINT8*<sp/>tileCfgReg,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>tmm);</highlight></codeline>
+<codeline lineno="3368"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3384"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__PIN__PROCESS_1ga09beb15faeb089c02f8154834f551d1f" kindref="member">TileCfg_GetTileBytesPerRow</ref>(UINT8*<sp/>tileCfgReg,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>tmm);</highlight></codeline>
+<codeline lineno="3385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3400"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT8<sp/><ref refid="group__PIN__PROCESS_1ga82cdf4b2f74b73228a2dd64f8f49f8ba" kindref="member">TileCfg_GetPaletteID</ref>(UINT8*<sp/>tileCfgReg);</highlight></codeline>
+<codeline lineno="3401"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3402"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>#ifdef<sp/>TARGET_IA32E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3403"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3404"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_PIN_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/pin/pin_client.PH"/>
+  </compounddef>
+</doxygen>

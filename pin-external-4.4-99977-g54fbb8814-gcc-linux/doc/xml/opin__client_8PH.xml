@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="opin__client_8PH" kind="file" language="C++">
+    <compoundname>opin_client.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="opin__client_8PH_1acef8023763f273fe7a29b9aff43015fa" prot="public" static="no">
+        <name>PIN_G_OPIN_CLIENT_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/opin_client.PH" line="9" column="10" bodyfile="Source/pin/pin/opin_client.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__PIN__CONTROL_1gafe7c14403bb052dab2caf316db743684" kind="function"><name>PIN_IsProbeMode</name></member>
+      <member refid="group__PIN__CONTROL_1gaad2d0a8d8dca408952f4a48ebcd0a2a3" kind="function"><name>PIN_IsAttaching</name></member>
+      <member refid="group__RTN_1gae4151f314f751d6499bba41e92aae6eb" kind="function"><name>RTN_IsSafeForProbedInsertion</name></member>
+      <member refid="group__RTN_1ga186f5491def9b0a47b933199fbdb33e9" kind="function"><name>RTN_IsSafeForProbedInsertionEx</name></member>
+      <member refid="group__RTN_1ga042c9fc39928c2779ebc30834982a212" kind="function"><name>RTN_IsSafeForProbedReplacement</name></member>
+      <member refid="group__RTN_1gaf2b9df2bdaf330c7cbefc54466096729" kind="function"><name>RTN_IsSafeForProbedReplacementEx</name></member>
+      <member refid="group__RTN_1gac5c9022ca80b4afff403d27fd37ab7f0" kind="function"><name>RTN_ReplaceSignatureProbed</name></member>
+      <member refid="group__RTN_1ga464818cf8c9e60b6174f3fd44ae3a3fc" kind="function"><name>RTN_ReplaceSignatureProbedEx</name></member>
+      <member refid="group__RTN_1ga0b8c379ada9c9e7bb47d7f529d7c527b" kind="function"><name>RTN_InsertCallProbed</name></member>
+      <member refid="group__RTN_1gaa875bf7abee670e448b8ae11a00cb611" kind="function"><name>RTN_InsertCallProbedEx</name></member>
+      <member refid="group__PIN__CONTROL_1ga5804cf309051f916da872b279ca46568" kind="function"><name>PIN_IsSafeForProbedInsertion</name></member>
+      <member refid="group__PIN__CONTROL_1ga41276f0137addcca5f480846887fee91" kind="function"><name>PIN_InsertCallProbed</name></member>
+      <member refid="group__PROTO_1gae01d20f7fd56e3eeebebe41009e7ff89" kind="function"><name>PROTO_Allocate</name></member>
+      <member refid="group__PROTO_1ga3ee75e35e150bd6260371b8e9ea6c29a" kind="function"><name>PROTO_Free</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2020-2026<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_OPIN_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>opin_client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_OPIN_CLIENT_PH</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1gafe7c14403bb052dab2caf316db743684" kindref="member">PIN_IsProbeMode</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1gaad2d0a8d8dca408952f4a48ebcd0a2a3" kindref="member">PIN_IsAttaching</ref>();</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__RTN_1gae4151f314f751d6499bba41e92aae6eb" kindref="member">RTN_IsSafeForProbedInsertion</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__RTN_1ga186f5491def9b0a47b933199fbdb33e9" kindref="member">RTN_IsSafeForProbedInsertionEx</ref>(RTN<sp/>rtn,<sp/><ref refid="group__RTN_1ga9c9b90546cd64ce1579629c87ec84007" kindref="member">PROBE_MODE</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__RTN_1ga042c9fc39928c2779ebc30834982a212" kindref="member">RTN_IsSafeForProbedReplacement</ref>(RTN<sp/>rtn);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__RTN_1gaf2b9df2bdaf330c7cbefc54466096729" kindref="member">RTN_IsSafeForProbedReplacementEx</ref>(RTN<sp/>rtn,<sp/><ref refid="group__RTN_1ga9c9b90546cd64ce1579629c87ec84007" kindref="member">PROBE_MODE</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>AFUNPTR<sp/><ref refid="group__RTN_1gac5c9022ca80b4afff403d27fd37ab7f0" kindref="member">RTN_ReplaceSignatureProbed</ref>(RTN<sp/>replacedRtn,<sp/>AFUNPTR<sp/>replacementFun,<sp/>...);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>AFUNPTR<sp/><ref refid="group__RTN_1ga464818cf8c9e60b6174f3fd44ae3a3fc" kindref="member">RTN_ReplaceSignatureProbedEx</ref>(RTN<sp/>replacedRtn,<sp/><ref refid="group__RTN_1ga9c9b90546cd64ce1579629c87ec84007" kindref="member">PROBE_MODE</ref><sp/>mode,<sp/>AFUNPTR<sp/>replacementFun,<sp/>...);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__RTN_1ga0b8c379ada9c9e7bb47d7f529d7c527b" kindref="member">RTN_InsertCallProbed</ref>(RTN<sp/>orgRtn,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__RTN_1gaa875bf7abee670e448b8ae11a00cb611" kindref="member">RTN_InsertCallProbedEx</ref>(RTN<sp/>orgRtn,<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref><sp/>action,<sp/><ref refid="group__RTN_1ga9c9b90546cd64ce1579629c87ec84007" kindref="member">PROBE_MODE</ref><sp/>mode,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1ga5804cf309051f916da872b279ca46568" kindref="member">PIN_IsSafeForProbedInsertion</ref>(ADDRINT<sp/>addr);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1ga41276f0137addcca5f480846887fee91" kindref="member">PIN_InsertCallProbed</ref>(ADDRINT<sp/>addr,<sp/>AFUNPTR<sp/>funptr,<sp/>...);</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PROTO_1ga554ff954c3ea33bb537f30e3b500ef1c" kindref="member">PROTO</ref><sp/><ref refid="group__PROTO_1gae01d20f7fd56e3eeebebe41009e7ff89" kindref="member">PROTO_Allocate</ref>(<ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>returnArg,<sp/><ref refid="group__PROTO_1gacfd9f3c8dc22310ce9b9152e8c61b17c" kindref="member">CALLINGSTD_TYPE</ref><sp/>cstype,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>name,<sp/>...);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal">PIN_DEPRECATED_API<sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PROTO_1ga3ee75e35e150bd6260371b8e9ea6c29a" kindref="member">PROTO_Free</ref>(<ref refid="group__PROTO_1ga554ff954c3ea33bb537f30e3b500ef1c" kindref="member">PROTO</ref><sp/>proto);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_OPIN_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/pin/opin_client.PH"/>
+  </compounddef>
+</doxygen>

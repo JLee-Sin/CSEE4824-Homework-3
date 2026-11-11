@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="internal__exception__client_8PH" kind="file" language="C++">
+    <compoundname>internal_exception_client.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="internal__exception__client_8PH_1a33f692ce259b8e7334f065baf79b63bb" prot="public" static="no">
+        <name>PIN_G_INTERNAL_EXCEPTION_CLIENT_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/internal_exception_client.PH" line="9" column="10" bodyfile="Source/pin/pin/internal_exception_client.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__PIN__CONTROL_1ga48e4c80589225d40efe177a9d399225c" kind="typedef"><name>INTERNAL_EXCEPTION_CALLBACK</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__PIN__CONTROL_1ga497983e81c1cfaf15866667e31eee791" kind="function"><name>PIN_AddInternalExceptionHandler</name></member>
+      <member refid="group__PIN__CONTROL_1ga745439a3c54413e886db6676ff6a8bae" kind="function"><name>PIN_TryStart</name></member>
+      <member refid="group__PIN__CONTROL_1gab6d4fa955364407511e161e7ed81d65d" kind="function"><name>PIN_TryEnd</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2020-2021<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_INTERNAL_EXCEPTION_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>internal_exception_client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_INTERNAL_EXCEPTION_CLIENT_PH</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga8c5c16fb133375efa3a27d3a3900c603" kindref="member">EXCEPT_HANDLING_RESULT</ref><sp/>(*<ref refid="group__PIN__CONTROL_1ga48e4c80589225d40efe177a9d399225c" kindref="member">INTERNAL_EXCEPTION_CALLBACK</ref>)(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/><ref refid="structEXCEPTION__INFO" kindref="compound">EXCEPTION_INFO</ref>*<sp/>pExceptInfo,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPHYSICAL__CONTEXT" kindref="compound">PHYSICAL_CONTEXT</ref>*<sp/>pPhysCtxt,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1ga497983e81c1cfaf15866667e31eee791" kindref="member">PIN_AddInternalExceptionHandler</ref>(<ref refid="group__PIN__CONTROL_1ga48e4c80589225d40efe177a9d399225c" kindref="member">INTERNAL_EXCEPTION_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga745439a3c54413e886db6676ff6a8bae" kindref="member">PIN_TryStart</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/><ref refid="group__PIN__CONTROL_1ga48e4c80589225d40efe177a9d399225c" kindref="member">INTERNAL_EXCEPTION_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1gab6d4fa955364407511e161e7ed81d65d" kindref="member">PIN_TryEnd</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_INTERNAL_EXCEPTION_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/pin/internal_exception_client.PH"/>
+  </compounddef>
+</doxygen>

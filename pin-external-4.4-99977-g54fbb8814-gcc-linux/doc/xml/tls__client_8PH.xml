@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="tls__client_8PH" kind="file" language="C++">
+    <compoundname>tls_client.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="tls__client_8PH_1a79e366d41a0f22a1b45ed3339394ab4c" prot="public" static="no">
+        <name>PIN_G_TLS_CLIENT_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/tls_client.PH" line="9" column="10" bodyfile="Source/pin/pin/tls_client.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group__THREADS_1ga726ca809ffd3d67ab4b8476646f26635" kind="enum"><name></name></member>
+    </sectiondef>
+    <sectiondef kind="var">
+      <member refid="group__THREADS_1gafa0cadbcbcfe2cc7825893c8f228317c" kind="variable"><name>MAX_CLIENT_TLS_KEYS</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__THREADS_1gad90ea83ef63975cdbd767d3cc68f80cd" kind="function"><name>PIN_CreateThreadDataKey</name></member>
+      <member refid="group__THREADS_1gac708db5e650bd8bea16364453d79d896" kind="function"><name>PIN_DeleteThreadDataKey</name></member>
+      <member refid="group__THREADS_1ga43216c2d5e64dc66a1a5c02821ee2877" kind="function"><name>PIN_SetThreadData</name></member>
+      <member refid="group__THREADS_1ga93789fd76f0b1bc94a39fc48fdf5f6b5" kind="function"><name>PIN_GetThreadData</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2007-2024<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_TLS_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>tls_client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_TLS_CLIENT_PH</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Reserved<sp/>for<sp/>internal<sp/>exception<sp/>handling</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_KEY_INTERNAL_EXCEPTION,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_KEY_CLIENT_FIRST,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Keys<sp/>in<sp/>the<sp/>[TLS_KEY_CLIENT_FIRST,<sp/>TLS_KEY_CLIENT_LAST]<sp/>range<sp/>can<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>allocated<sp/>by<sp/>tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>TLS_KEY_CLIENT_LAST<sp/>=<sp/>TLS_KEY_CLIENT_FIRST<sp/>+<sp/>63</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__THREADS_1gafa0cadbcbcfe2cc7825893c8f228317c" kindref="member">MAX_CLIENT_TLS_KEYS</ref><sp/>=<sp/>(TLS_KEY_CLIENT_LAST<sp/>-<sp/>TLS_KEY_CLIENT_FIRST<sp/>+<sp/>1);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1ga08319cb7eb56ee92a74dd9a97476c1eb" kindref="member">TLS_KEY</ref><sp/><ref refid="group__THREADS_1gad90ea83ef63975cdbd767d3cc68f80cd" kindref="member">PIN_CreateThreadDataKey</ref>(DESTRUCTFUN<sp/>destruct_func);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__THREADS_1gac708db5e650bd8bea16364453d79d896" kindref="member">PIN_DeleteThreadDataKey</ref>(<ref refid="group__THREADS_1ga08319cb7eb56ee92a74dd9a97476c1eb" kindref="member">TLS_KEY</ref><sp/>key);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__THREADS_1ga43216c2d5e64dc66a1a5c02821ee2877" kindref="member">PIN_SetThreadData</ref>(<ref refid="group__THREADS_1ga08319cb7eb56ee92a74dd9a97476c1eb" kindref="member">TLS_KEY</ref><sp/>key,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VOID*<sp/>data,<sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadId);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID*<sp/><ref refid="group__THREADS_1ga93789fd76f0b1bc94a39fc48fdf5f6b5" kindref="member">PIN_GetThreadData</ref>(<ref refid="group__THREADS_1ga08319cb7eb56ee92a74dd9a97476c1eb" kindref="member">TLS_KEY</ref><sp/>key,<sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadId);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_TLS_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/pin/tls_client.PH"/>
+  </compounddef>
+</doxygen>

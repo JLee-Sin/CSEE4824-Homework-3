@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="reginfo__ia32_8PH" kind="file" language="C++">
+    <compoundname>reginfo_ia32.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="reginfo__ia32_8PH_1a89003795393539843aa02ca2cf9bfcc1" prot="public" static="no">
+        <name>PIN_G_REGINFO_IA32_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/base_ia32/reginfo_ia32.PH" line="9" column="10" bodyfile="Source/pin/base_ia32/reginfo_ia32.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="reginfo__ia32_8PH_1a2a72395fc69008ac99666ee530f47b89" prot="public" static="no">
+        <name>_REGCBIT</name>
+        <param><defname>regClass</defname></param>
+        <initializer>(<ref refid="group__REG_1gacc9b609b842ce486cfbb57e95853fdae" kindref="member">REG_CLASS_BITS</ref>(1) &lt;&lt; (regClass))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/base_ia32/reginfo_ia32.PH" line="94" column="9" bodyfile="Source/pin/base_ia32/reginfo_ia32.PH" bodystart="94" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group__REG_1gaec0c649ef5462f4191f265d607fff05d" kind="enum"><name>REGWIDTH</name></member>
+      <member refid="group__REG_1ga822a327bf83e9a238322cccc9b2ada63" kind="enum"><name>REG_CLASS</name></member>
+      <member refid="group__REG_1ga357cf331cb9bb6022e3872c0eeb04d65" kind="enum"><name>REG_SUBCLASS</name></member>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__REG_1gacc9b609b842ce486cfbb57e95853fdae" kind="typedef"><name>REG_CLASS_BITS</name></member>
+    </sectiondef>
+    <sectiondef kind="var">
+      <member refid="group__REG_1ga90981434f5267e80e07b833668cab9d5" kind="variable"><name>REGCBIT_APP_ALL</name></member>
+      <member refid="group__REG_1gaa7c4b14c94d8686018ae59fead6e3120" kind="variable"><name>REGCBIT_PIN_ALL</name></member>
+      <member refid="group__REG_1gaa1d4309b05ffbfaf9305c937e6e16b2a" kind="variable"><name>REGCBIT_ALL_REGS</name></member>
+      <member refid="group__REG_1ga1e7d78a97e59bb57ac0d9663ae5d7e81" kind="variable"><name>REGCBIT_APP_FLAGS</name></member>
+      <member refid="group__REG_1gaaae6cac12a410edc70ffc867f6d5bb1d" kind="variable"><name>REGCBIT_PIN_FLAGS</name></member>
+      <member refid="group__REG_1ga5820ddf5b10f097e5f24e94a2927777f" kind="variable"><name>REGCBIT_PARTIAL</name></member>
+      <member refid="group__REG_1ga88990cbf9cd6cbc208bacdd808b0b889" kind="variable"><name>REGSBIT_PIN_INST_ALL</name></member>
+      <member refid="group__REG_1ga58e2fe9ac92370d83fbf4950536023bd" kind="variable"><name>REGSBIT_PIN_SCRATCH_ALL</name></member>
+      <member refid="group__REG_1gac45ce2281987113938de83fb885595be" kind="variable"><name>REGSBIT_STACKPTR_ALL</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2013-2026<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_REGINFO_IA32_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>reginfo_ia32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_REGINFO_IA32_PH</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__REG_1gaec0c649ef5462f4191f265d607fff05d" kindref="member">REGWIDTH</ref></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_8<sp/><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_16<sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_32<sp/>=<sp/>2,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_64<sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_80,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_128,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_256,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_512,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_TILE,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_REG_X87,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_INVALID,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TARGET_IA32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_NATIVE<sp/>=<sp/>REGWIDTH_32</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>REGWIDTH_NATIVE<sp/>=<sp/>REGWIDTH_64</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga822a327bf83e9a238322cccc9b2ada63" kindref="member">REG_CLASS</ref></highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_NONE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PSEUDO,</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_GR,</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_GRU8,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_GRL8,</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_GRH16,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_GRH32,</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_SEG,</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_MM,</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_XMM,</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_YMM,</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_ZMM,</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_K,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_TMM,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_FPST,</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_ST,</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_CR,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_DR,</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_TR,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_FLAGS,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_FLAGS16,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_FLAGS32,</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_STATUS_FLAGS,</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_DFLAG,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_X87,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_MXCSR,</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_MXCSRMASK,</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_IP,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_IP16,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_IP32,</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_ARCH,<sp/></highlight><highlight class="comment">//<sp/>Architectural<sp/>register,<sp/>that<sp/>does<sp/>not<sp/>belong<sp/>to<sp/>any<sp/>specific<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_GR,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_GRU8,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_GRL8,</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_GRH16,</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_GRH32,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_XMM,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_YMM,</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_ZMM,</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_K,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_TMM,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_X87,</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_MXCSR,</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_FLAGS,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_STATUS_FLAGS,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_CLASS_PIN_DFLAG</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>UINT64<sp/><ref refid="group__REG_1gacc9b609b842ce486cfbb57e95853fdae" kindref="member">REG_CLASS_BITS</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_REGCBIT(regClass)<sp/>(REG_CLASS_BITS(1)<sp/>&lt;&lt;<sp/>(regClass))</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1gacc9b609b842ce486cfbb57e95853fdae" kindref="member">REG_CLASS_BITS</ref><sp/><ref refid="group__REG_1ga90981434f5267e80e07b833668cab9d5" kindref="member">REGCBIT_APP_ALL</ref><sp/>=</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>_REGCBIT(REG_CLASS_PSEUDO)<sp/>|<sp/>(_REGCBIT(REG_CLASS_GR))<sp/>|<sp/>(_REGCBIT(REG_CLASS_GRU8))<sp/>|<sp/>(_REGCBIT(REG_CLASS_GRL8))<sp/>|</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_GRH16))<sp/>|<sp/>(_REGCBIT(REG_CLASS_GRH32))<sp/>|<sp/>(_REGCBIT(REG_CLASS_SEG))<sp/>|<sp/>(_REGCBIT(REG_CLASS_MM))<sp/>|</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_XMM))<sp/>|<sp/>(_REGCBIT(REG_CLASS_YMM))<sp/>|<sp/>(_REGCBIT(REG_CLASS_ZMM))<sp/>|<sp/>(_REGCBIT(REG_CLASS_K))<sp/>|</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_TMM))<sp/>|<sp/>(_REGCBIT(REG_CLASS_FPST))<sp/>|<sp/>(_REGCBIT(REG_CLASS_ST))<sp/>|<sp/>(_REGCBIT(REG_CLASS_CR))<sp/>|</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_DR))<sp/>|<sp/>(_REGCBIT(REG_CLASS_TR))<sp/>|<sp/>(_REGCBIT(REG_CLASS_FLAGS))<sp/>|<sp/>(_REGCBIT(REG_CLASS_FLAGS16))<sp/>|</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_FLAGS32))<sp/>|<sp/>(_REGCBIT(REG_CLASS_STATUS_FLAGS))<sp/>|<sp/>(_REGCBIT(REG_CLASS_DFLAG))<sp/>|<sp/>(_REGCBIT(REG_CLASS_X87))<sp/>|</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_MXCSR))<sp/>|<sp/>(_REGCBIT(REG_CLASS_MXCSRMASK))<sp/>|<sp/>(_REGCBIT(REG_CLASS_IP))<sp/>|<sp/>(_REGCBIT(REG_CLASS_IP16))<sp/>|</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_IP32))<sp/>|<sp/>(_REGCBIT(REG_CLASS_ARCH));</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1gacc9b609b842ce486cfbb57e95853fdae" kindref="member">REG_CLASS_BITS</ref><sp/><ref refid="group__REG_1gaa7c4b14c94d8686018ae59fead6e3120" kindref="member">REGCBIT_PIN_ALL</ref><sp/>=</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_PIN_GR))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_GRU8))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_GRL8))<sp/>|</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_PIN_GRH16))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_GRH32))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_XMM))<sp/>|</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_PIN_YMM))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_ZMM))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_TMM))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_K))<sp/>|</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_PIN_X87))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_MXCSR))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_FLAGS))<sp/>|</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_PIN_STATUS_FLAGS))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_DFLAG));</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1gacc9b609b842ce486cfbb57e95853fdae" kindref="member">REG_CLASS_BITS</ref><sp/><ref refid="group__REG_1gaa1d4309b05ffbfaf9305c937e6e16b2a" kindref="member">REGCBIT_ALL_REGS</ref><sp/>=<sp/><ref refid="group__REG_1ga90981434f5267e80e07b833668cab9d5" kindref="member">REGCBIT_APP_ALL</ref><sp/>|<sp/><ref refid="group__REG_1gaa7c4b14c94d8686018ae59fead6e3120" kindref="member">REGCBIT_PIN_ALL</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1gacc9b609b842ce486cfbb57e95853fdae" kindref="member">REG_CLASS_BITS</ref><sp/><ref refid="group__REG_1ga1e7d78a97e59bb57ac0d9663ae5d7e81" kindref="member">REGCBIT_APP_FLAGS</ref><sp/>=</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_FLAGS))<sp/>|<sp/>(_REGCBIT(REG_CLASS_STATUS_FLAGS))<sp/>|<sp/>(_REGCBIT(REG_CLASS_DFLAG));</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1gacc9b609b842ce486cfbb57e95853fdae" kindref="member">REG_CLASS_BITS</ref><sp/><ref refid="group__REG_1gaaae6cac12a410edc70ffc867f6d5bb1d" kindref="member">REGCBIT_PIN_FLAGS</ref><sp/>=</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_PIN_FLAGS))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_STATUS_FLAGS))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_DFLAG));</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1gacc9b609b842ce486cfbb57e95853fdae" kindref="member">REG_CLASS_BITS</ref><sp/><ref refid="group__REG_1ga5820ddf5b10f097e5f24e94a2927777f" kindref="member">REGCBIT_PARTIAL</ref><sp/>=<sp/>(_REGCBIT(REG_CLASS_GRU8))<sp/>|<sp/>(_REGCBIT(REG_CLASS_GRL8))<sp/>|<sp/>(_REGCBIT(REG_CLASS_GRH16))<sp/>|</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_GRH32))<sp/>|<sp/>(_REGCBIT(REG_CLASS_FLAGS16))<sp/>|</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_FLAGS32))<sp/>|<sp/>(_REGCBIT(REG_CLASS_IP16))<sp/>|<sp/>(_REGCBIT(REG_CLASS_IP32))<sp/>|</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_PIN_GRU8))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_GRL8))<sp/>|</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_REGCBIT(REG_CLASS_PIN_GRH16))<sp/>|<sp/>(_REGCBIT(REG_CLASS_PIN_GRH32));</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga357cf331cb9bb6022e3872c0eeb04d65" kindref="member">REG_SUBCLASS</ref></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_SUBCLASS_NONE<sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_SUBCLASS_REX,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_SUBCLASS_EGPR,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_SUBCLASS_FULL_STACKPTR,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_SUBCLASS_PIN_FULL_STACKPTR,</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_SUBCLASS_PIN_TMP,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_SUBCLASS_PIN_INST_GR,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_SUBCLASS_PIN_INST_GR_H32,</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_SUBCLASS_PIN_INST_BUF,</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>REG_SUBCLASS_PIN_INST_COND</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>REG_SUBCLASS_BITS<sp/><ref refid="group__REG_1ga88990cbf9cd6cbc208bacdd808b0b889" kindref="member">REGSBIT_PIN_INST_ALL</ref><sp/>=<sp/>(_REGCBIT(REG_SUBCLASS_PIN_INST_GR))<sp/>|<sp/>(_REGCBIT(REG_SUBCLASS_PIN_INST_GR_H32))<sp/>|</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(_REGCBIT(REG_SUBCLASS_PIN_INST_BUF))<sp/>|<sp/>(_REGCBIT(REG_SUBCLASS_PIN_INST_COND));</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>REG_SUBCLASS_BITS<sp/><ref refid="group__REG_1ga58e2fe9ac92370d83fbf4950536023bd" kindref="member">REGSBIT_PIN_SCRATCH_ALL</ref><sp/>=<sp/>(_REGCBIT(REG_SUBCLASS_PIN_INST_GR))<sp/>|<sp/>(_REGCBIT(REG_SUBCLASS_PIN_INST_BUF));</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>REG_SUBCLASS_BITS<sp/><ref refid="group__REG_1gac45ce2281987113938de83fb885595be" kindref="member">REGSBIT_STACKPTR_ALL</ref><sp/>=</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/>(_REGCBIT(REG_SUBCLASS_FULL_STACKPTR))<sp/>|<sp/>(_REGCBIT(REG_SUBCLASS_PIN_FULL_STACKPTR));</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_REGINFO_IA32_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/base_ia32/reginfo_ia32.PH"/>
+  </compounddef>
+</doxygen>

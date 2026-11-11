@@ -1,0 +1,1004 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="types__vmapi_8PH" kind="file" language="C++">
+    <compoundname>types_vmapi.PH</compoundname>
+    <innerclass refid="structDEBUGGER__REG__DESCRIPTION" prot="public">DEBUGGER_REG_DESCRIPTION</innerclass>
+    <innerclass refid="structCONTEXT" prot="public">CONTEXT</innerclass>
+    <innerclass refid="structPHYSICAL__CONTEXT" prot="public">PHYSICAL_CONTEXT</innerclass>
+    <innerclass refid="structPARG__T" prot="public">PARG_T</innerclass>
+    <innerclass refid="struct__PinPargClass" prot="public">_PinPargClass</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01T_01_5_01_4" prot="public">_PinPargClass&lt; T * &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01T_01_6_01_4" prot="public">_PinPargClass&lt; T &amp; &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01bool_01_4" prot="public">_PinPargClass&lt; bool &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01char_01_4" prot="public">_PinPargClass&lt; char &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01unsigned_01char_01_4" prot="public">_PinPargClass&lt; unsigned char &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01signed_01char_01_4" prot="public">_PinPargClass&lt; signed char &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01short_01_4" prot="public">_PinPargClass&lt; short &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01unsigned_01short_01_4" prot="public">_PinPargClass&lt; unsigned short &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01int_01_4" prot="public">_PinPargClass&lt; int &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01unsigned_01int_01_4" prot="public">_PinPargClass&lt; unsigned int &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01long_01_4" prot="public">_PinPargClass&lt; long &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01unsigned_01long_01_4" prot="public">_PinPargClass&lt; unsigned long &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01long_01long_01_4" prot="public">_PinPargClass&lt; long long &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01unsigned_01long_01long_01_4" prot="public">_PinPargClass&lt; unsigned long long &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01float_01_4" prot="public">_PinPargClass&lt; float &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01double_01_4" prot="public">_PinPargClass&lt; double &gt;</innerclass>
+    <innerclass refid="struct__PinPargClass_3_01void_01_4" prot="public">_PinPargClass&lt; void &gt;</innerclass>
+    <innerclass refid="structPIN__MEM__ACCESS__INFO" prot="public">PIN_MEM_ACCESS_INFO</innerclass>
+    <innerclass refid="structPIN__MULTI__MEM__ACCESS__INFO" prot="public">PIN_MULTI_MEM_ACCESS_INFO</innerclass>
+    <innerclass refid="classIMULTI__ELEMENT__OPERAND" prot="public">IMULTI_ELEMENT_OPERAND</innerclass>
+    <innerclass refid="struct__tcpServerStruct" prot="public">_tcpServerStruct</innerclass>
+    <innerclass refid="structDEBUG__CONNECTION__INFO" prot="public">DEBUG_CONNECTION_INFO</innerclass>
+    <innerclass refid="struct__tcpClientStruct" prot="public">_tcpClientStruct</innerclass>
+    <innerclass refid="structDEBUG__MODE" prot="public">DEBUG_MODE</innerclass>
+    <innerclass refid="unionPIN__MEM__TRANS__FLAGS" prot="public">PIN_MEM_TRANS_FLAGS</innerclass>
+    <innerclass refid="structPIN__MEM__TRANS__INFO" prot="public">PIN_MEM_TRANS_INFO</innerclass>
+    <innerclass refid="classISCATTERED__MEMORY__REWRITE" prot="public">ISCATTERED_MEMORY_REWRITE</innerclass>
+    <innerclass refid="structCALL__APPLICATION__FUNCTION__PARAM" prot="public">CALL_APPLICATION_FUNCTION_PARAM</innerclass>
+    <innerclass refid="structTE__timespec" prot="public">TE_timespec</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="types__vmapi_8PH_1a83ae79e5091c0bdbf5869e69d5ab2102" prot="public" static="no">
+        <name>TYPES_VMAPI_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="15" column="9" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types__vmapi_8PH_1afdf571f99836105e0c7306f84e2df08e" prot="public" static="no">
+        <name>IARG_END</name>
+        <initializer><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da2d2d4502ddc8de6d717c6878101c73df" kindref="member">IARG_FILE_NAME</ref>, __FILE__, <ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da5a86209c9f24bebb204f1c435eb18d1c" kindref="member">IARG_LINE_NO</ref>, LEVEL_BASE::UINT32(__LINE__), <ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dad1fd7d0ac8f175d5340787ff3f3a2093" kindref="member">IARG_LAST</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="576" column="10" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="576" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types__vmapi_8PH_1acadff4acc816527f5f9a60515e7753b1" prot="public" static="no">
+        <name>FUNC_NAME_IARG_STRING</name>
+        <param><defname>funcName</defname></param>
+        <initializer><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dafc942457043f547ccc82479ae34ee1bc" kindref="member">IARG_FUNC_NAME</ref>, funcName</initializer>
+        <briefdescription>
+<para>Creates an argument pair for logging the function name. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro takes a string representing the function name and pairs it with IARG_FUNC_NAME.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>funcName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The name of the function as a string.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Example usage: <programlisting><codeline><highlight class="normal">BBL_InsertCall(bbl,<sp/>IPOINT_BEFORE,<sp/>MAKE_AFUNPTR(analysis_function_func_ptr),</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FUNC_NAME_IARG_STRING(&quot;analysis_function_func_ptr&quot;),<sp/>IARG_END);</highlight></codeline>
+</programlisting></para>
+<para>Result of unfolding: <programlisting><codeline><highlight class="normal">BBL_InsertCall(bbl,<sp/>IPOINT_BEFORE,<sp/>MAKE_AFUNPTR(analysis_function_func_ptr),<sp/>IARG_FUNC_NAME,<sp/>&quot;analysis_function_func_ptr&quot;,<sp/>IARG_END);</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="599" column="9" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="599" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types__vmapi_8PH_1aa1f8ffe19f7b675ab3c1be3a16eaed73" prot="public" static="no">
+        <name>FUNC_NAME_IARG</name>
+        <param><defname>func</defname></param>
+        <initializer>FUNC_NAME_IARG_STRING(#func)</initializer>
+        <briefdescription>
+<para>Automatically converts a function name into a string and pairs it with IARG_FUNC_NAME. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro simplifies the process of passing the function name as a string.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function name. Example usage: <programlisting><codeline><highlight class="normal">BBL_InsertCall(bbl,<sp/>IPOINT_BEFORE,<sp/>MAKE_AFUNPTR(analysis_function_iarg),<sp/>FUNC_NAME_IARG(analysis_function_another_func),<sp/>IARG_END);</highlight></codeline>
+</programlisting></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Result of unfolding: <programlisting><codeline><highlight class="normal">BBL_InsertCall(bbl,<sp/>IPOINT_BEFORE,<sp/>MAKE_AFUNPTR(analysis_function_iarg),<sp/>IARG_FUNC_NAME,<sp/>&quot;analysis_function_another_func&quot;,<sp/>IARG_END);</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="617" column="9" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="617" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types__vmapi_8PH_1a0eac31c35e718452a4f896026bb80a73" prot="public" static="no">
+        <name>MAKE_AFUNPTR</name>
+        <param><defname>func</defname></param>
+        <initializer>AFUNPTR(func), FUNC_NAME_IARG(func)</initializer>
+        <briefdescription>
+<para>Combines the function pointer with its name for logging purposes. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This macro uses AFUNPTR(func) to get the function pointer and FUNC_NAME_IARG(func) to get the function name as a string.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>func</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The function name. Example usage: <programlisting><codeline><highlight class="normal">BBL_InsertCall(bbl,<sp/>IPOINT_BEFORE,<sp/>MAKE_AFUNPTR(analysis_function_func_name),<sp/>IARG_END);</highlight></codeline>
+</programlisting></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Result of unfolding: <programlisting><codeline><highlight class="normal">BBL_InsertCall(bbl,<sp/>IPOINT_BEFORE,<sp/>MAKE_AFUNPTR(analysis_function_func_name),<sp/>IARG_FUNC_NAME,<sp/>&quot;analysis_function_func_name&quot;,<sp/>IARG_END);</highlight></codeline>
+</programlisting> </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="635" column="9" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="635" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types__vmapi_8PH_1a97802bf6bb265a5625567eb8270a0d2c" prot="public" static="no">
+        <name>XMM_REG_SIZE</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="638" column="9" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="638" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types__vmapi_8PH_1a568a27afe8aa5ce6c9a2ecd6ba951232" prot="public" static="no">
+        <name>YMM_REG_SIZE</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="639" column="9" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="639" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="types__vmapi_8PH_1af37636a13efaaba6152a8ea9886dde01" prot="public" static="no">
+        <name>ZMM_REG_SIZE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="640" column="9" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="640" bodyend="-1"/>
+      </memberdef>
+      <member refid="group__PROTO_1gacb4faa1f3649fce55756313c6259519f" kind="define"><name>PIN_PARG</name></member>
+      <member refid="group__PROTO_1gaf8061627abf953100e29bd3f031ded2c" kind="define"><name>PIN_PARG_AGGREGATE</name></member>
+      <member refid="group__PROTO_1ga3fbcb1f92a17fcc24febac0676165ca2" kind="define"><name>PIN_PARG_ENUM</name></member>
+      <member refid="group__PROTO_1gaeebb4a42707b704ebf214a06a6bf4e62" kind="define"><name>PIN_PARG_END</name></member>
+      <member refid="group__INST__ARGS_1ga5d3025eb005b7ea4745799f0ee1b86a6" kind="define"><name>PIN_FAST_ANALYSIS_CALL</name></member>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <member refid="group__APPDEBUG_1gad6ae164e2005bda040921f234730cb5a" kind="enum"><name>DEBUGGING_EVENT</name></member>
+      <member refid="group__CONTEXT_1ga479f2b92361e3794145bb90a1ea7e027" kind="enum"><name>PROCESSOR_STATE</name></member>
+      <member refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kind="enum"><name>IPOINT</name></member>
+      <member refid="group__PIN__CONTROL_1ga8e4e6511a0e09fdc5ec7d6dbf395b3a8" kind="enum"><name>CONTEXT_CHANGE_REASON</name></member>
+      <member refid="group__PIN__CONTROL_1ga8c5c16fb133375efa3a27d3a3900c603" kind="enum"><name>EXCEPT_HANDLING_RESULT</name></member>
+      <member refid="group__INST__ARGS_1ga3d1d5f6805cb16d00bce441290ca2212" kind="enum"><name>CALL_ORDER</name></member>
+      <member refid="group__INST__ARGS_1ga089c27ca15e9ff139dd3a3f8a6f8451d" kind="enum"><name>IARG_TYPE</name></member>
+      <member refid="group__PROTO_1gacfd9f3c8dc22310ce9b9152e8c61b17c" kind="enum"><name>CALLINGSTD_TYPE</name></member>
+      <member refid="group__PROTO_1ga59e26fa7c51d677aaac419e05bfb1305" kind="enum"><name>PARG_TYPE</name></member>
+      <member refid="group__INST__ARGS_1ga624ddd00f45938da5eb525afc5b43195" kind="enum"><name>PIN_MEMOP_ENUM</name></member>
+      <member refid="group__INST__ARGS_1ga16b7ac266c4c1323b18396be70279eb0" kind="enum"><name>PIN_OP_ELEMENT_ACCESS</name></member>
+      <member refid="group__APPDEBUG_1ga41e814fff526e0232f2f8c3055d6e88b" kind="enum"><name>DEBUG_STATUS</name></member>
+      <member refid="group__APPDEBUG_1ga25f41d731fbc522fea67abd02f9c04c6" kind="enum"><name>DEBUG_CONNECTION_TYPE</name></member>
+      <member refid="group__APPDEBUG_1ga87ad53f06ecf9cbcd3b94a155e1c11b5" kind="enum"><name>DEBUGGER_TYPE</name></member>
+      <member refid="group__APPDEBUG_1gaf8cf023622aae11218cc9c911b906deb" kind="enum"><name>DEBUG_MODE_OPTION</name></member>
+      <member refid="group__PIN__CONTROL_1ga4e114852e46d5d839d6e71e242709777" kind="enum"><name>PIN_CALLBACK_TYPE</name></member>
+      <memberdef kind="enum" id="types__vmapi_8PH_1ad4a18e6ceb403aad6ecddb1be9323140" prot="public" static="no" strong="no">
+        <type></type>
+        <name>TE_CLOCK_ID</name>
+        <enumvalue id="types__vmapi_8PH_1ad4a18e6ceb403aad6ecddb1be9323140a604212f4f3aaa6709e5e744f264a6c8e" prot="public">
+          <name>TE_REAL_TIME</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types__vmapi_8PH_1ad4a18e6ceb403aad6ecddb1be9323140a5e6bb0b864b71ddff3ada820be7937cf" prot="public">
+          <name>TE_PROCESS_TIME</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="types__vmapi_8PH_1ad4a18e6ceb403aad6ecddb1be9323140a31b5de18b364f5e8c471d0b212cdeda9" prot="public">
+          <name>TE_THREAD_TIME</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Types of Time Emulation clocks. These type could be used with the function TE_GetTime() </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1332" column="1" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="1333" bodyend="1337"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__BUFFER_1gaee232a4179b4897b5869a6d5fc98d032" kind="typedef"><name>BUFFER_ID</name></member>
+      <memberdef kind="typedef" id="types__vmapi_8PH_1a48f59a9736d35c489d141e785df0e7ee" prot="public" static="no">
+        <type>UINT32</type>
+        <definition>typedef UINT32 DEBUG_MODE_OPTIONS</definition>
+        <argsstring></argsstring>
+        <name>DEBUG_MODE_OPTIONS</name>
+        <briefdescription>
+<para>A bit-wise &apos;or&apos; of DEBUG_MODE_OPTION&apos;s. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="95" column="16" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <member refid="group__CONTEXT_1ga73f8f88949aaecf53a6d23f56399c676" kind="typedef"><name>CONTEXT</name></member>
+      <member refid="group__PHYSICAL__CONTEXT_1ga3c6833a027db42b5d528a0c65cefbc07" kind="typedef"><name>PHYSICAL_CONTEXT</name></member>
+      <member refid="group__INST__ARGS_1gafbeb707dc23c7c09e1e8c932649107d5" kind="typedef"><name>IARGLIST</name></member>
+      <member refid="group__PROTO_1ga554ff954c3ea33bb537f30e3b500ef1c" kind="typedef"><name>PROTO</name></member>
+      <member refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kind="typedef"><name>THREADID</name></member>
+      <member refid="group__THREADS_1ga6fde44fe8696d51b99500e26aa0e4c61" kind="typedef"><name>PIN_THREAD_UID</name></member>
+      <member refid="group__THREADS_1gac896589ba4a8e51b3fe57df2744751a1" kind="typedef"><name>OS_THREAD_ID</name></member>
+      <member refid="group__THREADS_1gaf7d4b7206749ac3075b941a513d876c5" kind="typedef"><name>ROOT_THREAD_FUNC</name></member>
+      <member refid="group__THREADS_1ga2bf6029042d57fb825536c795c94d1ed" kind="typedef"><name>OS_PROCESS_ID</name></member>
+    </sectiondef>
+    <sectiondef kind="var">
+      <member refid="group__CONTEXT_1ga63af62bca2c39be3fd6edd57ad2ac5c3" kind="variable"><name>DEFAULT_CONTEXT_IMPL</name></member>
+      <member refid="group__BUFFER_1gaf379010b4b5cf3316089bb041ce5c02b" kind="variable"><name>BUFFER_ID_INVALID</name></member>
+      <member refid="group__INST__ARGS_1ga2a86c3c95b207c7c02b7b5c64311dd09" kind="variable"><name>MAX_MULTI_MEMOPS</name></member>
+      <member refid="group__THREADS_1ga6f1b19d7792c8c6f4547fd9d3dabb427" kind="variable"><name>INVALID_THREADID</name></member>
+      <member refid="group__THREADS_1gaf0e2823f0d54ba65c78bfb9e9c30be6f" kind="variable"><name>FUTURE_THREADID</name></member>
+      <member refid="group__THREADS_1gadea3bf4ebf6808cbc830c0735c9285ad" kind="variable"><name>INVALID_PIN_THREAD_UID</name></member>
+      <member refid="group__THREADS_1gafb51a301378b609eaeffa48de3355945" kind="variable"><name>INVALID_OS_THREAD_ID</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="types__vmapi_8PH_1a631bdef7c37bc455d6b6510a297c7b6f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="structPARG__T" kindref="compound">PARG_T</ref></type>
+        <definition>static PARG_T _PinParg</definition>
+        <argsstring>(PARG_TYPE p, size_t s)</argsstring>
+        <name>_PinParg</name>
+        <param>
+          <type><ref refid="group__PROTO_1ga59e26fa7c51d677aaac419e05bfb1305" kindref="member">PARG_TYPE</ref></type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="905" column="22" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="905" bodyend="911"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2021-2026<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>contains<sp/>types<sp/>that<sp/>are<sp/>in<sp/>LEVEL_VM<sp/>and<sp/>are<sp/>part<sp/>of<sp/>the<sp/>Pin</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>tool<sp/>API.<sp/>This<sp/>is<sp/>necessary<sp/>because<sp/>the<sp/>pin<sp/>client<sp/>does<sp/>not<sp/>link<sp/>against</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/>the<sp/>vm<sp/>and<sp/>does<sp/>not<sp/>include<sp/>vm<sp/>header<sp/>files.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TYPES_VMAPI_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TYPES_VMAPI_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__APPDEBUG_1gad6ae164e2005bda040921f234730cb5a" kindref="member">DEBUGGING_EVENT</ref></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1ggad6ae164e2005bda040921f234730cb5aad5cc78dfe7674fb92a5fb4a7648d00d9" kindref="member">DEBUGGING_EVENT_BREAKPOINT</ref>,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1ggad6ae164e2005bda040921f234730cb5aa2b7b5b57923d2c0fd4dfee4a4a2e4b73" kindref="member">DEBUGGING_EVENT_SINGLE_STEP</ref>,<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1ggad6ae164e2005bda040921f234730cb5aa5d342e07a5c1d8f4707af1c8d1835f5c" kindref="member">DEBUGGING_EVENT_ASYNC_BREAK</ref></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structDEBUGGER__REG__DESCRIPTION" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structDEBUGGER__REG__DESCRIPTION" kindref="compound">DEBUGGER_REG_DESCRIPTION</ref></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="structDEBUGGER__REG__DESCRIPTION_1ad31b616fd23aeea229a56202a0d0d654" kindref="member">_pinReg</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structDEBUGGER__REG__DESCRIPTION_1ac9885a7c9d680b3668ccc06b25e92ab6" kindref="member">_toolRegId</ref>;<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="structDEBUGGER__REG__DESCRIPTION_1a6539b5c392359a401f6d8372c1595bac" kindref="member">_widthInBits</ref>;<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="structDEBUGGER__REG__DESCRIPTION_1a2ebf3a3953800df85e849d1c0ead9a80" kindref="member">_name</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structDEBUGGER__REG__DESCRIPTION_1aeed9c19677c11949e5db2467901ac955" kindref="member">_gccId</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="group__CONTEXT_1ga63af62bca2c39be3fd6edd57ad2ac5c3" kindref="member">DEFAULT_CONTEXT_IMPL</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="structCONTEXT" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref></highlight></codeline>
+<codeline lineno="60"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCONTEXT_1a84cc77c0c694de74a7c02ed4a5c6fe49" kindref="member">CONTEXT</ref>()<sp/>:<sp/><ref refid="structCONTEXT_1a2936c81df3cb8e0a4eee037827489346" kindref="member">_impl</ref>(<ref refid="group__CONTEXT_1ga63af62bca2c39be3fd6edd57ad2ac5c3" kindref="member">DEFAULT_CONTEXT_IMPL</ref>)<sp/>{<sp/>memset(<ref refid="structCONTEXT_1a6f0b057949eba820fe0d0f6a0814ff91" kindref="member">_state</ref>,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(CHAR)<sp/>*<sp/><ref refid="group__CONTEXT_1ga15b5de856336b8d0452a63a746bb9c61" kindref="member">ARCH_STATE_SIZE</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>ADDRINT<sp/><ref refid="structCONTEXT_1a2936c81df3cb8e0a4eee037827489346" kindref="member">_impl</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>CHAR<sp/><ref refid="structCONTEXT_1a6f0b057949eba820fe0d0f6a0814ff91" kindref="member">_state</ref>[<ref refid="group__CONTEXT_1ga15b5de856336b8d0452a63a746bb9c61" kindref="member">ARCH_STATE_SIZE</ref>];<sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="structPHYSICAL__CONTEXT" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structPHYSICAL__CONTEXT" kindref="compound">PHYSICAL_CONTEXT</ref></highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structPHYSICAL__CONTEXT" kindref="compound">PHYSICAL_CONTEXT</ref>(<ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>pCtxt)<sp/>:<sp/><ref refid="structPHYSICAL__CONTEXT_1a277ca8973c1daa1d301522cee1f930b2" kindref="member">_pCtxt</ref>(pCtxt)<sp/>{}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/><ref refid="structPHYSICAL__CONTEXT_1a277ca8973c1daa1d301522cee1f930b2" kindref="member">_pCtxt</ref>;<sp/></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__BUFFER_1gaee232a4179b4897b5869a6d5fc98d032" kindref="member">BUFFER_ID</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__BUFFER_1gaee232a4179b4897b5869a6d5fc98d032" kindref="member">BUFFER_ID</ref><sp/><ref refid="group__BUFFER_1gaf379010b4b5cf3316089bb041ce5c02b" kindref="member">BUFFER_ID_INVALID</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>UINT32<sp/>DEBUG_MODE_OPTIONS;<sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__CONTEXT_1ga479f2b92361e3794145bb90a1ea7e027" kindref="member">PROCESSOR_STATE</ref></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__CONTEXT_1gga479f2b92361e3794145bb90a1ea7e027a940f194773d13bfe7b71a589b3d6a29a" kindref="member">PROCESSOR_STATE_X87</ref>,<sp/></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__CONTEXT_1gga479f2b92361e3794145bb90a1ea7e027ada893eda0a2fdd23742fb5d9f4ba25a7" kindref="member">PROCESSOR_STATE_XMM</ref>,<sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__CONTEXT_1gga479f2b92361e3794145bb90a1ea7e027a15481af1dfee3eb0845669e533b2d5e6" kindref="member">PROCESSOR_STATE_YMM</ref>,<sp/></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__CONTEXT_1gga479f2b92361e3794145bb90a1ea7e027a32f9fcc0e7c055726930ee8d563ea248" kindref="member">PROCESSOR_STATE_ZMM</ref>,<sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__CONTEXT_1gga479f2b92361e3794145bb90a1ea7e027a6e4756c74bb9d4ac33e6162e3352a988" kindref="member">PROCESSOR_STATE_TMM</ref>,<sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__CONTEXT_1gga479f2b92361e3794145bb90a1ea7e027ad97489a5a18e596b677e4a762cbf5e80" kindref="member">PROCESSOR_STATE_APX</ref><sp/><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structPHYSICAL__CONTEXT" kindref="compound">PHYSICAL_CONTEXT</ref><sp/><ref refid="structPHYSICAL__CONTEXT" kindref="compound">PHYSICAL_CONTEXT</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>IPOINT_INVALID,</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga707ea08e31f44f4a81e2a7766123bad7a7c7cbebb7a62a40e9f803b1db2e6ce20" kindref="member">IPOINT_BEFORE</ref>,<sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga707ea08e31f44f4a81e2a7766123bad7a42eff26179c6d87348abe492301c12ec" kindref="member">IPOINT_AFTER</ref>,</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga707ea08e31f44f4a81e2a7766123bad7acf7dee2063098dd79907d19f9c7df65d" kindref="member">IPOINT_ANYWHERE</ref>,</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga707ea08e31f44f4a81e2a7766123bad7a5ef5b45901a8447e5173f50746ab029d" kindref="member">IPOINT_TAKEN_BRANCH</ref></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}<sp/><ref refid="group__INST__ARGS_1ga707ea08e31f44f4a81e2a7766123bad7" kindref="member">IPOINT</ref>;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga8e4e6511a0e09fdc5ec7d6dbf395b3a8" kindref="member">CONTEXT_CHANGE_REASON</ref></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga8e4e6511a0e09fdc5ec7d6dbf395b3a8ae712c798df1d0e94022f6382a4c8239e" kindref="member">CONTEXT_CHANGE_REASON_FATALSIGNAL</ref>,<sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga8e4e6511a0e09fdc5ec7d6dbf395b3a8a43b8b032e969e0e5d14a3ed7385f29db" kindref="member">CONTEXT_CHANGE_REASON_SIGNAL</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga8e4e6511a0e09fdc5ec7d6dbf395b3a8a7e8b6943c9aa3a85b0a9cd23bc738dd9" kindref="member">CONTEXT_CHANGE_REASON_SIGRETURN</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga8e4e6511a0e09fdc5ec7d6dbf395b3a8a641c250ce491d66cc19f1205160dc279" kindref="member">CONTEXT_CHANGE_REASON_APC</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga8e4e6511a0e09fdc5ec7d6dbf395b3a8ae4c034a98f8eba91b2f8ac5b2543492b" kindref="member">CONTEXT_CHANGE_REASON_EXCEPTION</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga8e4e6511a0e09fdc5ec7d6dbf395b3a8a5b48097c22e4fcfdf12650129f364b50" kindref="member">CONTEXT_CHANGE_REASON_CALLBACK</ref><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga8c5c16fb133375efa3a27d3a3900c603" kindref="member">EXCEPT_HANDLING_RESULT</ref></highlight></codeline>
+<codeline lineno="176"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga8c5c16fb133375efa3a27d3a3900c603a32e365f541f4ea48f730a030185558cd" kindref="member">EHR_HANDLED</ref>,<sp/></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga8c5c16fb133375efa3a27d3a3900c603ab394692e0b4ad2fda77e7597c75c9599" kindref="member">EHR_UNHANDLED</ref>,<sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga8c5c16fb133375efa3a27d3a3900c603a1950501612b017bd8db1634f7dc8bf8f" kindref="member">EHR_CONTINUE_SEARCH</ref><sp/></highlight></codeline>
+<codeline lineno="184"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__INST__ARGS_1ga3d1d5f6805cb16d00bce441290ca2212" kindref="member">CALL_ORDER</ref></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga3d1d5f6805cb16d00bce441290ca2212a3f53c3878be5c2859b82b540561b72b3" kindref="member">CALL_ORDER_FIRST</ref><sp/><sp/><sp/>=<sp/>100,<sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga3d1d5f6805cb16d00bce441290ca2212a43af3c7aa24c81dddf629b2828b8354c" kindref="member">CALL_ORDER_DEFAULT</ref><sp/>=<sp/>200,<sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga3d1d5f6805cb16d00bce441290ca2212a0b197a15a2399e6443ce6be187ccf6c6" kindref="member">CALL_ORDER_LAST</ref><sp/><sp/><sp/><sp/>=<sp/>300<sp/><sp/></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>IARG_INVALID,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da34126f334d65afac69784351a03615ad" kindref="member">IARG_ADDRINT</ref>,<sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da7a11763427dff3afb81caab97b02881b" kindref="member">IARG_PTR</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dacac3cb99011b351eeb3f675bc8c62b83" kindref="member">IARG_BOOL</ref>,<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dabd19b79248899659441e56e4738d5bfd" kindref="member">IARG_UINT32</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dab2d3f91c48319ea5e824fdc678ae4a5c" kindref="member">IARG_UINT64</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da623ad95758bce14fcb9427beef53736a" kindref="member">IARG_INST_PTR</ref>,</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dabe70796bf61230dac3ea1deaf4983c46" kindref="member">IARG_REG_VALUE</ref>,</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da0337fbb99845733a3d35a9a3dbcfbf93" kindref="member">IARG_REG_REFERENCE</ref>,</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da817f3f2fe8c0c536daa86deb55126c25" kindref="member">IARG_REG_CONST_REFERENCE</ref>,</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da2138787daf04a57e6684eb0b368e120e" kindref="member">IARG_MEMORYREAD_EA</ref>,</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da2931627e96b437dc55e06966d31ad962" kindref="member">IARG_MEMORYREAD2_EA</ref>,</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da92be352ec619bbd3be69fed773c011a2" kindref="member">IARG_MEMORYWRITE_EA</ref>,</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dad2e2d24103d1a0286b57412f66b909d7" kindref="member">IARG_MEMORYREAD_SIZE</ref>,</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da365d8eed26ac239b013a01ab6a7cf375" kindref="member">IARG_MEMORYWRITE_SIZE</ref>,</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da4b127f5e8c89aabe67abb6d04ee8ecce" kindref="member">IARG_MEMORYREAD_PTR</ref>,</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da96d283a176b568500d63a7b8ad2558ed" kindref="member">IARG_MEMORYREAD2_PTR</ref>,</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da9fead51aa9d72879eadd61ae5cb00e98" kindref="member">IARG_MEMORYWRITE_PTR</ref>,</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da52ab7563efadafe484b53421e42ec8b1" kindref="member">IARG_MEMORYOP_PTR</ref>,</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451daa60ade75a81b448320631155e84829a6" kindref="member">IARG_MULTI_MEMORYACCESS_EA</ref>,</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da581b5886a7e69629a45607ac34adbf2c" kindref="member">IARG_MULTI_ELEMENT_OPERAND</ref>,</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451daf366ff3d1e14bc23162ad18c47b63c1f" kindref="member">IARG_REWRITE_SCATTERED_MEMOP</ref>,</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da87c9a713268fea1c9ddb157aa0a475eb" kindref="member">IARG_EXPLICIT_MEMORY_EA</ref>,<sp/></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da28140354d575f6b6404a6833552fed47" kindref="member">IARG_BRANCH_TAKEN</ref>,<sp/></highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451daa1b650f4229df434f3ac5ef61f14d0ed" kindref="member">IARG_BRANCH_TARGET_ADDR</ref>,</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da0faf9829bd4f46cc1873c943978b21d7" kindref="member">IARG_FALLTHROUGH_ADDR</ref>,</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da5f291cb55a7d61a40fa3ab98e191394e" kindref="member">IARG_EXECUTING</ref>,<sp/></highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da4e8c634973d6966dba21ff70455c1f5b" kindref="member">IARG_FIRST_REP_ITERATION</ref>,</highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da8cbb1c02c9e1bad259570179580adb50" kindref="member">IARG_PREDICATE</ref>,<sp/></highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>These<sp/>are<sp/>internal<sp/>only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dacd300aa37115a80c4ce30e11e7a37846" kindref="member">IARG_STACK_VALUE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da0ea57a2ba5c26fe0b0e7d75a8de06fee" kindref="member">IARG_STACK_REFERENCE</ref>,<sp/><sp/></highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da2b71d3e92a6b768857bd60cd1ffb67bb" kindref="member">IARG_MEMORY_VALUE</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dad99d33d82bec02d9dc8c1639c90920a2" kindref="member">IARG_MEMORY_REFERENCE</ref>,<sp/></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Syscall<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da6e903286d783f6ee402e146b8dff871f" kindref="member">IARG_SYSCALL_NUMBER</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dacf2d3d2c61544c89918563331a73b2f4" kindref="member">IARG_SYSARG_REFERENCE</ref>,<sp/></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da53b9c85f47960f7b805dc0bb8b6a1a2e" kindref="member">IARG_SYSARG_VALUE</ref>,<sp/></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da0480757dd8ff829a67621df1e9e5396d" kindref="member">IARG_SYSRET_VALUE</ref>,<sp/></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da969a0228ddab7219f20426504991b676" kindref="member">IARG_SYSRET_ERRNO</ref>,<sp/></highlight></codeline>
+<codeline lineno="428"><highlight class="normal"></highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>function<sp/>arguments</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da4babc2672f5a58d94f8fb8f5234c14d4" kindref="member">IARG_FUNCARG_CALLSITE_REFERENCE</ref>,</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da8766561ec59dfb16a94edb3624f53ab8" kindref="member">IARG_FUNCARG_CALLSITE_VALUE</ref>,</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dab23dff2bab780c074d4998d14f4ecb16" kindref="member">IARG_FUNCARG_ENTRYPOINT_REFERENCE</ref>,</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dab418d242314ea7c67b1febf7667e93a1" kindref="member">IARG_FUNCARG_ENTRYPOINT_VALUE</ref>,</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da78065c99b8462ff353115dc9f6419931" kindref="member">IARG_FUNCRET_EXITPOINT_REFERENCE</ref>,<sp/></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da19dc8d3703330b7b1e1064336dd235cf" kindref="member">IARG_FUNCRET_EXITPOINT_VALUE</ref>,<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"></highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da2c4a6ff4e8a076e0f39d24ab73ec7092" kindref="member">IARG_RETURN_IP</ref>,<sp/></highlight></codeline>
+<codeline lineno="450"><highlight class="normal"></highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da0425900c8991df5d840dd6d9f9b03295" kindref="member">IARG_ORIG_FUNCPTR</ref>,<sp/></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dad12677dad18848be51b49ea0f48e07cb" kindref="member">IARG_PROTOTYPE</ref>,<sp/></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451daadb6e5681193cc8435b9e57d13acf5d4" kindref="member">IARG_THREAD_ID</ref>,<sp/></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da25577a47a3c3945080ce1429959f3f1d" kindref="member">IARG_CONTEXT</ref>,</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dad3e65d643a63acb09d12b8538434ca45" kindref="member">IARG_CONST_CONTEXT</ref>,</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dafbbb614d534693b8997f4a7db8fb7e29" kindref="member">IARG_PARTIAL_CONTEXT</ref>,</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da9289568da718031f0b70921f9ca4d0c8" kindref="member">IARG_PRESERVE</ref>,</highlight></codeline>
+<codeline lineno="521"><highlight class="normal"></highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da31393f67fba0667a7917c177ced4438c" kindref="member">IARG_CHECK_INLINE</ref>,</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"></highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da6c8569ef37241134ffc6e24593275981" kindref="member">IARG_RETURN_REGS</ref>,<sp/></highlight></codeline>
+<codeline lineno="530"><highlight class="normal"></highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da45b6bfd69845ada4a0875967995ad7c6" kindref="member">IARG_CALL_ORDER</ref>,<sp/></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"></highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dae11c26daf8993e626359a566d35d46d0" kindref="member">IARG_IARGLIST</ref>,<sp/></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da892dbdf11883df94c327bb31fd0d5fcd" kindref="member">IARG_FAST_ANALYSIS_CALL</ref>,<sp/></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dade945c86ad61559e00c047bcaae16ab5" kindref="member">IARG_EXPOSE</ref>,</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da985747a3c70e3a4283fc8a2f16399e63" kindref="member">IARG_MEMORYOP_EA</ref>,</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451daa5b738f4179d2b6313ac517be1f5221d" kindref="member">IARG_MEMORYOP_SIZE</ref>,<sp/></highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da821b74fed6ac3d8740d73245b4f26a06" kindref="member">IARG_MEMORYOP_MASKED_ON</ref>,<sp/></highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da30acbbeded5e7e293324f81cc796ef7d" kindref="member">IARG_TSC</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dafc942457043f547ccc82479ae34ee1bc" kindref="member">IARG_FUNC_NAME</ref>,<sp/></highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da2d2d4502ddc8de6d717c6878101c73df" kindref="member">IARG_FILE_NAME</ref>,<sp/></highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451da5a86209c9f24bebb204f1c435eb18d1c" kindref="member">IARG_LINE_NO</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1gga089c27ca15e9ff139dd3a3f8a6f8451dad1fd7d0ac8f175d5340787ff3f3a2093" kindref="member">IARG_LAST</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="564"><highlight class="normal"></highlight></codeline>
+<codeline lineno="565"><highlight class="normal">}<sp/><ref refid="group__INST__ARGS_1ga089c27ca15e9ff139dd3a3f8a6f8451d" kindref="member">IARG_TYPE</ref>;</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"></highlight></codeline>
+<codeline lineno="567"><highlight class="normal"></highlight><highlight class="comment">//<sp/>IARG_END<sp/>must<sp/>be<sp/>the<sp/>last<sp/>IARG<sp/>in<sp/>the<sp/>argument<sp/>list.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="568"><highlight class="normal"></highlight><highlight class="comment">//<sp/>These<sp/>iargs<sp/>are<sp/>used<sp/>by<sp/>Pin<sp/>internally,<sp/>and<sp/>not<sp/>passed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="569"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>the<sp/>analysis,<sp/>replacement<sp/>or<sp/>callback<sp/>routine.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight><highlight class="comment">//<sp/>We<sp/>need<sp/>to<sp/>be<sp/>sure<sp/>about<sp/>the<sp/>type<sp/>of<sp/>__LINE__,<sp/>because<sp/>we&apos;re<sp/>passing<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"></highlight><highlight class="comment">//<sp/>via<sp/>varargs,<sp/>and<sp/>different<sp/>compilers<sp/>seem<sp/>to<sp/>treat<sp/>it<sp/>differently.<sp/>By<sp/>forcing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="572"><highlight class="normal"></highlight><highlight class="comment">//<sp/>it<sp/>to<sp/>UINT32<sp/>(which<sp/>restricts<sp/>the<sp/>file<sp/>to<sp/>a<sp/>mere<sp/>4Gi<sp/>lines),<sp/>we<sp/>can<sp/>be<sp/>safe.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>OMIT_SOURCE_LOCATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="574"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IARG_END<sp/>IARG_LAST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="575"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="576"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IARG_END<sp/>IARG_FILE_NAME,<sp/>__FILE__,<sp/>IARG_LINE_NO,<sp/>LEVEL_BASE::UINT32(__LINE__),<sp/>IARG_LAST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="577"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"></highlight><highlight class="comment">//MACROs<sp/>for<sp/>-log-inline<sp/>flag<sp/>to<sp/>log<sp/>the<sp/>inline<sp/>function<sp/>name<sp/>(analysis<sp/>function<sp/>name).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"></highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FUNC_NAME_IARG_STRING(funcName)<sp/>IARG_FUNC_NAME,<sp/>funcName</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="600"><highlight class="normal"></highlight></codeline>
+<codeline lineno="617"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FUNC_NAME_IARG(func)<sp/>FUNC_NAME_IARG_STRING(#func)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="618"><highlight class="normal"></highlight></codeline>
+<codeline lineno="635"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAKE_AFUNPTR(func)<sp/>AFUNPTR(func),<sp/>FUNC_NAME_IARG(func)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="636"><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Constants<sp/>representing<sp/>AVX<sp/>registers<sp/>size</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>XMM_REG_SIZE<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="639"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>YMM_REG_SIZE<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="640"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ZMM_REG_SIZE<sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="641"><highlight class="normal"></highlight></codeline>
+<codeline lineno="648"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="649"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/>CALLINGSTD_INVALID,</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/><sp/><sp/>CALLINGSTD_DEFAULT,</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/>CALLINGSTD_CDECL,</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/>CALLINGSTD_REGPARMS,</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/>CALLINGSTD_STDCALL,</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/>CALLINGSTD_ART</highlight></codeline>
+<codeline lineno="656"><highlight class="normal">}<sp/><ref refid="group__PROTO_1gacfd9f3c8dc22310ce9b9152e8c61b17c" kindref="member">CALLINGSTD_TYPE</ref>;</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"></highlight></codeline>
+<codeline lineno="663"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="664"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_INVALID,</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_POINTER,</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_BOOL,</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_CHAR,</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_UCHAR,</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_SCHAR,</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_SHORT,</highlight></codeline>
+<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_USHORT,</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_INT,</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_UINT,</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_LONG,</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_ULONG,</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_LONGLONG,</highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_ULONGLONG,</highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_FLOAT,</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_DOUBLE,</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_VOID,</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_ENUM,</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_AGGREGATE,</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/>PARG_END</highlight></codeline>
+<codeline lineno="685"><highlight class="normal">}<sp/><ref refid="group__PROTO_1ga59e26fa7c51d677aaac419e05bfb1305" kindref="member">PARG_TYPE</ref>;</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"></highlight></codeline>
+<codeline lineno="687" refid="structPARG__T" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structPARG__T" kindref="compound">PARG_T</ref></highlight></codeline>
+<codeline lineno="688"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PROTO_1ga59e26fa7c51d677aaac419e05bfb1305" kindref="member">PARG_TYPE</ref><sp/>_parg;</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>_size;</highlight></codeline>
+<codeline lineno="691"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_PARG(t)<sp/>_PinPargClass&lt;<sp/>t<sp/>&gt;::parg()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="702"><highlight class="normal"></highlight></codeline>
+<codeline lineno="708"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_PARG_AGGREGATE(t)<sp/>_PinParg(PARG_AGGREGATE,<sp/>sizeof(t))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="709"><highlight class="normal"></highlight></codeline>
+<codeline lineno="715"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_PARG_ENUM(t)<sp/>_PinParg(PARG_ENUM,<sp/>sizeof(t))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight></codeline>
+<codeline lineno="722"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_PARG_END()<sp/>_PinParg(PARG_END,<sp/>0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="723"><highlight class="normal"></highlight></codeline>
+<codeline lineno="724" refid="struct__PinPargClass" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T<sp/>&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref></highlight></codeline>
+<codeline lineno="725"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="728"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_INVALID;</highlight></codeline>
+<codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="731"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="733"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="734" refid="struct__PinPargClass_3_01T_01_5_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T<sp/>&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>T*<sp/>&gt;</highlight></codeline>
+<codeline lineno="735"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="736"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="737"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="738"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="739"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_POINTER;</highlight></codeline>
+<codeline lineno="740"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T*);</highlight></codeline>
+<codeline lineno="741"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="743"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="744" refid="struct__PinPargClass_3_01T_01_6_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T<sp/>&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>T&amp;<sp/>&gt;</highlight></codeline>
+<codeline lineno="745"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="748"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_POINTER;</highlight></codeline>
+<codeline lineno="750"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(T&amp;);</highlight></codeline>
+<codeline lineno="751"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="753"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="754" refid="struct__PinPargClass_3_01bool_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>bool<sp/>&gt;</highlight></codeline>
+<codeline lineno="755"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_BOOL;</highlight></codeline>
+<codeline lineno="760"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(bool);</highlight></codeline>
+<codeline lineno="761"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="762"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="763"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="764" refid="struct__PinPargClass_3_01char_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>char<sp/>&gt;</highlight></codeline>
+<codeline lineno="765"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="767"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="768"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="769"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_CHAR;</highlight></codeline>
+<codeline lineno="770"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(char);</highlight></codeline>
+<codeline lineno="771"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="772"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="773"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="774" refid="struct__PinPargClass_3_01unsigned_01char_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>unsigned<sp/>char<sp/>&gt;</highlight></codeline>
+<codeline lineno="775"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="776"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="777"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="778"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="779"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_UCHAR;</highlight></codeline>
+<codeline lineno="780"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>char);</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="783"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="784" refid="struct__PinPargClass_3_01signed_01char_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>signed<sp/>char<sp/>&gt;</highlight></codeline>
+<codeline lineno="785"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="787"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="789"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_SCHAR;</highlight></codeline>
+<codeline lineno="790"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/>char);</highlight></codeline>
+<codeline lineno="791"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="792"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="793"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="794" refid="struct__PinPargClass_3_01short_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>short<sp/>&gt;</highlight></codeline>
+<codeline lineno="795"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="796"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="797"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="798"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="799"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_SHORT;</highlight></codeline>
+<codeline lineno="800"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(short);</highlight></codeline>
+<codeline lineno="801"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="802"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="803"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="804" refid="struct__PinPargClass_3_01unsigned_01short_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>unsigned<sp/>short<sp/>&gt;</highlight></codeline>
+<codeline lineno="805"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="806"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="807"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="808"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="809"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_USHORT;</highlight></codeline>
+<codeline lineno="810"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>short);</highlight></codeline>
+<codeline lineno="811"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="812"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="813"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="814" refid="struct__PinPargClass_3_01int_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>int<sp/>&gt;</highlight></codeline>
+<codeline lineno="815"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="816"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="817"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="818"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="819"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_INT;</highlight></codeline>
+<codeline lineno="820"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(int);</highlight></codeline>
+<codeline lineno="821"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="822"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="823"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="824" refid="struct__PinPargClass_3_01unsigned_01int_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>unsigned<sp/>int<sp/>&gt;</highlight></codeline>
+<codeline lineno="825"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="826"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="827"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="828"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="829"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_UINT;</highlight></codeline>
+<codeline lineno="830"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>int);</highlight></codeline>
+<codeline lineno="831"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="832"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="833"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="834" refid="struct__PinPargClass_3_01long_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>long<sp/>&gt;</highlight></codeline>
+<codeline lineno="835"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="836"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="837"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="838"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="839"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_LONG;</highlight></codeline>
+<codeline lineno="840"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(long);</highlight></codeline>
+<codeline lineno="841"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="842"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="843"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="844" refid="struct__PinPargClass_3_01unsigned_01long_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>unsigned<sp/>long<sp/>&gt;</highlight></codeline>
+<codeline lineno="845"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="846"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="847"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="848"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="849"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_ULONG;</highlight></codeline>
+<codeline lineno="850"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>long);</highlight></codeline>
+<codeline lineno="851"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="852"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="853"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="854" refid="struct__PinPargClass_3_01long_01long_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>long<sp/>long<sp/>&gt;</highlight></codeline>
+<codeline lineno="855"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="856"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="857"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="858"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="859"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_LONGLONG;</highlight></codeline>
+<codeline lineno="860"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>long);</highlight></codeline>
+<codeline lineno="861"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="862"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="863"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="864" refid="struct__PinPargClass_3_01unsigned_01long_01long_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>unsigned<sp/>long<sp/>long<sp/>&gt;</highlight></codeline>
+<codeline lineno="865"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="866"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="867"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="868"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="869"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_ULONGLONG;</highlight></codeline>
+<codeline lineno="870"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>long);</highlight></codeline>
+<codeline lineno="871"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="872"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="873"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="874" refid="struct__PinPargClass_3_01float_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>float<sp/>&gt;</highlight></codeline>
+<codeline lineno="875"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="876"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="877"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="878"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="879"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_FLOAT;</highlight></codeline>
+<codeline lineno="880"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(float);</highlight></codeline>
+<codeline lineno="881"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="882"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="883"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="884" refid="struct__PinPargClass_3_01double_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>double<sp/>&gt;</highlight></codeline>
+<codeline lineno="885"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="886"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="887"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="888"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="889"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_DOUBLE;</highlight></codeline>
+<codeline lineno="890"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(double);</highlight></codeline>
+<codeline lineno="891"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="892"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="893"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="894" refid="struct__PinPargClass_3_01void_01_4" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;&gt;<sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__PinPargClass" kindref="compound">_PinPargClass</ref>&lt;<sp/>void<sp/>&gt;</highlight></codeline>
+<codeline lineno="895"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="896"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>parg()</highlight></codeline>
+<codeline lineno="897"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="898"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="899"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>PARG_VOID;</highlight></codeline>
+<codeline lineno="900"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="901"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="902"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="903"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="904"><highlight class="normal"></highlight></codeline>
+<codeline lineno="905"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>_PinParg(<ref refid="group__PROTO_1ga59e26fa7c51d677aaac419e05bfb1305" kindref="member">PARG_TYPE</ref><sp/>p,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>s)</highlight></codeline>
+<codeline lineno="906"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="907"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structPARG__T" kindref="compound">PARG_T</ref><sp/>x;</highlight></codeline>
+<codeline lineno="908"><highlight class="normal"><sp/><sp/><sp/><sp/>x._parg<sp/>=<sp/>p;</highlight></codeline>
+<codeline lineno="909"><highlight class="normal"><sp/><sp/><sp/><sp/>x._size<sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="910"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>x;</highlight></codeline>
+<codeline lineno="911"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="912"><highlight class="normal"></highlight></codeline>
+<codeline lineno="913"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="914"><highlight class="comment"><sp/>*<sp/>Opaque<sp/>types<sp/>in<sp/>api</highlight></codeline>
+<codeline lineno="915"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="916"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IARGLIST_CLASS;</highlight></codeline>
+<codeline lineno="917"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">PROTO_CLASS;</highlight></codeline>
+<codeline lineno="918"><highlight class="normal"></highlight></codeline>
+<codeline lineno="923"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>IARGLIST_CLASS*<sp/><ref refid="group__INST__ARGS_1gafbeb707dc23c7c09e1e8c932649107d5" kindref="member">IARGLIST</ref>;</highlight></codeline>
+<codeline lineno="924"><highlight class="normal"></highlight></codeline>
+<codeline lineno="947"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(TARGET_IA32)<sp/>&amp;&amp;<sp/>defined(TARGET_LINUX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="948"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_FAST_ANALYSIS_CALL<sp/>__attribute__((regparm(3)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="949"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(TARGET_IA32)<sp/>&amp;&amp;<sp/>defined(TARGET_WINDOWS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="950"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_FAST_ANALYSIS_CALL<sp/>__fastcall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="951"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="952"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_FAST_ANALYSIS_CALL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="953"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="954"><highlight class="normal"></highlight></codeline>
+<codeline lineno="959"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="960"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="961"><highlight class="normal"><sp/><sp/><sp/><sp/>PIN_MEMOP_LOAD,</highlight></codeline>
+<codeline lineno="962"><highlight class="normal"><sp/><sp/><sp/><sp/>PIN_MEMOP_STORE</highlight></codeline>
+<codeline lineno="963"><highlight class="normal">}<sp/><ref refid="group__INST__ARGS_1ga624ddd00f45938da5eb525afc5b43195" kindref="member">PIN_MEMOP_ENUM</ref>;</highlight></codeline>
+<codeline lineno="964"><highlight class="normal"></highlight></codeline>
+<codeline lineno="969" refid="structPIN__MEM__ACCESS__INFO" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="970"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="971"><highlight class="normal"><sp/><sp/><sp/><sp/>ADDRINT<sp/>memoryAddress;</highlight></codeline>
+<codeline lineno="972"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1ga624ddd00f45938da5eb525afc5b43195" kindref="member">PIN_MEMOP_ENUM</ref><sp/>memopType;</highlight></codeline>
+<codeline lineno="973"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/>bytesAccessed;</highlight></codeline>
+<codeline lineno="974"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/>maskOn;</highlight></codeline>
+<codeline lineno="975"><highlight class="normal">}<sp/><ref refid="structPIN__MEM__ACCESS__INFO" kindref="compound">PIN_MEM_ACCESS_INFO</ref>;</highlight></codeline>
+<codeline lineno="976"><highlight class="normal"></highlight></codeline>
+<codeline lineno="980"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>MAX_MULTI_MEMOPS<sp/>=<sp/>16;</highlight></codeline>
+<codeline lineno="981"><highlight class="normal"></highlight></codeline>
+<codeline lineno="986" refid="structPIN__MULTI__MEM__ACCESS__INFO" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="987"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="988"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/>numberOfMemops;<sp/></highlight><highlight class="comment">//<sp/>only<sp/>the<sp/>first<sp/>numberOfMemops<sp/>elements<sp/>in<sp/>the<sp/>memop[]<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="989"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>are<sp/>valid</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="990"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structPIN__MEM__ACCESS__INFO" kindref="compound">PIN_MEM_ACCESS_INFO</ref><sp/>memop[MAX_MULTI_MEMOPS];</highlight></codeline>
+<codeline lineno="991"><highlight class="normal">}<sp/><ref refid="structPIN__MULTI__MEM__ACCESS__INFO" kindref="compound">PIN_MULTI_MEM_ACCESS_INFO</ref>;</highlight></codeline>
+<codeline lineno="992"><highlight class="normal"></highlight></codeline>
+<codeline lineno="997"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="998"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="999"><highlight class="normal"><sp/><sp/><sp/><sp/>PIN_OP_ELEMENT_ACCESS_READ,</highlight></codeline>
+<codeline lineno="1000"><highlight class="normal"><sp/><sp/><sp/><sp/>PIN_OP_ELEMENT_ACCESS_WRITE,</highlight></codeline>
+<codeline lineno="1001"><highlight class="normal"><sp/><sp/><sp/><sp/>PIN_OP_ELEMENT_ACCESS_READWRITE</highlight></codeline>
+<codeline lineno="1002"><highlight class="normal">}<sp/><ref refid="group__INST__ARGS_1ga16b7ac266c4c1323b18396be70279eb0" kindref="member">PIN_OP_ELEMENT_ACCESS</ref>;</highlight></codeline>
+<codeline lineno="1003"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1011" refid="classIMULTI__ELEMENT__OPERAND" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classIMULTI__ELEMENT__OPERAND" kindref="compound">IMULTI_ELEMENT_OPERAND</ref></highlight></codeline>
+<codeline lineno="1012"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1013"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1014"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classIMULTI__ELEMENT__OPERAND" kindref="compound">~IMULTI_ELEMENT_OPERAND</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="1018"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="classIMULTI__ELEMENT__OPERAND_1a2a088a11c5f57fbfcd1643f5e3e67c64" kindref="member">IsMemory</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1022"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="classIMULTI__ELEMENT__OPERAND_1a45aaae095c8d575da9a497250f269489" kindref="member">IsRegister</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1027"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="classIMULTI__ELEMENT__OPERAND_1a1a3269c2ad96bab099c908b9c8a77c50" kindref="member">Size</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1033"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="classIMULTI__ELEMENT__OPERAND_1a38322afed12bae66f9760f7e12ad0386" kindref="member">Address</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1037"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="classIMULTI__ELEMENT__OPERAND_1a9540e7ff0b5c79096a2b2dc62d7ff8e9" kindref="member">NumOfElements</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1041"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="classIMULTI__ELEMENT__OPERAND_1ae515ed8a4383bc4539c06e2f6f6f0573" kindref="member">ElementSize</ref>(UINT32<sp/>element_index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1045"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="classIMULTI__ELEMENT__OPERAND_1a0a734eb473651efa17ffae1815af95a1" kindref="member">ElementAddress</ref>(UINT32<sp/>element_index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1051"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="classIMULTI__ELEMENT__OPERAND_1a0f3864eb7d7ac52e344baabd1b5042e8" kindref="member">ElementOffset</ref>(UINT32<sp/>element_index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1059"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="classIMULTI__ELEMENT__OPERAND_1a502bd3f8a07d530e7ce8d0f5709989e6" kindref="member">ElementMaskValue</ref>(UINT32<sp/>element_index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1063"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="group__INST__ARGS_1ga16b7ac266c4c1323b18396be70279eb0" kindref="member">PIN_OP_ELEMENT_ACCESS</ref><sp/><ref refid="classIMULTI__ELEMENT__OPERAND_1a0f64f8d8fbdd4055a1436104fd414c2d" kindref="member">ElementAccessType</ref>(UINT32<sp/>element_index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1064"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1065"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1071"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>PROTO_CLASS*<sp/><ref refid="group__PROTO_1ga554ff954c3ea33bb537f30e3b500ef1c" kindref="member">PROTO</ref>;</highlight></codeline>
+<codeline lineno="1072"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1076"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>INT32<sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref>;</highlight></codeline>
+<codeline lineno="1077"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1081"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/><ref refid="group__THREADS_1ga6f1b19d7792c8c6f4547fd9d3dabb427" kindref="member">INVALID_THREADID</ref><sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(-1);</highlight></codeline>
+<codeline lineno="1082"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1086"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/><ref refid="group__THREADS_1gaf0e2823f0d54ba65c78bfb9e9c30be6f" kindref="member">FUTURE_THREADID</ref><sp/>=<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(-2);</highlight></codeline>
+<codeline lineno="1087"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1093"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="group__THREADS_1ga6fde44fe8696d51b99500e26aa0e4c61" kindref="member">PIN_THREAD_UID</ref>;</highlight></codeline>
+<codeline lineno="1094"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1098"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1ga6fde44fe8696d51b99500e26aa0e4c61" kindref="member">PIN_THREAD_UID</ref><sp/><ref refid="group__THREADS_1gadea3bf4ebf6808cbc830c0735c9285ad" kindref="member">INVALID_PIN_THREAD_UID</ref><sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1ga6fde44fe8696d51b99500e26aa0e4c61" kindref="member">PIN_THREAD_UID</ref><sp/></highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(uintptr_t(-1));</highlight></codeline>
+<codeline lineno="1099"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1103"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>INT32<sp/><ref refid="group__THREADS_1gac896589ba4a8e51b3fe57df2744751a1" kindref="member">OS_THREAD_ID</ref>;</highlight></codeline>
+<codeline lineno="1104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1108"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1gac896589ba4a8e51b3fe57df2744751a1" kindref="member">OS_THREAD_ID</ref><sp/><ref refid="group__THREADS_1gafb51a301378b609eaeffa48de3355945" kindref="member">INVALID_OS_THREAD_ID</ref><sp/>=<sp/>INVALID_NATIVE_TID;</highlight></codeline>
+<codeline lineno="1109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1115"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__THREADS_1gaf7d4b7206749ac3075b941a513d876c5" kindref="member">ROOT_THREAD_FUNC</ref>(VOID*<sp/>arg);</highlight></codeline>
+<codeline lineno="1116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1120"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__THREADS_1ga2bf6029042d57fb825536c795c94d1ed" kindref="member">OS_PROCESS_ID</ref>;</highlight></codeline>
+<codeline lineno="1121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1125"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__APPDEBUG_1ga41e814fff526e0232f2f8c3055d6e88b" kindref="member">DEBUG_STATUS</ref></highlight></codeline>
+<codeline lineno="1126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1127"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga41e814fff526e0232f2f8c3055d6e88ba72ca0db67ae970e3c62a40b5ac4f7003" kindref="member">DEBUG_STATUS_DISABLED</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1128"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga41e814fff526e0232f2f8c3055d6e88ba8360ff1aaecfe81589ca624db3618367" kindref="member">DEBUG_STATUS_UNCONNECTABLE</ref>,<sp/></highlight></codeline>
+<codeline lineno="1129"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga41e814fff526e0232f2f8c3055d6e88ba994b4c3ad3ae17936ecf71deaadf1f80" kindref="member">DEBUG_STATUS_UNCONNECTED</ref>,<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1130"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga41e814fff526e0232f2f8c3055d6e88bac55ed4b18e05f4dcd13a38bbe6ee6cb7" kindref="member">DEBUG_STATUS_CONNECTED</ref><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1131"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1137"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__APPDEBUG_1ga25f41d731fbc522fea67abd02f9c04c6" kindref="member">DEBUG_CONNECTION_TYPE</ref></highlight></codeline>
+<codeline lineno="1138"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga25f41d731fbc522fea67abd02f9c04c6a48023b1450d43ba2c4190432e50fcb44" kindref="member">DEBUG_CONNECTION_TYPE_NONE</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga25f41d731fbc522fea67abd02f9c04c6abc9902ef5ebfac00333f6ce7bd00cd57" kindref="member">DEBUG_CONNECTION_TYPE_TCP_SERVER</ref>,<sp/></highlight></codeline>
+<codeline lineno="1141"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga25f41d731fbc522fea67abd02f9c04c6a656476b26189f8de3f70603ce19a3640" kindref="member">DEBUG_CONNECTION_TYPE_TCP_CLIENT</ref><sp/><sp/></highlight></codeline>
+<codeline lineno="1142"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1147"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__APPDEBUG_1ga87ad53f06ecf9cbcd3b94a155e1c11b5" kindref="member">DEBUGGER_TYPE</ref></highlight></codeline>
+<codeline lineno="1148"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1149"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga87ad53f06ecf9cbcd3b94a155e1c11b5a36c70d872b32db70ffa16fb1f9a1e698" kindref="member">DEBUGGER_TYPE_UNKNOWN</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga87ad53f06ecf9cbcd3b94a155e1c11b5a93747991bbf93bec18a63aa0def7502a" kindref="member">DEBUGGER_TYPE_GDB</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga87ad53f06ecf9cbcd3b94a155e1c11b5ae257dd6ee7c4c21be32afc5dfa4145ee" kindref="member">DEBUGGER_TYPE_LLDB</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga87ad53f06ecf9cbcd3b94a155e1c11b5a215d036d52fcd8a1d9d0655c0915983f" kindref="member">DEBUGGER_TYPE_IDB</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga87ad53f06ecf9cbcd3b94a155e1c11b5a382d02f0500b212562d3278dee138b3c" kindref="member">DEBUGGER_TYPE_VISUAL_STUDIO_VSDBG</ref>,<sp/></highlight></codeline>
+<codeline lineno="1154"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gga87ad53f06ecf9cbcd3b94a155e1c11b5aa51709dd57db7e6200b154e9b1cb71d7" kindref="member">DEBUGGER_TYPE_VISUAL_STUDIO</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1155"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1160"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__APPDEBUG_1gaf8cf023622aae11218cc9c911b906deb" kindref="member">DEBUG_MODE_OPTION</ref></highlight></codeline>
+<codeline lineno="1161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1162"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1ggaf8cf023622aae11218cc9c911b906deba83aab8069eb6913be66d65a272343f4f" kindref="member">DEBUG_MODE_OPTION_NONE</ref><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="1163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1170"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1ggaf8cf023622aae11218cc9c911b906debad239403d750fcc2bd58f07d609c9962a" kindref="member">DEBUG_MODE_OPTION_STOP_AT_ENTRY</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>0),</highlight></codeline>
+<codeline lineno="1171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1177"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1ggaf8cf023622aae11218cc9c911b906deba723c132474f30b96833655fba66a3cf5" kindref="member">DEBUG_MODE_OPTION_SILENT</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>1),</highlight></codeline>
+<codeline lineno="1178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1184"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1ggaf8cf023622aae11218cc9c911b906deba4e65fd1fd0aadcefd334b4824965eaf7" kindref="member">DEBUG_MODE_OPTION_ALLOW_REMOTE</ref><sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>2)</highlight></codeline>
+<codeline lineno="1185"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1190" refid="struct__tcpServerStruct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__tcpServerStruct" kindref="compound">_tcpServerStruct</ref></highlight></codeline>
+<codeline lineno="1191"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1192"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct__tcpServerStruct_1a263a119b2bc391cf181fb4718dc2968c" kindref="member">_tcpPort</ref>;<sp/></highlight></codeline>
+<codeline lineno="1193"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1198" refid="structDEBUG__CONNECTION__INFO" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structDEBUG__CONNECTION__INFO" kindref="compound">DEBUG_CONNECTION_INFO</ref></highlight></codeline>
+<codeline lineno="1199"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1200"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1ga25f41d731fbc522fea67abd02f9c04c6" kindref="member">DEBUG_CONNECTION_TYPE</ref><sp/><ref refid="structDEBUG__CONNECTION__INFO_1aad048415716dec2a5858fb0b82783bf1" kindref="member">_type</ref>;<sp/></highlight></codeline>
+<codeline lineno="1201"><highlight class="normal"><sp/><sp/><sp/><sp/>BOOL<sp/><ref refid="structDEBUG__CONNECTION__INFO_1a784ff40a14b8040481ca67f63dba8727" kindref="member">_stopAtEntry</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1203"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>data<sp/>is<sp/>dependent<sp/>on<sp/>the<sp/>connection<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1206"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__tcpServerStruct" kindref="compound">_tcpServerStruct</ref><sp/>_tcpServer;</highlight></codeline>
+<codeline lineno="1208"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="1209"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1214" refid="struct__tcpClientStruct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__tcpClientStruct" kindref="compound">_tcpClientStruct</ref></highlight></codeline>
+<codeline lineno="1215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="struct__tcpClientStruct_1a8a1d05343e60bd2df2b6d84cb4894fe8" kindref="member">_ip</ref>;<sp/></highlight></codeline>
+<codeline lineno="1217"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct__tcpClientStruct_1af80ec20e2fa6f6ef4b43bcc0f8e77d2c" kindref="member">_tcpPort</ref>;<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="1218"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1223" refid="structDEBUG__MODE" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structDEBUG__MODE" kindref="compound">DEBUG_MODE</ref></highlight></codeline>
+<codeline lineno="1224"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1225"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1ga25f41d731fbc522fea67abd02f9c04c6" kindref="member">DEBUG_CONNECTION_TYPE</ref><sp/><ref refid="structDEBUG__MODE_1a28359c21886e940247c89957a95bd598" kindref="member">_type</ref>;<sp/></highlight></codeline>
+<codeline lineno="1226"><highlight class="normal"><sp/><sp/><sp/><sp/>DEBUG_MODE_OPTIONS<sp/><ref refid="structDEBUG__MODE_1aa5b290051c7c88df4b8a2afa217c1aa3" kindref="member">_options</ref>;<sp/></highlight></codeline>
+<codeline lineno="1227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1228"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>data<sp/>is<sp/>dependent<sp/>on<sp/>the<sp/>connection<sp/>type.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1231"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct__tcpClientStruct" kindref="compound">_tcpClientStruct</ref><sp/><ref refid="structDEBUG__MODE_1ac426b2c82705938d22657be802de1529" kindref="member">_tcpClient</ref>;</highlight></codeline>
+<codeline lineno="1236"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="1237"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1244" refid="unionPIN__MEM__TRANS__FLAGS" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1245"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1246"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/>data;</highlight></codeline>
+<codeline lineno="1247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1248"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT32<sp/>isAtomic<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="1250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT32<sp/>isRmw<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="1251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT32<sp/>isPrefetch<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="1252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT32<sp/>isFromPin<sp/>:<sp/>1;</highlight></codeline>
+<codeline lineno="1253"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>bits;</highlight></codeline>
+<codeline lineno="1254"><highlight class="normal">}<sp/><ref refid="unionPIN__MEM__TRANS__FLAGS" kindref="compound">PIN_MEM_TRANS_FLAGS</ref>;</highlight></codeline>
+<codeline lineno="1255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1256" refid="structPIN__MEM__TRANS__INFO" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1257"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1258"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>because<sp/>this<sp/>structure<sp/>is<sp/>allocated<sp/>on<sp/>the<sp/>stack<sp/>before</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>call<sp/>to<sp/>CallMemoryAddrTrans<sp/>and<sp/>a<sp/>function<sp/>may</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>write<sp/>into<sp/>the<sp/>48bytes<sp/>above<sp/>it&apos;s<sp/>rsp</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1261"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8<sp/>dummySpace[32];</highlight></codeline>
+<codeline lineno="1262"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadIndex;</highlight></codeline>
+<codeline lineno="1263"><highlight class="normal"><sp/><sp/><sp/><sp/>ADDRINT<sp/>addr;</highlight></codeline>
+<codeline lineno="1264"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>bytes;</highlight></codeline>
+<codeline lineno="1265"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__INST__ARGS_1ga624ddd00f45938da5eb525afc5b43195" kindref="member">PIN_MEMOP_ENUM</ref><sp/>memOpType;</highlight></codeline>
+<codeline lineno="1266"><highlight class="normal"><sp/><sp/><sp/><sp/>ADDRINT<sp/>ip;</highlight></codeline>
+<codeline lineno="1267"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="unionPIN__MEM__TRANS__FLAGS" kindref="compound">PIN_MEM_TRANS_FLAGS</ref><sp/>flags;</highlight></codeline>
+<codeline lineno="1268"><highlight class="normal">}<sp/><ref refid="structPIN__MEM__TRANS__INFO" kindref="compound">PIN_MEM_TRANS_INFO</ref>;</highlight></codeline>
+<codeline lineno="1269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1274" refid="classISCATTERED__MEMORY__REWRITE" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classISCATTERED__MEMORY__REWRITE" kindref="compound">ISCATTERED_MEMORY_REWRITE</ref></highlight></codeline>
+<codeline lineno="1275"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1276"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="1277"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classISCATTERED__MEMORY__REWRITE" kindref="compound">~ISCATTERED_MEMORY_REWRITE</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="1281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="classISCATTERED__MEMORY__REWRITE_1ad98e8ac391d205490dbe82b2a61c095b" kindref="member">NumOfElements</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1285"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="classISCATTERED__MEMORY__REWRITE_1ac75da3a632c752dfec2f0b369dff8c0c" kindref="member">ElementSize</ref>(UINT32<sp/>element_index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1293"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="classISCATTERED__MEMORY__REWRITE_1afaeeccf554b9c60d66b8dd64e09c435e" kindref="member">ElementMaskValue</ref>(UINT32<sp/>element_index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="classISCATTERED__MEMORY__REWRITE_1ae5fd1b66a6005fce2539b077a40bce9b" kindref="member">ElementOffset</ref>(UINT32<sp/>element_index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1303"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>ADDRINT<sp/><ref refid="classISCATTERED__MEMORY__REWRITE_1ae8c65649c17fe13335986061445f316d" kindref="member">ElementAddress</ref>(UINT32<sp/>element_index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1307"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="classISCATTERED__MEMORY__REWRITE_1a1d1b078dd4182756879319faa0f8e5e0" kindref="member">SetElementAddress</ref>(UINT32<sp/>element_index,<sp/>ADDRINT<sp/>address)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="1308"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1313" refid="structCALL__APPLICATION__FUNCTION__PARAM" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1314"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1315"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT32<sp/>native<sp/>:<sp/>1;<sp/></highlight></codeline>
+<codeline lineno="1316"><highlight class="normal">}<sp/><ref refid="structCALL__APPLICATION__FUNCTION__PARAM" kindref="compound">CALL_APPLICATION_FUNCTION_PARAM</ref>;</highlight></codeline>
+<codeline lineno="1317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1322"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CONTROL_1ga4e114852e46d5d839d6e71e242709777" kindref="member">PIN_CALLBACK_TYPE</ref></highlight></codeline>
+<codeline lineno="1323"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1324"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga4e114852e46d5d839d6e71e242709777af6f04d87615566deb3bd49ec1e3468ef" kindref="member">PIN_CALLBACK_TYPE_NONE</ref><sp/><sp/><sp/><sp/>=<sp/>0,<sp/></highlight></codeline>
+<codeline lineno="1325"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__PIN__CONTROL_1gga4e114852e46d5d839d6e71e242709777ae9e0416b9e54e38bc1cf69956f81bc2c" kindref="member">PIN_CALLBACK_TYPE_SYSCALL</ref><sp/>=<sp/>1<sp/><sp/></highlight></codeline>
+<codeline lineno="1326"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1332"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>TE_CLOCK_ID</highlight></codeline>
+<codeline lineno="1333"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1334"><highlight class="normal"><sp/><sp/><sp/><sp/>TE_REAL_TIME<sp/><sp/><sp/><sp/>=<sp/>0,<sp/></highlight><highlight class="comment">//&lt;<sp/>The<sp/>real<sp/>time<sp/>clock<sp/>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1335"><highlight class="normal"><sp/><sp/><sp/><sp/>TE_PROCESS_TIME<sp/>=<sp/>1,<sp/></highlight><highlight class="comment">//&lt;<sp/>The<sp/>process<sp/>time<sp/>clock<sp/>&gt;<sp/>This<sp/>is<sp/>a<sp/>total<sp/>cycles<sp/>the<sp/>process<sp/>excuted.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1336"><highlight class="normal"><sp/><sp/><sp/><sp/>TE_THREAD_TIME<sp/><sp/>=<sp/>2<sp/><sp/></highlight><highlight class="comment">//&lt;<sp/>The<sp/>thread<sp/>time<sp/>clock<sp/>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1337"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1347" refid="structTE__timespec" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structTE__timespec" kindref="compound">TE_timespec</ref></highlight></codeline>
+<codeline lineno="1348"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="1349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1350"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT64<sp/>sec;</highlight></codeline>
+<codeline lineno="1354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT64<sp/>nsec;</highlight></codeline>
+<codeline lineno="1355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>wallClock;<sp/></highlight><highlight class="comment">//<sp/>used<sp/>for<sp/>real-time<sp/>wall<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT64<sp/>kernelTime;<sp/></highlight><highlight class="comment">//cycles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1359"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT64<sp/>userTime;<sp/><sp/><sp/></highlight><highlight class="comment">//cycles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>times;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>used<sp/>for<sp/>fetching<sp/>emulated<sp/>time<sp/>(thread<sp/>and<sp/>process<sp/>time).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1361"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="1362"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="1363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1364"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/include/types_vmapi.PH"/>
+  </compounddef>
+</doxygen>

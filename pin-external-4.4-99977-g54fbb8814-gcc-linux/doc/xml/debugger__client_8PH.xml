@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="debugger__client_8PH" kind="file" language="C++">
+    <compoundname>debugger_client.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="debugger__client_8PH_1a08f25e09766d7867b73533c5d632db7d" prot="public" static="no">
+        <name>PIN_G_DEBUGGER_CLIENT_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/debugger_client.PH" line="9" column="10" bodyfile="Source/pin/pin/debugger_client.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__APPDEBUG_1ga3d6a74972d3450e7fb487103f5fe8147" kind="typedef"><name>DEBUG_INTERPRETER_CALLBACK</name></member>
+      <member refid="group__APPDEBUG_1gaee4c44a7173aa62cd5121253d2966b52" kind="typedef"><name>DEBUG_BREAKPOINT_CALLBACK</name></member>
+      <member refid="group__APPDEBUG_1ga3e5a10fa61485e7bce314a1c3fe51216" kind="typedef"><name>INTERCEPT_DEBUGGING_EVENT_CALLBACK</name></member>
+      <member refid="group__APPDEBUG_1ga9d7745cc697db791f72d06cd149daa72" kind="typedef"><name>GET_EMULATED_REGISTER_CALLBACK</name></member>
+      <member refid="group__APPDEBUG_1gacb569f5ec458c0cdacfbc511e8d7a24b" kind="typedef"><name>SET_EMULATED_REGISTER_CALLBACK</name></member>
+      <member refid="group__APPDEBUG_1gaf5bdf55a090a9e22c7fdc2efbfac8cb6" kind="typedef"><name>GET_TARGET_DESCRIPTION_CALLBACK</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__APPDEBUG_1ga4f727b422499f5d312204ba42b23fda0" kind="function"><name>PIN_InterceptDebuggingEvent</name></member>
+      <member refid="group__APPDEBUG_1ga227aa5052c499e58c77a376048478647" kind="function"><name>PIN_AddDebuggerRegisterEmulator</name></member>
+      <member refid="group__APPDEBUG_1ga8b7429dba7db028dc095a48d026b30f3" kind="function"><name>PIN_AddDebugInterpreter</name></member>
+      <member refid="group__APPDEBUG_1gae16ccb04f07c4d2d7eb021e128b28f2b" kind="function"><name>PIN_RemoveDebugInterpreter</name></member>
+      <member refid="group__APPDEBUG_1ga4d6cb680fcf43fe32857fe54bfc8e2a3" kind="function"><name>PIN_AddBreakpointHandler</name></member>
+      <member refid="group__APPDEBUG_1gaca4da902f7ed6a9985b9ab26a6699384" kind="function"><name>PIN_RemoveBreakpointHandler</name></member>
+      <member refid="group__APPDEBUG_1gaa878efff68323d2a8f23b7ee2b5a912c" kind="function"><name>PIN_ResetBreakpointAt</name></member>
+      <member refid="group__APPDEBUG_1gabbd52cd5977cd9ffef8065f144137b14" kind="function"><name>PIN_ApplicationBreakpoint</name></member>
+      <member refid="group__APPDEBUG_1ga15e52a111880529d439946eb392dd992" kind="function"><name>PIN_SetDebugMode</name></member>
+      <member refid="group__APPDEBUG_1ga92c6d18526f1f895eb9d2736c79478e4" kind="function"><name>PIN_GetDebugStatus</name></member>
+      <member refid="group__APPDEBUG_1ga36087c681ff5cdf730c3d5d12723ba4b" kind="function"><name>PIN_GetDebugConnectionInfo</name></member>
+      <member refid="group__APPDEBUG_1gadbe2a0980528561c214a4b8bfdca1251" kind="function"><name>PIN_GetDebuggerType</name></member>
+      <member refid="group__APPDEBUG_1gacc153fff2b3f0f8542b5c5208356f0fb" kind="function"><name>PIN_WaitForDebuggerToConnect</name></member>
+      <member refid="group__APPDEBUG_1ga9c5930cc3e21cec532e4909ee3f9f165" kind="function"><name>PIN_GetStoppedThreadPendingToolBreakpoint</name></member>
+      <member refid="group__APPDEBUG_1gab651618eb1f148e0f1d0af927510c3a6" kind="function"><name>PIN_ChangePendingToolBreakpointOnStoppedThread</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2008-2021<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_DEBUGGER_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>debugger_client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_DEBUGGER_CLIENT_PH</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>BOOL<sp/>(*<ref refid="group__APPDEBUG_1ga3d6a74972d3450e7fb487103f5fe8147" kindref="member">DEBUG_INTERPRETER_CALLBACK</ref>)(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>threadIndex,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>cmd,<sp/>std::string*<sp/>reply,</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>BOOL<sp/>(*<ref refid="group__APPDEBUG_1gaee4c44a7173aa62cd5121253d2966b52" kindref="member">DEBUG_BREAKPOINT_CALLBACK</ref>)(ADDRINT<sp/>addr,<sp/>UINT<sp/>size,<sp/>BOOL<sp/>insert,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>BOOL<sp/>(*<ref refid="group__APPDEBUG_1ga3e5a10fa61485e7bce314a1c3fe51216" kindref="member">INTERCEPT_DEBUGGING_EVENT_CALLBACK</ref>)(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/><ref refid="group__APPDEBUG_1gad6ae164e2005bda040921f234730cb5a" kindref="member">DEBUGGING_EVENT</ref><sp/>eventType,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/>VOID*<sp/>arg);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__APPDEBUG_1ga9d7745cc697db791f72d06cd149daa72" kindref="member">GET_EMULATED_REGISTER_CALLBACK</ref>)(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>toolRegId,<sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/>VOID*<sp/>data,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>VOID<sp/>(*<ref refid="group__APPDEBUG_1gacb569f5ec458c0cdacfbc511e8d7a24b" kindref="member">SET_EMULATED_REGISTER_CALLBACK</ref>)(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>toolRegId,<sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>VOID*<sp/>data,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>USIZE<sp/>(*<ref refid="group__APPDEBUG_1gaf5bdf55a090a9e22c7fdc2efbfac8cb6" kindref="member">GET_TARGET_DESCRIPTION_CALLBACK</ref>)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/>USIZE<sp/>size,<sp/>VOID*<sp/>buf,<sp/>VOID*<sp/>v);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__APPDEBUG_1ga4f727b422499f5d312204ba42b23fda0" kindref="member">PIN_InterceptDebuggingEvent</ref>(<ref refid="group__APPDEBUG_1gad6ae164e2005bda040921f234730cb5a" kindref="member">DEBUGGING_EVENT</ref><sp/>eventType,<sp/><ref refid="group__APPDEBUG_1ga3e5a10fa61485e7bce314a1c3fe51216" kindref="member">INTERCEPT_DEBUGGING_EVENT_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>arg);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__APPDEBUG_1ga227aa5052c499e58c77a376048478647" kindref="member">PIN_AddDebuggerRegisterEmulator</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>numRegisters,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structDEBUGGER__REG__DESCRIPTION" kindref="compound">DEBUGGER_REG_DESCRIPTION</ref>*<sp/>registerDescriptions,</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1ga9d7745cc697db791f72d06cd149daa72" kindref="member">GET_EMULATED_REGISTER_CALLBACK</ref><sp/>getFun,<sp/><ref refid="group__APPDEBUG_1gacb569f5ec458c0cdacfbc511e8d7a24b" kindref="member">SET_EMULATED_REGISTER_CALLBACK</ref><sp/>setFun,</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="group__APPDEBUG_1gaf5bdf55a090a9e22c7fdc2efbfac8cb6" kindref="member">GET_TARGET_DESCRIPTION_CALLBACK</ref><sp/>getDescriptionFun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__APPDEBUG_1ga8b7429dba7db028dc095a48d026b30f3" kindref="member">PIN_AddDebugInterpreter</ref>(<ref refid="group__APPDEBUG_1ga3d6a74972d3450e7fb487103f5fe8147" kindref="member">DEBUG_INTERPRETER_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__APPDEBUG_1gae16ccb04f07c4d2d7eb021e128b28f2b" kindref="member">PIN_RemoveDebugInterpreter</ref>(<ref refid="group__APPDEBUG_1ga3d6a74972d3450e7fb487103f5fe8147" kindref="member">DEBUG_INTERPRETER_CALLBACK</ref><sp/>fun);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__APPDEBUG_1ga4d6cb680fcf43fe32857fe54bfc8e2a3" kindref="member">PIN_AddBreakpointHandler</ref>(<ref refid="group__APPDEBUG_1gaee4c44a7173aa62cd5121253d2966b52" kindref="member">DEBUG_BREAKPOINT_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__APPDEBUG_1gaca4da902f7ed6a9985b9ab26a6699384" kindref="member">PIN_RemoveBreakpointHandler</ref>(<ref refid="group__APPDEBUG_1gaee4c44a7173aa62cd5121253d2966b52" kindref="member">DEBUG_BREAKPOINT_CALLBACK</ref><sp/>fun);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__APPDEBUG_1gaa878efff68323d2a8f23b7ee2b5a912c" kindref="member">PIN_ResetBreakpointAt</ref>(ADDRINT<sp/>addr);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__APPDEBUG_1gabbd52cd5977cd9ffef8065f144137b14" kindref="member">PIN_ApplicationBreakpoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structCONTEXT" kindref="compound">CONTEXT</ref>*<sp/>ctxt,<sp/><ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/>BOOL<sp/>waitIfNoDebugger,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__APPDEBUG_1ga15e52a111880529d439946eb392dd992" kindref="member">PIN_SetDebugMode</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structDEBUG__MODE" kindref="compound">DEBUG_MODE</ref>*<sp/>mode);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__APPDEBUG_1ga41e814fff526e0232f2f8c3055d6e88b" kindref="member">DEBUG_STATUS</ref><sp/><ref refid="group__APPDEBUG_1ga92c6d18526f1f895eb9d2736c79478e4" kindref="member">PIN_GetDebugStatus</ref>();</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="407"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__APPDEBUG_1ga36087c681ff5cdf730c3d5d12723ba4b" kindref="member">PIN_GetDebugConnectionInfo</ref>(<ref refid="structDEBUG__CONNECTION__INFO" kindref="compound">DEBUG_CONNECTION_INFO</ref>*<sp/>info);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__APPDEBUG_1ga87ad53f06ecf9cbcd3b94a155e1c11b5" kindref="member">DEBUGGER_TYPE</ref><sp/><ref refid="group__APPDEBUG_1gadbe2a0980528561c214a4b8bfdca1251" kindref="member">PIN_GetDebuggerType</ref>();</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="443"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__APPDEBUG_1gacc153fff2b3f0f8542b5c5208356f0fb" kindref="member">PIN_WaitForDebuggerToConnect</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>timeout);</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__APPDEBUG_1ga9c5930cc3e21cec532e4909ee3f9f165" kindref="member">PIN_GetStoppedThreadPendingToolBreakpoint</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/>std::string*<sp/>msg);</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"></highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__APPDEBUG_1gab651618eb1f148e0f1d0af927510c3a6" kindref="member">PIN_ChangePendingToolBreakpointOnStoppedThread</ref>(<ref refid="group__THREADS_1gab0be56ec5de7d57d369411d078175186" kindref="member">THREADID</ref><sp/>tid,<sp/>BOOL<sp/>squash,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>msg);</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_DEBUGGER_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/pin/debugger_client.PH"/>
+  </compounddef>
+</doxygen>

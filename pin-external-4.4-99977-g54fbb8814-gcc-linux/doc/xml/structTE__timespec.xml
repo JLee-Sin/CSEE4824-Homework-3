@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structTE__timespec" kind="struct" language="C++" prot="public">
+    <compoundname>TE_timespec</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structTE__timespec_1a62592a8579905e0de59c97ef16035e47" prot="public" static="no" mutable="no">
+        <type>UINT64</type>
+        <definition>UINT64 TE_timespec::sec</definition>
+        <argsstring></argsstring>
+        <name>sec</name>
+        <qualifiedname>TE_timespec::sec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1353" column="20" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="1353" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTE__timespec_1a139b4ce4d436b761e12ca93917539388" prot="public" static="no" mutable="no">
+        <type>UINT64</type>
+        <definition>UINT64 TE_timespec::nsec</definition>
+        <argsstring></argsstring>
+        <name>nsec</name>
+        <qualifiedname>TE_timespec::nsec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1354" column="20" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="1354" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTE__timespec_1ac2f845739aa3dd2de055040b0d808a0a" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structTE__timespec" kindref="compound">TE_timespec</ref></type>
+        <definition>struct TE_timespec TE_timespec::wallClock</definition>
+        <argsstring></argsstring>
+        <name>wallClock</name>
+        <qualifiedname>TE_timespec::wallClock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1355" column="19"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTE__timespec_1a52d89e784a99be3276e6c46df2d8c170" prot="public" static="no" mutable="no">
+        <type>UINT64</type>
+        <definition>UINT64 TE_timespec::kernelTime</definition>
+        <argsstring></argsstring>
+        <name>kernelTime</name>
+        <qualifiedname>TE_timespec::kernelTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1358" column="20" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="1358" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTE__timespec_1ac72e8a393780ec2615ed131a98a0a3cd" prot="public" static="no" mutable="no">
+        <type>UINT64</type>
+        <definition>UINT64 TE_timespec::userTime</definition>
+        <argsstring></argsstring>
+        <name>userTime</name>
+        <qualifiedname>TE_timespec::userTime</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1359" column="20" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="1359" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTE__timespec_1a2ed23d2ca2d7f41095098a0b02a51720" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="structTE__timespec" kindref="compound">TE_timespec</ref></type>
+        <definition>struct TE_timespec TE_timespec::times</definition>
+        <argsstring></argsstring>
+        <name>times</name>
+        <qualifiedname>TE_timespec::times</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1360" column="15"/>
+      </memberdef>
+      <memberdef kind="variable" id="structTE__timespec_1ae6fdf6c95bd90df04ab42a6d77895dd7" prot="public" static="no" mutable="no">
+        <type>union <ref refid="structTE__timespec" kindref="compound">TE_timespec</ref></type>
+        <definition>union TE_timespec TE_timespec</definition>
+        <argsstring></argsstring>
+        <name></name>
+        <qualifiedname>TE_timespec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/include/types_vmapi.PH" line="1361" column="5"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure used to return the time from TE_GetTime() The time is returned in seconds and nanoseconds. In Linux for example, we have the time utility. Using &quot;time ls&quot; command we get: real 0m0.002s (corresponds to wallClock) user 0m0.000s (Sum of all threads, corresponds to times.userTime) sys 0m0.000s (Sum of all threads, corresponds to times.kernelTime) </para>
+    </detaileddescription>
+    <location file="Source/pin/include/types_vmapi.PH" line="1347" column="1" bodyfile="Source/pin/include/types_vmapi.PH" bodystart="1348" bodyend="1362"/>
+    <listofallmembers>
+      <member refid="structTE__timespec_1a52d89e784a99be3276e6c46df2d8c170" prot="public" virt="non-virtual"><scope>TE_timespec</scope><name>kernelTime</name></member>
+      <member refid="structTE__timespec_1a139b4ce4d436b761e12ca93917539388" prot="public" virt="non-virtual"><scope>TE_timespec</scope><name>nsec</name></member>
+      <member refid="structTE__timespec_1a62592a8579905e0de59c97ef16035e47" prot="public" virt="non-virtual"><scope>TE_timespec</scope><name>sec</name></member>
+      <member refid="structTE__timespec_1a2ed23d2ca2d7f41095098a0b02a51720" prot="public" virt="non-virtual"><scope>TE_timespec</scope><name>times</name></member>
+      <member refid="structTE__timespec_1ac72e8a393780ec2615ed131a98a0a3cd" prot="public" virt="non-virtual"><scope>TE_timespec</scope><name>userTime</name></member>
+      <member refid="structTE__timespec_1ac2f845739aa3dd2de055040b0d808a0a" prot="public" virt="non-virtual"><scope>TE_timespec</scope><name>wallClock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

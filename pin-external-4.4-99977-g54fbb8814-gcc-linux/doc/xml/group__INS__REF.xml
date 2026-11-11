@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__INS__REF" kind="group">
+    <compoundname>INS_REF</compoundname>
+    <title>INS: Instruction Object</title>
+    <innergroup refid="group__INS__INSTRUMENTATION">Instrumentation API</innergroup>
+    <innergroup refid="group__INS__INSPECTION">Inspection API for IA-32 and Intel(R) 64 instructions</innergroup>
+    <innergroup refid="group__INS__MODIFICATION">Generic modification API</innergroup>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>An INS represents an instruction. Can only be accessed at instrumentation time.</para>
+<para>Iteration idioms:</para>
+<para><programlisting><codeline><highlight class="comment">//<sp/>Forward<sp/>pass<sp/>over<sp/>all<sp/>instructions<sp/>in<sp/>bbl</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/>INS<sp/>ins=<sp/><ref refid="group__BBL_1ga924f36e487a71b9e59583a07e45e8019" kindref="member">BBL_InsHead</ref>(bbl);<sp/><ref refid="group__INS__INSPECTION_1ga29639fe41688c24d5cbe6a60ed0e48cc" kindref="member">INS_Valid</ref>(ins);<sp/>ins<sp/>=<sp/><ref refid="group__INS__INSPECTION_1ga7200b02bcadf61e9e651eeadd69f96d5" kindref="member">INS_Next</ref>(ins)<sp/>)</highlight></codeline>
+<codeline><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>pass<sp/>over<sp/>all<sp/>instructions<sp/>in<sp/>routine</highlight><highlight class="normal"></highlight></codeline>
+<codeline><highlight class="normal"></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(<sp/>INS<sp/>ins=<sp/><ref refid="group__RTN_1ga75cda09f353a70e23f2c4a96d64b2a01" kindref="member">RTN_InsHead</ref>(rtn);<sp/><ref refid="group__INS__INSPECTION_1ga29639fe41688c24d5cbe6a60ed0e48cc" kindref="member">INS_Valid</ref>(ins);<sp/>ins<sp/>=<sp/><ref refid="group__INS__INSPECTION_1ga7200b02bcadf61e9e651eeadd69f96d5" kindref="member">INS_Next</ref>(ins)<sp/>)</highlight></codeline>
+</programlisting> </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

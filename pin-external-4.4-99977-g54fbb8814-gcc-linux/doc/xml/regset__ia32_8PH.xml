@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="regset__ia32_8PH" kind="file" language="C++">
+    <compoundname>regset_ia32.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="regset__ia32_8PH_1a2ed5299cc593500b57ec48b89bdde9d7" prot="public" static="no">
+        <name>PIN_G_REGSET_IA32_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/core_ia32/regset_ia32.PH" line="9" column="10" bodyfile="Source/pin/core_ia32/regset_ia32.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__REG_1ga8a33ca031ce83cf24d58dca8adf19f6c" kind="typedef"><name>REGSET</name></member>
+    </sectiondef>
+    <sectiondef kind="var">
+      <member refid="group__REG_1gad31f09a57200512724bc45892b0d21c5" kind="variable"><name>REG_FirstInRegset</name></member>
+      <member refid="group__REG_1gae59d801e869df24c4321204c807df1a2" kind="variable"><name>REG_LastInRegset</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__REG_1gabb3254cab0dfed10866883311e3aa40f" kind="function"><name>REGSET_Contains</name></member>
+      <member refid="group__REG_1gac3002bde7356752b5953b2c140efa600" kind="function"><name>REGSET_Insert</name></member>
+      <member refid="group__REG_1gaf482a1965fa3be4c307336ba0b4d1e54" kind="function"><name>REGSET_Remove</name></member>
+      <member refid="group__REG_1ga3ea9754341453dedb9e106f61235309f" kind="function"><name>REGSET_Clear</name></member>
+      <member refid="group__REG_1ga0d287d13f9dc3f2fbffe24f217e12674" kind="function"><name>REGSET_AddAll</name></member>
+      <member refid="group__REG_1ga32a772c1f6417ffc7267f3b1ac4b0047" kind="function"><name>REGSET_PopNext</name></member>
+      <member refid="group__REG_1ga00f8d8090cf07f01758aa830f99d810f" kind="function"><name>REGSET_PopCount</name></member>
+      <member refid="group__REG_1ga44658f073c44408d669817cd73ba8339" kind="function"><name>REGSET_PopCountIsZero</name></member>
+      <member refid="group__REG_1gad21bf7e4d141d873d3a5c7aee0a6edde" kind="function"><name>REGSET_StringShort</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2020-2021<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_REGSET_IA32_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>regset_ia32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_REGSET_IA32_PH</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="group__REG_1gad31f09a57200512724bc45892b0d21c5" kindref="member">REG_FirstInRegset</ref><sp/>=<sp/>REG_RBASE;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="group__REG_1gae59d801e869df24c4321204c807df1a2" kindref="member">REG_LastInRegset</ref><sp/>=<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref>(REG_LAST<sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classREGISTER__SET" kindref="compound">REGISTER_SET</ref>&lt;<sp/><ref refid="group__REG_1gad31f09a57200512724bc45892b0d21c5" kindref="member">REG_FirstInRegset</ref>,<sp/><ref refid="group__REG_1gae59d801e869df24c4321204c807df1a2" kindref="member">REG_LastInRegset</ref><sp/>&gt;<sp/><ref refid="group__REG_1ga8a33ca031ce83cf24d58dca8adf19f6c" kindref="member">REGSET</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__REG_1gabb3254cab0dfed10866883311e3aa40f" kindref="member">REGSET_Contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8a33ca031ce83cf24d58dca8adf19f6c" kindref="member">REGSET</ref>&amp;<sp/>regset,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>regset.Contains(reg);<sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__REG_1gac3002bde7356752b5953b2c140efa600" kindref="member">REGSET_Insert</ref>(<ref refid="group__REG_1ga8a33ca031ce83cf24d58dca8adf19f6c" kindref="member">REGSET</ref>&amp;<sp/>regset,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg)<sp/>{<sp/>regset.Insert(reg);<sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__REG_1gaf482a1965fa3be4c307336ba0b4d1e54" kindref="member">REGSET_Remove</ref>(<ref refid="group__REG_1ga8a33ca031ce83cf24d58dca8adf19f6c" kindref="member">REGSET</ref>&amp;<sp/>regset,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg)<sp/>{<sp/>regset.Remove(reg);<sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__REG_1ga3ea9754341453dedb9e106f61235309f" kindref="member">REGSET_Clear</ref>(<ref refid="group__REG_1ga8a33ca031ce83cf24d58dca8adf19f6c" kindref="member">REGSET</ref>&amp;<sp/>regset)<sp/>{<sp/>regset.Clear();<sp/>}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__REG_1ga0d287d13f9dc3f2fbffe24f217e12674" kindref="member">REGSET_AddAll</ref>(<ref refid="group__REG_1ga8a33ca031ce83cf24d58dca8adf19f6c" kindref="member">REGSET</ref>&amp;<sp/>regset)<sp/>{<sp/>regset.InsertAll();<sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="group__REG_1ga32a772c1f6417ffc7267f3b1ac4b0047" kindref="member">REGSET_PopNext</ref>(<ref refid="group__REG_1ga8a33ca031ce83cf24d58dca8adf19f6c" kindref="member">REGSET</ref>&amp;<sp/>regset)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>regset.PopNext();<sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__REG_1ga00f8d8090cf07f01758aa830f99d810f" kindref="member">REGSET_PopCount</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8a33ca031ce83cf24d58dca8adf19f6c" kindref="member">REGSET</ref>&amp;<sp/>regset)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>regset.PopCount();<sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__REG_1ga44658f073c44408d669817cd73ba8339" kindref="member">REGSET_PopCountIsZero</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8a33ca031ce83cf24d58dca8adf19f6c" kindref="member">REGSET</ref>&amp;<sp/>regset)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>regset.PopCountIsZero();<sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::string<sp/><ref refid="group__REG_1gad21bf7e4d141d873d3a5c7aee0a6edde" kindref="member">REGSET_StringShort</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8a33ca031ce83cf24d58dca8adf19f6c" kindref="member">REGSET</ref>&amp;<sp/>regset)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>regset.String();<sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_REGSET_IA32_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/core_ia32/regset_ia32.PH"/>
+  </compounddef>
+</doxygen>

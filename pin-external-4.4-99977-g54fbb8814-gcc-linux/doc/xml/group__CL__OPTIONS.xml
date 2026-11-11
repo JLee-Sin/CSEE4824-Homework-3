@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__CL__OPTIONS" kind="group">
+    <compoundname>CL_OPTIONS</compoundname>
+    <title>Command Line Switches</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This section describes the command line switches that are currently supported by Pin.</para>
+<para><simplesect kind="note"><para>Please issue <computeroutput>pin -help</computeroutput> from the command-line </para>
+</simplesect>
+</para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

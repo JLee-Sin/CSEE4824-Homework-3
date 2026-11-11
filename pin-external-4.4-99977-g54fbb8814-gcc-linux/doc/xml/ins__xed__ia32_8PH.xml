@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="ins__xed__ia32_8PH" kind="file" language="C++">
+    <compoundname>ins_xed_ia32.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="ins__xed__ia32_8PH_1abcfbbee4c3c3a52fa3e6dc39231b4f11" prot="public" static="no">
+        <name>PIN_G_INS_XED_IA32_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/core_ia32/ins_xed_ia32.PH" line="9" column="10" bodyfile="Source/pin/core_ia32/ins_xed_ia32.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__INS__INSPECTION_1gaa67cf2890ebfbfdc671d9a671d1d415f" kind="function"><name>INS_XedDec</name></member>
+      <member refid="group__INS__INSPECTION_1ga1ec5f46a0bd404ae2d9e04823f79072c" kind="function"><name>INS_XedExactMapToPinReg</name></member>
+      <member refid="group__INS__INSPECTION_1gaeddde4b64a0009640facf6482bed4850" kind="function"><name>INS_XedExactMapFromPinReg</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2020-2022<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_INS_XED_IA32_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>ins_xed_ia32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_INS_XED_IA32_PH</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>xed_decoded_inst_t*<sp/><ref refid="group__INS__INSPECTION_1gaa67cf2890ebfbfdc671d9a671d1d415f" kindref="member">INS_XedDec</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="group__INS__INSPECTION_1ga1ec5f46a0bd404ae2d9e04823f79072c" kindref="member">INS_XedExactMapToPinReg</ref>(xed_reg_enum_t<sp/>xed_reg);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>xed_reg_enum_t<sp/><ref refid="group__INS__INSPECTION_1gaeddde4b64a0009640facf6482bed4850" kindref="member">INS_XedExactMapFromPinReg</ref>(<ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>pin_reg);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_INS_XED_IA32_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/core_ia32/ins_xed_ia32.PH"/>
+  </compounddef>
+</doxygen>

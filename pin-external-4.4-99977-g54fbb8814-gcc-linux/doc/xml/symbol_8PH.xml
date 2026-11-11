@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="symbol_8PH" kind="file" language="C++">
+    <compoundname>symbol.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="symbol_8PH_1a664dff4c56f9154d11ebed60bb58f313" prot="public" static="no">
+        <name>PIN_G_SYMBOL_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/symbol.PH" line="9" column="10" bodyfile="Source/pin/pin/symbol.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__PIN__CONTROL_1ga5a74f4530db5d94bede1391c59e39939" kind="function"><name>PIN_InitSymbols</name></member>
+      <member refid="group__PIN__CONTROL_1gadeaa38396564e0afbd701fce28131937" kind="function"><name>PIN_InitSymbolsAlt</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2020-2026<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_SYMBOL_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>symbol<sp/>PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_SYMBOL_PH</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__CONTROL_1ga5a74f4530db5d94bede1391c59e39939" kindref="member">PIN_InitSymbols</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__PIN__CONTROL_1gadeaa38396564e0afbd701fce28131937" kindref="member">PIN_InitSymbolsAlt</ref>(<ref refid="group__PIN__CONTROL_1ga32ad8725a818ddded04963a3b35a317c" kindref="member">SYMBOL_INFO_MODE</ref><sp/>mode);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_SYMBOL_PH</highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/pin/symbol.PH"/>
+  </compounddef>
+</doxygen>

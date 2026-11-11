@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpstate__ia32e_8PH" kind="file" language="C++">
+    <compoundname>fpstate_ia32e.PH</compoundname>
+    <innerclass refid="structXSAVE__HEADER" prot="public">XSAVE_HEADER</innerclass>
+    <innerclass refid="structFPSTATE" prot="public">FPSTATE</innerclass>
+    <innerclass refid="structFPSTATE_1_1XSTATE" prot="public">FPSTATE::XSTATE</innerclass>
+    <innerclass refid="structFPSTATE_1_1VSTATE" prot="public">FPSTATE::VSTATE</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="fpstate__ia32e_8PH_1a7c7acfa61cf5ec12939da3ee510e483c" prot="public" static="no">
+        <name>PIN_G_FPSTATE_IA32E_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/base/fpstate_ia32e.PH" line="9" column="10" bodyfile="Source/pin/base/fpstate_ia32e.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__CONTEXT_1ga7334b8a2b36cd6fb7f40c2106849f3cc" kind="typedef"><name>FXSAVE</name></member>
+    </sectiondef>
+    <sectiondef kind="var">
+      <member refid="group__CONTEXT_1gad1b665d43ed8655d42cf86e474ceb5ea" kind="variable"><name>VSTATE_PADDING</name></member>
+      <member refid="group__CONTEXT_1gaaf302a6d2cb4e89c0355540b1b0951d7" kind="variable"><name>FPSTATE_SIZE</name></member>
+      <member refid="group__CONTEXT_1ga0f5ad5017cf79566f740ff72e37dfeec" kind="variable"><name>FPSTATE_ALIGNMENT</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2010-2026<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_FPSTATE_IA32E_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>fpstate_ia32e</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_FPSTATE_IA32E_PH</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>UTIL::FXSAVE_INTEL64_PROMOTED<sp/><ref refid="group__CONTEXT_1ga7334b8a2b36cd6fb7f40c2106849f3cc" kindref="member">FXSAVE</ref>;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structXSAVE__HEADER" kindref="compound">XSAVE_HEADER</ref></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structXSAVE__HEADER" kindref="compound">XSAVE_HEADER</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Active/in-use<sp/>mask:<sp/>each<sp/>bit<sp/>indicates<sp/>whether<sp/>the<sp/>corresponding<sp/>xstate<sp/>component<sp/>has</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>non-INIT<sp/>data<sp/>in<sp/>this<sp/>buffer.<sp/><sp/>XRSTOR<sp/>uses<sp/>this<sp/>to<sp/>decide<sp/>per-component<sp/>whether<sp/>to<sp/>restore</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>from<sp/>the<sp/>buffer<sp/>(bit<sp/>set)<sp/>or<sp/>reset<sp/>to<sp/>INIT<sp/>state<sp/>(bit<sp/>clear).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>NOTE:<sp/>This<sp/>is<sp/>NOT<sp/>the<sp/>same<sp/>as<sp/>FPX_SW_BYTES._xstateBv,<sp/>which<sp/>is<sp/>the<sp/>LAYOUT<sp/>mask<sp/>describing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>which<sp/>features<sp/>the<sp/>signal<sp/>frame<sp/>is<sp/>sized<sp/>to<sp/>hold<sp/>(derived<sp/>from<sp/>XCR0).<sp/><sp/>FPX_SW_BYTES<sp/>is<sp/>a</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Linux<sp/>software<sp/>structure<sp/>embedded<sp/>in<sp/>the<sp/>FXSAVE<sp/>padding<sp/>(last<sp/>48<sp/>bytes<sp/>of<sp/>_pad4,<sp/>at<sp/>offset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>464<sp/>within<sp/>FXSAVE).<sp/><sp/>See<sp/>fpstate_linux.H<sp/>for<sp/>its<sp/>definition<sp/>and<sp/>accessors.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT64<sp/>_xstate_bv;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Compaction<sp/>format<sp/>descriptor<sp/>(XCOMP_BV):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Bit<sp/>63:<sp/>compact-mode<sp/>flag<sp/>(1<sp/>=<sp/>compact<sp/>layout,<sp/>0<sp/>=<sp/>standard<sp/>fixed-offset<sp/>layout).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Bits<sp/>62:0:<sp/>which<sp/>state<sp/>components<sp/>have<sp/>slots<sp/>in<sp/>the<sp/>buffer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Written<sp/>by<sp/>XSAVEC<sp/>as<sp/>RFBM<sp/>|<sp/>(1&lt;&lt;63).<sp/><sp/>XSAVE/XSAVEOPT<sp/>leave<sp/>this<sp/>field<sp/>0<sp/>(standard<sp/>format).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>XRSTOR<sp/>reads<sp/>bit<sp/>63<sp/>to<sp/>choose<sp/>standard<sp/>vs<sp/>compact<sp/>layout,<sp/>then<sp/>uses<sp/>bits<sp/>62:0<sp/>to<sp/>locate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>each<sp/>component&apos;s<sp/>offset<sp/>in<sp/>the<sp/>compact<sp/>buffer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT64<sp/>_xcomp_bv;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT64<sp/>_reserved[6];</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="group__CONTEXT_1gad1b665d43ed8655d42cf86e474ceb5ea" kindref="member">VSTATE_PADDING</ref><sp/>=<sp/>128;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structFPSTATE" kindref="compound">FPSTATE</ref></highlight></codeline>
+<codeline lineno="56"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fxsave_legacy<sp/>is<sp/>applicable<sp/>on<sp/>all<sp/>supported<sp/>CPUs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="group__CONTEXT_1ga4ca557f14f098e2c733785a3a9a78f50" kindref="member">FXSAVE</ref><sp/>fxsave_legacy;<sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>512<sp/><sp/>bytes<sp/>at<sp/>offset<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>are<sp/>only<sp/>applicable<sp/>on<sp/>processors<sp/>that<sp/>support<sp/>XSAVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">XSTATE</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structXSAVE__HEADER" kindref="compound">XSAVE_HEADER</ref><sp/>_extendedHeader;<sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>64<sp/><sp/><sp/>bytes<sp/>at<sp/>offset<sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT8<sp/>_ymmUpper[16<sp/>*<sp/>16];<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>upper<sp/>128<sp/>bits<sp/>of<sp/>ymm0-ymm15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>256<sp/><sp/>bytes<sp/>at<sp/>offset<sp/>576</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>_xstate;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>is<sp/>only<sp/>applicable<sp/>on<sp/>processors<sp/>that<sp/>support<sp/>AVX512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>So<sp/>far<sp/>there<sp/>are<sp/>832<sp/>bytes<sp/>of<sp/>data<sp/>but<sp/>the<sp/>next<sp/>bulk<sp/>of<sp/>data<sp/>begins<sp/>at<sp/>offset<sp/>1088.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8<sp/>_reserved[<ref refid="group__CONTEXT_1gad1b665d43ed8655d42cf86e474ceb5ea" kindref="member">VSTATE_PADDING</ref>];<sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>128<sp/><sp/>bytes<sp/>at<sp/>offset<sp/>832</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>_vstate<sp/>is<sp/>comprised<sp/>of<sp/>five<sp/>parts.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>1.<sp/>BND<sp/>registers<sp/>BND0-BND3<sp/>(MPX)<sp/>OR<sp/>APX<sp/>extended<sp/>GPRs<sp/>r16-r31<sp/>(mutually<sp/>exclusive)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>2.<sp/>BND<sp/>control<sp/>and<sp/>status<sp/>registers<sp/>(MPX,<sp/>part<sp/>of<sp/>APX<sp/>EGPR<sp/>area<sp/>on<sp/>APX-enabled<sp/>CPUs)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>3.<sp/>The<sp/>Opmask<sp/>registers<sp/>k0-k7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>4.<sp/>The<sp/>upper<sp/>256<sp/>bits<sp/>of<sp/>zmm0-zmm15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>5.<sp/>zmm16-zmm31<sp/>(512<sp/>bits<sp/>each)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">VSTATE</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>MPX<sp/>(components<sp/>3-4)<sp/>and<sp/>APX<sp/>EGPR<sp/>(component<sp/>19)<sp/>share<sp/>the<sp/>same<sp/>XSAVE<sp/>offset<sp/>(960).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>They<sp/>are<sp/>mutually<sp/>exclusive:<sp/>a<sp/>processor<sp/>supports<sp/>one<sp/>or<sp/>neither,<sp/>never<sp/>both.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">union</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT8<sp/>_bndRegs[64];<sp/></highlight><highlight class="comment">//<sp/>BND<sp/>registers<sp/>BND0-BND3.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>64<sp/><sp/><sp/>bytes<sp/>at<sp/>offset<sp/>960</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT8<sp/>_bndCSR[64];<sp/><sp/></highlight><highlight class="comment">//<sp/>BND<sp/>control<sp/>and<sp/>status<sp/>registers.<sp/><sp/><sp/><sp/><sp/><sp/>64<sp/><sp/><sp/>bytes<sp/>at<sp/>offset<sp/>1024</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/>_mpx;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT64<sp/>_egpr[16];<sp/></highlight><highlight class="comment">//<sp/>APX<sp/>extended<sp/>GPRs<sp/>r16-r31.<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>128<sp/><sp/>bytes<sp/>at<sp/>offset<sp/>960</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT64<sp/>_kmasks[8];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>8<sp/>64-bit<sp/>k<sp/>(mask)<sp/>registers<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>64<sp/><sp/><sp/>bytes<sp/>at<sp/>offset<sp/>1088</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT8<sp/>_zmmUpper[16<sp/>*<sp/>32];<sp/></highlight><highlight class="comment">//<sp/>upper<sp/>256<sp/>bits<sp/>of<sp/>zmm0-zmm15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>512<sp/><sp/>bytes<sp/>at<sp/>offset<sp/>1152</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UINT8<sp/>_zmms[16<sp/>*<sp/>64];<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>16<sp/>512-bit<sp/>zmm<sp/>registers<sp/>(zmm16-zmm31)<sp/><sp/><sp/>1024<sp/>bytes<sp/>at<sp/>offset<sp/>1664</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/>_vstate;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>following<sp/>is<sp/>only<sp/>applicable<sp/>on<sp/>processors<sp/>that<sp/>support<sp/>AMX<sp/>(XTILE_CFG,<sp/>xstate<sp/>bit<sp/>17).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>XTILE_CFG<sp/>is<sp/>a<sp/>non-dynamic<sp/>feature<sp/>included<sp/>in<sp/>the<sp/>kernel&apos;s<sp/>signal<sp/>frame<sp/>xstate<sp/>area.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CPUID<sp/>reports<sp/>XTILE_CFG<sp/>at<sp/>absolute<sp/>offset<sp/>2752<sp/>with<sp/>size<sp/>64<sp/>on<sp/>SPR,<sp/>so<sp/>there<sp/>is<sp/>a<sp/>64-byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>gap<sp/>between<sp/>the<sp/>end<sp/>of<sp/>VSTATE<sp/>(offset<sp/>2688)<sp/>and<sp/>the<sp/>start<sp/>of<sp/>XTILE_CFG.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note:<sp/>XTILE_DATA<sp/>(xstate<sp/>bit<sp/>18,<sp/>8KB<sp/>of<sp/>tile<sp/>register<sp/>data)<sp/>is<sp/>intentionally<sp/>excluded.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8<sp/>_xtileCfgPadding[64];<sp/></highlight><highlight class="comment">//<sp/>padding<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>64<sp/><sp/><sp/>bytes<sp/>at<sp/>offset<sp/>2688</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>UINT8<sp/>_xtileCfg[64];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TILECFG<sp/>register<sp/>(AMX<sp/>configuration)<sp/><sp/><sp/><sp/><sp/>64<sp/><sp/><sp/>bytes<sp/>at<sp/>offset<sp/>2752</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Total<sp/>of<sp/>2816<sp/>bytes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="group__CONTEXT_1gaaf302a6d2cb4e89c0355540b1b0951d7" kindref="member">FPSTATE_SIZE</ref><sp/>=<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structFPSTATE" kindref="compound">FPSTATE</ref>);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="group__CONTEXT_1ga0f5ad5017cf79566f740ff72e37dfeec" kindref="member">FPSTATE_ALIGNMENT</ref><sp/>=<sp/>64;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_FPSTATE_IA32E_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/base/fpstate_ia32e.PH"/>
+  </compounddef>
+</doxygen>

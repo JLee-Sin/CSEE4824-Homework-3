@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="operand__ia32_8PH" kind="file" language="C++">
+    <compoundname>operand_ia32.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="operand__ia32_8PH_1a058529ae19184421d8bec276410a040a" prot="public" static="no">
+        <name>PIN_G_OPERAND_IA32_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/core_ia32/operand_ia32.PH" line="9" column="10" bodyfile="Source/pin/core_ia32/operand_ia32.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__INS__INSPECTION_1ga68a9e9a74a8028c7563375be7c230f3a" kind="function"><name>INS_OperandCount</name></member>
+      <member refid="group__INS__INSPECTION_1ga3390b29d8191050119050c038f9dce8a" kind="function"><name>INS_OperandElementCount</name></member>
+      <member refid="group__INS__INSPECTION_1ga75ca91e0ea573688572123db944fcda3" kind="function"><name>INS_OperandHasElements</name></member>
+      <member refid="group__INS__INSPECTION_1ga1150b9fcd86aaf0807683412b909f22a" kind="function"><name>INS_OperandElementSize</name></member>
+      <member refid="group__INS__INSPECTION_1ga210efa4d05fce960cf32656d10df6baf" kind="function"><name>INS_OperandNameId</name></member>
+      <member refid="group__INS__INSPECTION_1ga742593b20994f62aaaa841794b97dba4" kind="function"><name>INS_OperandIsMemory</name></member>
+      <member refid="group__INS__INSPECTION_1gae726545c04460e7696bb284df320f4f2" kind="function"><name>INS_OperandMemoryBaseReg</name></member>
+      <member refid="group__INS__INSPECTION_1gaaa9a52ca96e3cc0bc5150fa9e7f87c0e" kind="function"><name>INS_OperandMemoryIndexReg</name></member>
+      <member refid="group__INS__INSPECTION_1gab55682e63100b3ebc5326237ad83c171" kind="function"><name>INS_OperandMemorySegmentReg</name></member>
+      <member refid="group__INS__INSPECTION_1ga8a20d2d4be126df6469a5161f97eca6c" kind="function"><name>INS_OperandMemoryScale</name></member>
+      <member refid="group__INS__INSPECTION_1gab15523f2c2dc93599a8f59dd61057973" kind="function"><name>INS_OperandMemoryDisplacement</name></member>
+      <member refid="group__INS__INSPECTION_1ga1c5fa1253299975b9038e2f839f137b6" kind="function"><name>INS_OperandIsFixedMemop</name></member>
+      <member refid="group__INS__INSPECTION_1gab02e5d35eda9ffcb9a208120d932b4de" kind="function"><name>GetNumberAndSizeOfMemAccesses</name></member>
+      <member refid="group__INS__INSPECTION_1gaa01f153aa19aeb478458cf2042d05a01" kind="function"><name>INS_MemoryOperandCount</name></member>
+      <member refid="group__INS__INSPECTION_1ga48e9034dc81f2a2e5f1a61ec4c68b497" kind="function"><name>INS_MemoryOperandElementCount</name></member>
+      <member refid="group__INS__INSPECTION_1gaa905931fcdcac481c789192e0bd30014" kind="function"><name>INS_MemoryOperandSize</name></member>
+      <member refid="group__INS__INSPECTION_1gafa78b79577f4cdf4ca898b13e324d4f8" kind="function"><name>INS_MemoryOperandElementSize</name></member>
+      <member refid="group__INS__INSPECTION_1gac610cf9dbd53deeba31c2277006d70fd" kind="function"><name>INS_OperandIsAddressGenerator</name></member>
+      <member refid="group__INS__INSPECTION_1gab2869fa6158976e73fa91fb5a19ad054" kind="function"><name>INS_OperandIsBranchDisplacement</name></member>
+      <member refid="group__INS__INSPECTION_1ga2db1205b7749b176d9145d911bad461c" kind="function"><name>INS_MemoryOperandIsRead</name></member>
+      <member refid="group__INS__INSPECTION_1gab66a50260dde64035e46a831f5d4b1dc" kind="function"><name>INS_MemoryOperandIsWritten</name></member>
+      <member refid="group__INS__INSPECTION_1ga67a5b6c52c0cae6256557d4bc8729ab8" kind="function"><name>INS_MemoryOperandIndexToOperandIndex</name></member>
+      <member refid="group__INS__INSPECTION_1gae860ce689d370e278440310b882d0440" kind="function"><name>INS_OperandIsReg</name></member>
+      <member refid="group__INS__INSPECTION_1gaf1084ae5fd648934ffe2b4b12b1df935" kind="function"><name>INS_OperandIsSegmentReg</name></member>
+      <member refid="group__INS__INSPECTION_1ga4b3136c05e383bea3f91a5204b87a570" kind="function"><name>INS_OperandReg</name></member>
+      <member refid="group__INS__INSPECTION_1ga43b03561626b62fd27a0e699692fde04" kind="function"><name>INS_OperandIsImmediate</name></member>
+      <member refid="group__INS__INSPECTION_1gab53dc2b4142ff9f104cf4a9c4d952845" kind="function"><name>INS_OperandImmediate</name></member>
+      <member refid="group__INS__INSPECTION_1gab022da45d7331aae8b2642a9e8ddbe4c" kind="function"><name>INS_OperandIsImplicit</name></member>
+      <member refid="group__INS__INSPECTION_1ga990a23fc02e9bd79b95a3e9360a1bf87" kind="function"><name>INS_RegIsImplicit</name></member>
+      <member refid="group__INS__INSPECTION_1ga4fc45dd076d7de4fb42ee273d0fb2ae8" kind="function"><name>INS_OperandWidth</name></member>
+      <member refid="group__INS__INSPECTION_1gaf95b32d966c70948bc2bd73226909869" kind="function"><name>INS_OperandSize</name></member>
+      <member refid="group__INS__INSPECTION_1ga9233f304c34ac2a24c39345eb31e7b15" kind="function"><name>INS_OperandRead</name></member>
+      <member refid="group__INS__INSPECTION_1ga5f878705486eb595557cf1af0f7be562" kind="function"><name>INS_OperandWritten</name></member>
+      <member refid="group__INS__INSPECTION_1ga717be313a730cb54502d0e01a5529eea" kind="function"><name>INS_OperandReadOnly</name></member>
+      <member refid="group__INS__INSPECTION_1ga98490395bafb6b8798494a36cd064f09" kind="function"><name>INS_OperandWrittenOnly</name></member>
+      <member refid="group__INS__INSPECTION_1ga3de89936066fff8ed6ade7aa8cdb8822" kind="function"><name>INS_OperandReadAndWritten</name></member>
+      <member refid="group__INS__INSPECTION_1ga09a517bd84de8e70d6bfbce932eeffbd" kind="function"><name>INS_MaskRegister</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2020-2021<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_OPERAND_IA32_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>operand_ia32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_OPERAND_IA32_PH</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__INS__INSPECTION_1ga68a9e9a74a8028c7563375be7c230f3a" kindref="member">INS_OperandCount</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__INS__INSPECTION_1ga3390b29d8191050119050c038f9dce8a" kindref="member">INS_OperandElementCount</ref>(INS<sp/>ins,<sp/>UINT32<sp/>opIdx);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga75ca91e0ea573688572123db944fcda3" kindref="member">INS_OperandHasElements</ref>(INS<sp/>ins,<sp/>UINT32<sp/>opIdx);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="group__INS__INSPECTION_1ga1150b9fcd86aaf0807683412b909f22a" kindref="member">INS_OperandElementSize</ref>(INS<sp/>ins,<sp/>UINT32<sp/>opIdx);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/>INS_OperandNameId(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga742593b20994f62aaaa841794b97dba4" kindref="member">INS_OperandIsMemory</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="group__INS__INSPECTION_1gae726545c04460e7696bb284df320f4f2" kindref="member">INS_OperandMemoryBaseReg</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="group__INS__INSPECTION_1gaaa9a52ca96e3cc0bc5150fa9e7f87c0e" kindref="member">INS_OperandMemoryIndexReg</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="group__INS__INSPECTION_1gab55682e63100b3ebc5326237ad83c171" kindref="member">INS_OperandMemorySegmentReg</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__INS__INSPECTION_1ga8a20d2d4be126df6469a5161f97eca6c" kindref="member">INS_OperandMemoryScale</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>ADDRDELTA<sp/><ref refid="group__INS__INSPECTION_1gab15523f2c2dc93599a8f59dd61057973" kindref="member">INS_OperandMemoryDisplacement</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga1c5fa1253299975b9038e2f839f137b6" kindref="member">INS_OperandIsFixedMemop</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/>GetNumberAndSizeOfMemAccesses(INS<sp/>ins,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>numAccesses,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>accessSize,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">*<sp/>indexSize);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__INS__INSPECTION_1gaa01f153aa19aeb478458cf2042d05a01" kindref="member">INS_MemoryOperandCount</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__INS__INSPECTION_1ga48e9034dc81f2a2e5f1a61ec4c68b497" kindref="member">INS_MemoryOperandElementCount</ref>(INS<sp/>ins,<sp/>UINT32<sp/>memoryOp);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="group__INS__INSPECTION_1gaa905931fcdcac481c789192e0bd30014" kindref="member">INS_MemoryOperandSize</ref>(INS<sp/>ins,<sp/>UINT32<sp/>memoryOp);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>USIZE<sp/><ref refid="group__INS__INSPECTION_1gafa78b79577f4cdf4ca898b13e324d4f8" kindref="member">INS_MemoryOperandElementSize</ref>(INS<sp/>ins,<sp/>UINT32<sp/>memoryOp);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1gac610cf9dbd53deeba31c2277006d70fd" kindref="member">INS_OperandIsAddressGenerator</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1gab2869fa6158976e73fa91fb5a19ad054" kindref="member">INS_OperandIsBranchDisplacement</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga2db1205b7749b176d9145d911bad461c" kindref="member">INS_MemoryOperandIsRead</ref>(INS<sp/>ins,<sp/>UINT32<sp/>memopIdx);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1gab66a50260dde64035e46a831f5d4b1dc" kindref="member">INS_MemoryOperandIsWritten</ref>(INS<sp/>ins,<sp/>UINT32<sp/>memopIdx);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__INS__INSPECTION_1ga67a5b6c52c0cae6256557d4bc8729ab8" kindref="member">INS_MemoryOperandIndexToOperandIndex</ref>(INS<sp/>ins,<sp/>UINT32<sp/>memopIdx);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1gae860ce689d370e278440310b882d0440" kindref="member">INS_OperandIsReg</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1gaf1084ae5fd648934ffe2b4b12b1df935" kindref="member">INS_OperandIsSegmentReg</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="group__INS__INSPECTION_1ga4b3136c05e383bea3f91a5204b87a570" kindref="member">INS_OperandReg</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga43b03561626b62fd27a0e699692fde04" kindref="member">INS_OperandIsImmediate</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT64<sp/><ref refid="group__INS__INSPECTION_1gab53dc2b4142ff9f104cf4a9c4d952845" kindref="member">INS_OperandImmediate</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1gab022da45d7331aae8b2642a9e8ddbe4c" kindref="member">INS_OperandIsImplicit</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga990a23fc02e9bd79b95a3e9360a1bf87" kindref="member">INS_RegIsImplicit</ref>(INS<sp/>ins,<sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/>reg);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__INS__INSPECTION_1ga4fc45dd076d7de4fb42ee273d0fb2ae8" kindref="member">INS_OperandWidth</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>UINT32<sp/><ref refid="group__INS__INSPECTION_1gaf95b32d966c70948bc2bd73226909869" kindref="member">INS_OperandSize</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga9233f304c34ac2a24c39345eb31e7b15" kindref="member">INS_OperandRead</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga5f878705486eb595557cf1af0f7be562" kindref="member">INS_OperandWritten</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga717be313a730cb54502d0e01a5529eea" kindref="member">INS_OperandReadOnly</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga98490395bafb6b8798494a36cd064f09" kindref="member">INS_OperandWrittenOnly</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>BOOL<sp/><ref refid="group__INS__INSPECTION_1ga3de89936066fff8ed6ade7aa8cdb8822" kindref="member">INS_OperandReadAndWritten</ref>(INS<sp/>ins,<sp/>UINT32<sp/>n);</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__REG_1ga8f899d7ad1af070aae505a85cc998fa5" kindref="member">REG</ref><sp/><ref refid="group__INS__INSPECTION_1ga09a517bd84de8e70d6bfbce932eeffbd" kindref="member">INS_MaskRegister</ref>(INS<sp/>ins);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_OPERAND_IA32_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/core_ia32/operand_ia32.PH"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="group__DEPRECATED" kind="group">
+    <compoundname>DEPRECATED</compoundname>
+    <title>Pin Deprecated API</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>APIs from older versions of Pin that have been replaced by more powerful, or simpler, interfaces in the current version of Pin. The newer APIs should be used instead of these interfaces. </para>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

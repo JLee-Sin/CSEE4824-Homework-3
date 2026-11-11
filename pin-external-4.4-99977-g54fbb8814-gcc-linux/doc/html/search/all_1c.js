@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['wait_20waitpid_20wait4_0',['wait() / waitpid() / wait4()',['../group__PINCRTDEV.html#win_waitpid',1,'']]],
+  ['wait4_1',['wait() / waitpid() / wait4()',['../group__PINCRTDEV.html#win_waitpid',1,'']]],
+  ['waitpid_20wait4_2',['wait() / waitpid() / wait4()',['../group__PINCRTDEV.html#win_waitpid',1,'']]],
+  ['weak_20mode_3',['Weak mode',['../index.html#mmanweakrange',1,'']]],
+  ['what_20s_20new_20in_20pin_204_20x_4',['What&apos;s New in Pin 4.x',['../index.html#WHATSNEW',1,'']]],
+  ['when_20to_20use_20iarg_5fmulti_5felement_5foperand_5',['When to use IARG_MULTI_ELEMENT_OPERAND',['../index.html#MULTI_ELEMENT_WHEN_TO_USE',1,'']]],
+  ['when_20writing_20a_20pintool_6',['Performance Considerations When Writing  a Pintool',['../index.html#PERFORMANCE',1,'']]],
+  ['where_20to_20instrument_7',['Letting Pin Decide Where to Instrument',['../index.html#let_pin_decide',1,'']]],
+  ['windbg_20debugger_20on_20windows_8',['Using the WinDbg Debugger on Windows',['../index.html#WinDbg',1,'']]],
+  ['windows_9',['windows',['../index.html#APPDEBUG_WINDOWS',1,'Advanced Debugging Extensions on Windows'],['../index.html#namespace',1,'Conflicts between Pin and Windows'],['../index.html#multi',1,'Constructing PinTools from multiple DLLs on Windows'],['../index.html#FindSymbol',1,'Finding Functions By Name on Windows'],['../index.html#WindowsNotes',1,'Notes for Building Tools for Windows'],['../index.html#VSDBG',1,'Using the Visual Studio Debugger on Windows'],['../index.html#WinDbg',1,'Using the WinDbg Debugger on Windows']]],
+  ['windows_20os_10',['Windows OS',['../index.html#WINDOWS_OS',1,'']]],
+  ['windows_20specific_20changes_11',['Pin CRT Windows Specific Changes',['../group__PINCRTDEV.html#PINCRT_WINDOWS',1,'']]],
+  ['windows_20without_20pin_20s_20makefile_20infrastructure_12',['Building Pintools on Windows Without Pin&apos;s Makefile Infrastructure',['../index.html#BuildingWithoutMakefileWindows',1,'']]],
+  ['windows_5fsys_13',['WINDOWS_SYS',['../structEXCEPTION__INFO_1_1EXCEPTION__SPECIFIC_1_1WINDOWS__SYS.html',1,'EXCEPTION_INFO::EXCEPTION_SPECIFIC']]],
+  ['with_20a_20pind_20rpc_20plugin_20from_20a_20pintool_14',['Interacting With a pind RPC Plugin from a Pintool',['../index.html#USERPC',1,'']]],
+  ['with_20e_5frpc_5farg_5ftype_3a_3arpcbuffer_20out_20arguments_20and_20return_20values_15',['Dealing with E_rpc_arg_type::RpcBuffer OUT Arguments and Return Values',['../index.html#RPCOUTARG',1,'']]],
+  ['with_20pin_16',['How to Instrument with Pin',['../index.html#INSTRUMENTING',1,'']]],
+  ['within_20the_20kit_20directory_20tree_17',['Building a Tool From Within the Kit Directory Tree',['../index.html#BuildingInsideKit',1,'']]],
+  ['without_20pin_20s_20makefile_20infrastructure_18',['without pin s makefile infrastructure',['../index.html#BuildingWithoutMakefilesLinux',1,'Building Pintools on Linux Without Pin&apos;s Makefile Infrastructure'],['../index.html#BuildingWithoutMakefileWindows',1,'Building Pintools on Windows Without Pin&apos;s Makefile Infrastructure']]],
+  ['without_20wrappers_19',['Building Tools From The Command Line Without Wrappers',['../index.html#buildingsa',1,'']]],
+  ['working_20directory_20cwd_20',['Current Working Directory (CWD)',['../group__PINCRTDEV.html#CWD',1,'']]],
+  ['wrappers_21',['Building Tools From The Command Line Without Wrappers',['../index.html#buildingsa',1,'']]],
+  ['write_22',['write',['../classLOGFILE.html#ad1b403ecdee046ba262660278c70ed2f',1,'LOGFILE::Write()'],['../group__PINCRTDEV.html#win_write',1,'write()']]],
+  ['writing_20a_20pintool_23',['Performance Considerations When Writing  a Pintool',['../index.html#PERFORMANCE',1,'']]]
+];

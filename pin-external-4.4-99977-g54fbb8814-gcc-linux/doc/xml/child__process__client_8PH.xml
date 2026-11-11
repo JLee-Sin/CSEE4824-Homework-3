@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="child__process__client_8PH" kind="file" language="C++">
+    <compoundname>child_process_client.PH</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="child__process__client_8PH_1a271704830085166ee64e6f144c3fe1db" prot="public" static="no">
+        <name>PIN_G_CHILD_PROCESS_CLIENT_PH</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Source/pin/pin/child_process_client.PH" line="9" column="10" bodyfile="Source/pin/pin/child_process_client.PH" bodystart="9" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <member refid="group__PIN__PROCESS_1ga9830f4f81eb0f4cab7b66cf6c51ac89a" kind="typedef"><name>CHILD_PROCESS</name></member>
+      <member refid="group__PIN__PROCESS_1gabccd10f8f7203db2476f28a5c3a8f75b" kind="typedef"><name>FOLLOW_CHILD_PROCESS_CALLBACK</name></member>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__PIN__CONTROL_1gae710eef7b08de1d153a0b7f3469175a0" kind="function"><name>PIN_AddFollowChildProcessFunction</name></member>
+      <member refid="group__PIN__PROCESS_1gad9e9d95dd47de9efbf3bf46bb1f549d6" kind="function"><name>CHILD_PROCESS_GetId</name></member>
+      <member refid="group__PIN__PROCESS_1ga0d58bd9bcb5f952f248df28876f9c7fb" kind="function"><name>CHILD_PROCESS_GetCommandLine</name></member>
+      <member refid="group__PIN__PROCESS_1ga82625ca6006c9e0a7c94e60162870fb6" kind="function"><name>CHILD_PROCESS_SetPinCommandLine</name></member>
+      <member refid="group__PIN__PROCESS_1gaf4078d1d7fe3dde470974cfbd17a6561" kind="function"><name>CHILD_PROCESS_GetPinCommandLine</name></member>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2020-2026<sp/>Intel<sp/>Corporation.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>SPDX-License-Identifier:<sp/>MIT</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>PIN_G_CHILD_PROCESS_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>duplicate<sp/>inclusion<sp/>of<sp/>child_process_client</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PIN_G_CHILD_PROCESS_CLIENT_PH</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/><ref refid="group__PIN__PROCESS_1ga9830f4f81eb0f4cab7b66cf6c51ac89a" kindref="member">CHILD_PROCESS</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>BOOL<sp/>(*<ref refid="group__PIN__PROCESS_1gabccd10f8f7203db2476f28a5c3a8f75b" kindref="member">FOLLOW_CHILD_PROCESS_CALLBACK</ref>)(<ref refid="group__PIN__PROCESS_1ga9830f4f81eb0f4cab7b66cf6c51ac89a" kindref="member">CHILD_PROCESS</ref><sp/>cProcess,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__PIN__CALLBACKS_1ga80ecde10e25aa90133f29e875d21d61d" kindref="member">PIN_CALLBACK</ref><sp/><ref refid="group__PIN__CONTROL_1gae710eef7b08de1d153a0b7f3469175a0" kindref="member">PIN_AddFollowChildProcessFunction</ref>(<ref refid="group__PIN__PROCESS_1gabccd10f8f7203db2476f28a5c3a8f75b" kindref="member">FOLLOW_CHILD_PROCESS_CALLBACK</ref><sp/>fun,<sp/>VOID*<sp/>val);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="group__THREADS_1ga2bf6029042d57fb825536c795c94d1ed" kindref="member">OS_PROCESS_ID</ref><sp/><ref refid="group__PIN__PROCESS_1gad9e9d95dd47de9efbf3bf46bb1f549d6" kindref="member">CHILD_PROCESS_GetId</ref>(<ref refid="group__PIN__PROCESS_1ga9830f4f81eb0f4cab7b66cf6c51ac89a" kindref="member">CHILD_PROCESS</ref><sp/>cProcess);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__PROCESS_1ga0d58bd9bcb5f952f248df28876f9c7fb" kindref="member">CHILD_PROCESS_GetCommandLine</ref>(<ref refid="group__PIN__PROCESS_1ga9830f4f81eb0f4cab7b66cf6c51ac89a" kindref="member">CHILD_PROCESS</ref><sp/>cProcess,<sp/>INT*<sp/>pArgc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CHAR*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">**<sp/>pArgv);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__PROCESS_1ga82625ca6006c9e0a7c94e60162870fb6" kindref="member">CHILD_PROCESS_SetPinCommandLine</ref>(<ref refid="group__PIN__PROCESS_1ga9830f4f81eb0f4cab7b66cf6c51ac89a" kindref="member">CHILD_PROCESS</ref><sp/>cProcess,<sp/>INT<sp/>argc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CHAR*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">*<sp/>argv);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>VOID<sp/><ref refid="group__PIN__PROCESS_1gaf4078d1d7fe3dde470974cfbd17a6561" kindref="member">CHILD_PROCESS_GetPinCommandLine</ref>(<ref refid="group__PIN__PROCESS_1ga9830f4f81eb0f4cab7b66cf6c51ac89a" kindref="member">CHILD_PROCESS</ref><sp/>cProcess,<sp/>INT*<sp/>pArgc,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>CHAR*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">**<sp/>pArgv);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>PIN_G_CHILD_PROCESS_CLIENT_PH</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Source/pin/pin/child_process_client.PH"/>
+  </compounddef>
+</doxygen>
