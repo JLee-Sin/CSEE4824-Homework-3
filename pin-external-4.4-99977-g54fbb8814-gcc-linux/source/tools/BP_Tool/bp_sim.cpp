@@ -67,8 +67,27 @@ bool SimDriver::Init(const std::string& specs, std::string* err) {
 			}
 			return false;
 		}
+		std::string key = spec;
+		for(char& ch : key) {
+			if(!isalnum((unsigned char)ch) && ch != '_' && ch != '-') {
+				ch = '_';
+			}
+		}
+		if(key == "tool" || key == "check") {
+			delete s;
+			*err = "simulator spec '" + spec + "' would use tool's '" + key + ".' keys";
+			return false;
+		}
+		for(const std::string& k : keys_) {
+			if(k == key) {
+				delete s;
+				*err = "simulator spec '" + spec + "' would report under same name as other spec";
+				return false;
+			}
+		}
 		sims_.push_back(s);
 		specs_.push_back(spec);
+		keys_.push_back(key);
 	}
 	miss_.assign(sims_.size() * BR_NTYPES, 0);
 	return true;
@@ -93,7 +112,7 @@ void SimDriver::Report(FILE* f, uint64_t insts) const {
 		return insts ? 1000.0 * m / insts : 0.0;
 	};
 	for(size_t i = 0; i < sims_.size(); i++) {
-		const std::string p = "sim" + std::to_string(i) + ".";
+		const std::string p = keys_[i] + ".";
 		const uint64_t* m = &miss_[i * BR_NTYPES];
 		uint64_t total = 0;
 		fprintf(f, "%sspec = %s\n", p.c_str(), specs_[i].c_str());

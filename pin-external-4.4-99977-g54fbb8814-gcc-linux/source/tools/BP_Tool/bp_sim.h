@@ -38,6 +38,7 @@ public:
 private:
 	std::vector<BranchSimulator*> sims_;
 	std::vector<std::string> specs_;
+	std::vector<std::string> keys_;
 	std::vector<uint64_t> miss_;
 	uint64_t n_[BR_NTYPES] = {};
 };
