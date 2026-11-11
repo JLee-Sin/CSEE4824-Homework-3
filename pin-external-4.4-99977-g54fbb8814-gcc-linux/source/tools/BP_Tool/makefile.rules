@@ -1,0 +1,27 @@
+TOOL_ROOTS := bp_tool
+TEST_ROOTS := 
+APP_ROOTS  := 
+
+SIM_SRCS :=
+
+BP_HEADERS := branch_event.h bp_sim.h
+SIM_OBJS   := $(SIM_SRCS:%.cpp=$(OBJDIR)%$(OBJ_SUFFIX))
+BP_OBJS    := $(OBJDIR)bp_tool$(OBJ_SUFFIX) $(OBJDIR)bp_sim$(OBJ_SUFFIX) $(SIM_OBJS)
+
+
+$(OBJDIR)bp_tool$(OBJ_SUFFIX): bp_tool.cpp $(BP_HEADERS)
+	@mkdir -p $(OBJDIR)
+	$(TOOL_CXX) $(TOOL_CXXFLAGS) $(COMP_OBJ)$@ $<
+
+$(OBJDIR)bp_sim$(OBJ_SUFFIX): bp_sim.cpp $(BP_HEADERS)
+	@mkdir -p $(OBJDIR)
+	$(TOOL_CXX) $(TOOL_CXXFLAGS) $(COMP_OBJ)$@ $<
+
+ifneq ($(SIM_OBJS),)
+$(SIM_OBJS): $(OBJDIR)%$(OBJ_SUFFIX): %.cpp $(BP_HEADERS)
+	@mkdir -p $(OBJDIR)
+	$(TOOL_CXX) $(TOOL_CXXFLAGS) $(COMP_OBJ)$@ $<
+endif
+
+$(OBJDIR)bp_tool$(PINTOOL_SUFFIX): $(BP_OBJS)
+	$(TOOL_LINKER) $(TOOL_LDFLAGS) $(LINK_EXE)$@ $^ $(TOOL_LPATHS) $(TOOL_LIBS)
