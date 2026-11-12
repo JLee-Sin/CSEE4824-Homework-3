@@ -2,7 +2,7 @@ TOOL_ROOTS := bp_tool
 TEST_ROOTS := 
 APP_ROOTS  := 
 
-SIM_SRCS :=
+SIM_SRCS := simulators/baseline.cpp
 
 BP_HEADERS := branch_event.h bp_sim.h
 SIM_OBJS   := $(SIM_SRCS:%.cpp=$(OBJDIR)%$(OBJ_SUFFIX))
@@ -19,7 +19,7 @@ $(OBJDIR)bp_sim$(OBJ_SUFFIX): bp_sim.cpp $(BP_HEADERS)
 
 ifneq ($(SIM_OBJS),)
 $(SIM_OBJS): $(OBJDIR)%$(OBJ_SUFFIX): %.cpp $(BP_HEADERS)
-	@mkdir -p $(OBJDIR)
+	@mkdir -p $(dir $@)
 	$(TOOL_CXX) $(TOOL_CXXFLAGS) $(COMP_OBJ)$@ $<
 endif
 
